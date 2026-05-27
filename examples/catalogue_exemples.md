@@ -72,6 +72,16 @@ candidats** que je proposerais, chacun rattaché à un mécanisme dominant press
 - **Gouvernance sanitaire mondiale (pandémies)** — activation normative + désynchronisation d'ordre.
 - **Pêche illégale et ressources halieutiques** — conversion de capital + capacité de nuisance.
 
+### 2.6 L'intelligence artificielle comme objet d'étude
+
+> Ici l'IA est la **situation analysée** (champ de puissance et de gouvernance), non un outil
+> d'analyse.
+
+- **Gouvernance mondiale de l'IA** — désynchronisation d'ordre (les capacités dépassent la régulation) + lutte de classement (standards, définitions du risque, niveaux de capacité).
+- **Course à l'IA et puissance de calcul** — weaponisation de dépendance (accès au *compute* et aux puces avancées) + contestation hégémonique ; recoupe partiellement le cas US-Chine.
+- **Armes létales autonomes (LAWS)** — dilemme de sécurité + activation normative (tentatives de régulation internationale).
+- **IA et manipulation informationnelle interétatique** — weaponisation de dépendance informationnelle + écart de crédibilité.
+
 ---
 
 ## 3. Critère de sélection
