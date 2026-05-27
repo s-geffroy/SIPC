@@ -35,6 +35,11 @@ dépendances, mécanismes et trajectoires. Voir [Situation sociale international
 - Remplacer le droit international, l'économie politique ou la stratégie militaire.
 - Produire une certitude : *un diagnostic faussement certain est une faute.*
 
+## Papier académique
+
+Le fondement théorique est exposé dans un papier académique (LaTeX, compilé en CI) :
+**[📄 Télécharger le PDF](assets/sipc_paper.pdf)**.
+
 ## Parcours recommandé
 
 1. [Théorie](01_theorie/these_centrale.md) — fondations conceptuelles.

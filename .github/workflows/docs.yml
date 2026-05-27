@@ -23,6 +23,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Compile LaTeX paper (source of truth)
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: sipc_paper.tex
+          working_directory: paper
+          latexmk_use_xelatex: false
+
+      - name: Publish PDF into the site assets
+        run: |
+          mkdir -p docs/assets
+          cp paper/sipc_paper.pdf docs/assets/sipc_paper.pdf
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:

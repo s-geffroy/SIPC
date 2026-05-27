@@ -9,3 +9,10 @@ services:
       - .:/sipc
     ports:
       - "8000:8000"
+
+  # Compilation LaTeX du papier académique (source de vérité : paper/sipc_paper.tex).
+  latex:
+    image: texlive/texlive:latest
+    working_dir: /sipc
+    volumes:
+      - .:/sipc

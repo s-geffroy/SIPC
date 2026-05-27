@@ -15,7 +15,8 @@ méthode, l'**ontologie JSON** outillée et trois exemples appliqués et validé
 | `examples/` | 3 cas complets : détroit de Taïwan, guerre en Ukraine, rivalité tech US-Chine |
 | `tools/` | validateur JSON Schema, **linter doctrinal**, générateur de résumé |
 | `tests/` | suite pytest, incluant un test négatif |
-| `references/` | bibliographie BibTeX, papier académique de travail |
+| `paper/` | papier académique **LaTeX** (`sipc_paper.tex`) — source de vérité, compilé en PDF par la CI |
+| `references/` | bibliographie BibTeX, liste de lecture |
 
 ## Démarrage rapide (Docker)
 
@@ -24,8 +25,9 @@ Aucune installation locale : tout passe par le conteneur.
 ```bash
 make build      # construit l'image outillée
 make check      # validation JSON Schema + linter doctrinal + tests
+make paper      # compile le papier LaTeX en PDF (docs/assets/sipc_paper.pdf)
+make docs       # compile le papier puis le site (mkdocs build --strict)
 make serve      # site local sur http://localhost:8000
-make docs       # build statique (mkdocs build --strict)
 ```
 
 Commandes individuelles : `make validate`, `make lint`, `make test`.

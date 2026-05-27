@@ -7,5 +7,19 @@ __pycache__/
 .pytest_cache/
 .cache/
 
+# LaTeX (artefacts générés ; la source de vérité est paper/sipc_paper.tex)
+paper/*.aux
+paper/*.bbl
+paper/*.bcf
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.run.xml
+paper/*.toc
+paper/sipc_paper.pdf
+docs/assets/sipc_paper.pdf
+
 # OS
 .DS_Store

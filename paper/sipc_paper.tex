@@ -1,0 +1,343 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue,
+  pdftitle={Vers une sociologie internationale des personnes collectives},
+  pdfauthor={Sylvain Geffroy}
+}
+
+\usepackage[backend=biber,style=authoryear,sorting=nyt,maxcitenames=2]{biblatex}
+\addbibresource{../references/sipc_bibliographie.bib}
+
+\title{\textbf{Vers une sociologie internationale des personnes collectives}\\[0.4em]
+\large Champs, capitaux, dépendances, rangs et mécanismes de la société mondiale}
+\author{Sylvain Geffroy}
+\date{Version 1.0 --- \today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Cet article propose la \emph{Sociologie internationale des personnes collectives} (SIPC), un
+cadre théorique et opérationnel qui analyse les relations internationales comme une société
+mondiale stratifiée d'acteurs collectifs inégaux. La SIPC ne réduit ni la politique mondiale à
+un système d'États rationnels dans l'anarchie, ni les acteurs à des récits désincarnés~: elle
+les traite comme des \emph{personnes collectives} dotées de capitaux convertibles, de rôles
+revendiqués et reconnus, de dépendances activables et de trajectoires dépendantes du chemin.
+Son unité d'analyse n'est ni l'État ni la crise, mais la \emph{situation sociale
+internationale}. Sa contribution propre n'est pas l'invention de concepts isolés --- la plupart
+sont hérités de la sociologie des champs, de l'École anglaise, du constructivisme, de
+l'économie politique internationale et de la sociologie analytique --- mais leur
+\emph{intégration disciplinée} et leur \emph{formalisation en une ontologie testable}. Nous
+exposons l'appareil conceptuel, sa logique causale configurationnelle et sa discipline
+probatoire, puis l'appliquons au cas du détroit de Taïwan. Nous discutons enfin ses limites,
+notamment les risques d'anthropomorphisme, d'hypertrophie conceptuelle et de fausse précision.
+
+\medskip
+\noindent\textbf{Mots-clés~:} relations internationales, sociologie, champs, capitaux,
+dépendances, reconnaissance, mécanismes causaux, ontologie.
+\end{abstract}
+
+\section{Introduction}
+
+Les relations internationales sont fréquemment pensées soit comme un système d'États unitaires
+maximisant leur sécurité dans l'anarchie \autocite{waltz1979,mearsheimer2001}, soit comme un
+espace de significations et de normes en perpétuelle construction \autocite{wendt1999}. Chacune
+de ces lectures capte une part du réel et en manque une autre. Le réalisme structurel saisit la
+matérialité de la puissance mais peine à rendre compte du rang, de la légitimité et de la
+reconnaissance~; le constructivisme saisit le poids du sens mais sous-estime les capitaux, les
+infrastructures et la coercition.
+
+Cet article propose un troisième terme, qui n'est pas un compromis mais une \emph{intégration
+disciplinée}~: la Sociologie internationale des personnes collectives (SIPC). Sa thèse centrale
+est que la politique mondiale forme une société stratifiée de personnes collectives inégales,
+qui mobilisent des capitaux, occupent des rôles, activent des normes, subissent des dépendances
+et produisent des trajectoires sous contrainte de légitimité, de crédibilité et de preuve.
+
+L'enjeu n'est pas seulement théorique. La SIPC se veut \emph{opérationnelle}~: elle s'accompagne
+d'une méthode d'analyse en dix étapes et d'une ontologie formelle (schémas JSON, validateurs,
+exemples), de sorte qu'une analyse puisse être produite, critiquée et \emph{validée par des
+règles explicites}. Cette double exigence --- théorique et computationnelle --- distingue la
+SIPC d'une simple grille de lecture.
+
+\section{Positionnement~: ce qui est hérité, ce qui est propre}
+\label{sec:positionnement}
+
+La SIPC est résolument synthétique. Il importe de dire clairement ce qu'elle doit à d'autres et
+ce qu'elle ajoute.
+
+\paragraph{Héritages.} De Bourdieu, elle reprend les notions de champ, de capital et de
+conversion, ainsi que l'idée que la position dans un espace structure les stratégies
+\autocite{bourdieu1979,bourdieuWacquant1992}. De l'École anglaise, elle retient l'idée d'une
+\emph{société} internationale dotée d'institutions \autocite{bull1977,buzan2004}. Du
+constructivisme, elle conserve l'attention aux normes, aux identités et à leur dynamique
+\autocite{wendt1999,finnemoreSikkink1998,barnettFinnemore2004}. De l'économie politique
+internationale, elle hérite l'analyse de l'interdépendance, de la puissance structurelle et de
+l'hégémonie \autocite{keohaneNye1977,strange1988,gilpin1987}, prolongée par les travaux récents
+sur l'interdépendance instrumentalisée \autocite{farrellNewman2019}. De la sociologie de
+l'interaction, elle emprunte la présentation de soi et la \emph{face}
+\autocite{goffman1959}, et de la théorie de la reconnaissance la lutte pour le statut
+\autocite{honneth1995,ringmar1996}. De la sociologie historique, elle tient l'attention aux
+appareils, à la coercition et à la formation des États \autocite{weber1978,tilly1992,mann1986}~;
+de Gramsci et Foucault, l'idée que la domination passe par le consentement et la classification
+\autocite{gramsci1971,foucault1977}. Enfin, de la sociologie analytique et relationnelle, elle
+adopte une explication par \emph{mécanismes} \autocite{hedstromSwedberg1998,elster1989} et une
+ontologie processuelle et relationnelle \autocite{emirbayer1997,abbott2016,nexon2009,pouliot2016}.
+
+\paragraph{Apport propre.} La nouveauté de la SIPC ne réside pas dans ces briques mais dans
+trois opérations. \emph{Premièrement}, elle les articule autour d'une unité d'analyse unique et
+explicite --- la situation sociale internationale --- au lieu de les juxtaposer.
+\emph{Deuxièmement}, elle impose une \emph{discipline causale}~: une analyse doit identifier un
+mécanisme dominant, un petit nombre de mécanismes secondaires, des trajectoires conditionnelles
+et des signaux d'invalidation. \emph{Troisièmement}, elle traduit cet appareil en une
+\emph{ontologie formelle} (\S\ref{sec:ontologie}) dont la conformité est vérifiable par des
+outils, ce qui transforme une grille conceptuelle en instrument testable.
+
+\section{La personne collective internationale}
+
+Les acteurs internationaux ne sont pas des individus, mais on gagne à les analyser \emph{comme}
+des personnes collectives~: des entités composées, institutionnalisées et historiques qui
+produisent des décisions par assemblage de bureaucraties, de dirigeants, de doctrines et
+d'audiences \autocite{weber1978}. L'analogie doit être maniée avec prudence. Une personne
+collective ne possède pas de conscience unitaire~; ce qui lui tient lieu d'« intention » est le
+produit instable de coalitions internes et de rapports de force.
+
+L'intérêt analytique de la notion tient à ce qu'elle autorise un vocabulaire commun ---
+identité, mémoire, intérêts, ressources, rôles, dépendances, réputation, trajectoire --- sans
+homogénéiser les acteurs. Car les personnes collectives sont profondément \emph{inégales}~:
+elles diffèrent par leur capacité d'action, leur reconnaissance, leurs capitaux, leur accès aux
+institutions, leur crédibilité, leur résilience et, surtout, leur capacité à définir les
+catégories du monde \autocite{foucault1977}. La SIPC refuse donc à la fois l'étatisme pauvre
+(seuls les États comptent) et le pluralisme naïf (tous les acteurs se valent).
+
+\section{La situation sociale internationale comme unité d'analyse}
+
+L'unité centrale n'est ni l'État, ni la crise, ni le système pris globalement, mais la
+\emph{situation sociale internationale}~: une configuration située d'acteurs, de relations, de
+champs, de capitaux, de normes, d'institutions, de dépendances, d'audiences et de mécanismes,
+qui produit une dynamique observable.
+
+Choisir la crise comme objet rendrait le modèle réactif. Or beaucoup de configurations
+décisives demeurent latentes pendant des années~: dépendances énergétiques, rivalités
+technologiques, tensions de reconnaissance. La situation permet d'analyser ces configurations
+\emph{avant} qu'elles ne deviennent explosives, et de penser la latence comme un état à part
+entière et non comme une simple pré-crise.
+
+\section{Champs, capitaux et conversions}
+
+La société internationale n'est pas homogène~: elle se compose de champs --- militaire,
+diplomatique, économique, financier, technologique, juridique, institutionnel, symbolique,
+informationnel --- dotés chacun de règles, de ressources et de formes de reconnaissance propres
+\autocite{bourdieu1979}. Un acteur peut être puissant dans un champ et faible dans un autre.
+
+La notion décisive est la \emph{conversion de capital}. Un capital n'est stratégique que s'il
+peut être converti en effet dans une situation donnée~: le capital militaire en dissuasion ou
+coercition, le capital financier en sanctions ou en discipline \autocite{strange1988}, le
+capital technologique en dépendance ou en verrouillage, le capital symbolique en légitimité ou
+en mobilisation. D'où une définition relationnelle de la puissance~:
+
+\begin{quote}
+La puissance n'est pas la simple possession de ressources~; elle est la capacité \emph{située}
+de convertir des capitaux en effets reconnus.
+\end{quote}
+
+\section{Rôles, rangs et audiences}
+
+Les personnes collectives n'agissent pas seulement~: elles se présentent, se justifient et sont
+classées par d'autres \autocite{goffman1959}. Un acteur peut revendiquer un rôle (protecteur,
+puissance responsable, gardien de norme, victime) sans qu'il soit reconnu. La SIPC distingue
+ainsi rôle revendiqué, reconnu, contesté, imposé, performé et discrédité. La même logique vaut
+pour le rang~: une part majeure de la politique internationale est une lutte pour la
+reconnaissance du statut \autocite{honneth1995,ringmar1996,pouliot2016}. Les classements
+internationaux (« puissance responsable », « État voyou », « marché émergent ») ne décrivent pas
+seulement~; ils produisent des effets d'accès, d'exclusion et de réputation, et constituent
+eux-mêmes des instruments de pouvoir.
+
+\section{Normes, institutions et légitimité}
+
+Une norme internationale est une attente stabilisée définissant l'acceptable, l'obligatoire et
+l'interdit \autocite{finnemoreSikkink1998}. Mais une norme n'agit pas seule~: elle doit être
+\emph{activée} par un acteur qui l'invoque sur une scène, devant une audience qui reconnaît ou
+conteste, avec un coût ou une sanction à la clé. Une norme peut protéger comme hiérarchiser,
+être sincère et instrumentalisée, universelle dans son langage et sélective dans son
+application.
+
+Les institutions, quant à elles, sont des dispositifs sociaux de stabilisation, de classement
+et de lutte \autocite{barnettFinnemore2004}. Elles cristallisent souvent un rapport de force en
+procédure~: une institution naît d'un rapport de force, le transforme en règle, et la règle peut
+ensuite survivre au rapport de force initial. La légitimité n'est donc jamais une propriété
+fixe~: c'est une reconnaissance située, disputée et convertible.
+
+\section{Dépendances, vulnérabilités et résilience}
+
+La SIPC accorde une place centrale aux dépendances. Une dépendance est une relation où un acteur
+a besoin d'un autre, d'un réseau ou d'une infrastructure pour maintenir une capacité d'action.
+Contre deux illusions symétriques --- « dépendance = faiblesse » et « interdépendance = paix »
+\autocite{keohaneNye1977} --- la SIPC soutient qu'une interdépendance peut tout autant stabiliser
+que devenir un levier de coercition \autocite{farrellNewman2019}. Une dépendance se qualifie par
+sa criticité, son asymétrie, sa substituabilité, son coût de rupture et le potentiel de sa
+\emph{weaponisation}. La résilience est alors la capacité à absorber et reconfigurer ses
+dépendances sans perdre ses fonctions essentielles~: l'autonomie stratégique n'est pas l'absence
+de dépendance, mais la maîtrise politique des dépendances vitales.
+
+\section{Domination, contestation et ordre}
+
+L'hégémonie tient rarement par la seule coercition. Elle tient lorsqu'une domination matérielle
+est convertie en institutions, normes, dépendances, protections, classements et consentement
+partiel \autocite{gramsci1971,gilpin1987}. Signe révélateur de stress~: quand une hégémonie doit
+menacer de plus en plus pour obtenir ce qu'elle obtenait par simple normalité, elle est déjà en
+difficulté. La contestation, de son côté, vise à modifier règles, rangs, dépendances ou
+catégories~; mais la SIPC pose une règle froide~: la capacité de nuisance n'est pas une capacité
+d'ordre. Un acteur peut affaiblir un ordre sans pouvoir en produire un autre. Un ordre, enfin,
+n'est ni la paix ni la justice~: c'est la prévisibilité relative des positions, des règles, des
+coûts et des accès. Son changement est le plus souvent une recomposition multi-couches, non un
+effondrement brutal.
+
+\section{Causalité configurationnelle et mécanismes}
+\label{sec:causalite}
+
+La SIPC n'explique pas par une cause unique mais par une \emph{configuration}~: un effet résulte
+d'une configuration initiale, de mécanismes activés, de seuils franchis, d'une séquence
+d'interactions, de rétroactions et de verrouillages \autocite{hedstromSwedberg1998,elster1989}.
+Un mécanisme est une chaîne causale activable sous conditions, dotée d'une séquence typique et
+de signaux d'invalidation. La SIPC en retient une dizaine~: conversion de capital, weaponisation
+de dépendance, verrouillage d'audience, crise de reconnaissance, dilemme de sécurité
+\autocite{jervis1976}, activation normative, lutte de classement, écart de crédibilité,
+prophétie auto-réalisatrice, désynchronisation d'ordre.
+
+La règle méthodologique est stricte~: pas de trajectoire sans mécanisme, pas de mécanisme sans
+conditions d'activation, pas d'analyse sérieuse sans signal d'invalidation. Une analyse
+identifie un mécanisme \emph{dominant}, deux à quatre mécanismes secondaires au plus, des seuils,
+une séquence et les signaux qui feraient changer le diagnostic.
+
+\section{Preuve, contre-hypothèses et invalidation}
+\label{sec:preuve}
+
+Le danger majeur d'un tel cadre est de produire des interprétations brillantes mais
+insuffisamment prouvées. La parade est la \emph{triangulation probatoire}
+\autocite{beachPedersen2013}~: une hypothèse n'est robuste que si elle relie sources
+déclaratives, comportements observables, données matérielles, séquence temporelle, réactions
+d'audience, contre-hypothèses et contradictions, le tout assorti d'un niveau de confiance
+explicite. La SIPC recommande une échelle de statuts probatoires (de \textsc{speculative} à
+\textsc{strongly\_supported}) et impose qu'aucun score ne vaille sans justification textuelle.
+
+\begin{quote}
+Un diagnostic incertain n'est pas un échec~; un diagnostic faussement certain est une faute.
+\end{quote}
+
+\section{Étude de cas~: le détroit de Taïwan}
+\label{sec:taiwan}
+
+Nous appliquons l'appareil à une situation qui active presque toutes ses briques.
+
+\paragraph{Cadrage.} La situation du détroit de Taïwan n'est pas réductible à une crise
+militaire potentielle. C'est une situation sociale internationale durable, périodiquement
+accélérée, qui articule souveraineté contestée, reconnaissance partielle, dépendance mondiale
+aux semi-conducteurs avancés, dissuasion sino-américaine et ordre régional sous stress. Les
+champs activés sont au premier chef militaire, technologique, diplomatique et économique.
+
+\paragraph{Acteurs et relations.} On retient cinq personnes collectives principales~: la Chine
+(revendication de souveraineté, capitaux militaire, économique, technologique et symbolique)~;
+les États-Unis (garant d'un ordre régional sous ambiguïté stratégique)~; Taïwan (entité de
+\emph{facto} autonome, statut contesté, nœud technologique)~; TSMC (firme détenant un quasi-
+monopole sur les nœuds de gravure les plus avancés)~; le Japon (allié exposé). Les relations
+structurantes sont une non-reconnaissance coercitive (Chine~$\rightarrow$~Taïwan), une protection
+sous ambiguïté (États-Unis~$\rightarrow$~Taïwan), une rivalité stratégique (États-Unis~$\leftrightarrow$~Chine)
+et une dépendance technologique mondiale au nœud taïwanais.
+
+\paragraph{Capitaux et dépendances.} Le capital décisif de Taïwan n'est pas militaire mais
+technologique~: la concentration de la production de pointe constitue un \emph{chokepoint}
+mondial. Cette dépendance est doublement asymétrique et faiblement substituable à court terme~;
+son potentiel de weaponisation est réel mais borné par le coût d'une rupture pour tous les
+acteurs, y compris la Chine, elle-même dépendante d'intrants technologiques occidentaux.
+
+\paragraph{Mécanisme dominant et mécanismes secondaires.} Le mécanisme dominant est une
+\emph{crise de reconnaissance}~: l'écart entre le statut revendiqué et la reconnaissance
+accordée structure la tension et rend certaines concessions coûteuses devant les audiences
+internes \autocite{ringmar1996}. Deux mécanismes secondaires l'amplifient~: un \emph{dilemme de
+sécurité} sino-américain, où chaque mesure défensive est lue comme offensive
+\autocite{jervis1976}, et une \emph{weaponisation potentielle de la dépendance} technologique
+\autocite{farrellNewman2019}. Les amortisseurs --- coût d'une guerre majeure, interdépendance
+économique, canaux de gestion de crise --- maintiennent ordinairement la situation sous le seuil
+de rupture.
+
+\paragraph{Trajectoires.} Deux trajectoires conditionnelles se dégagent. La première, jugée la
+plus probable, est une \emph{tension gérée} sans rupture majeure, conditionnée par la continuité
+de la dissuasion, l'absence d'incident accidentel grave et la reconnaissance du coût économique.
+La seconde est une \emph{escalade coercitive} (blocus ou quarantaine), conditionnée par un
+verrouillage d'audience et un incident déclencheur. Les points de bifurcation incluent un
+incident militaire majeur, un basculement politique interne et une expansion des contrôles
+technologiques.
+
+\paragraph{Preuve et contre-hypothèses.} L'hypothèse du primat de la reconnaissance s'appuie sur
+un faisceau convergent~: réaffirmations officielles récurrentes (discours), exercices et
+incursions répétés (pratique observable), concentration documentée de la production de
+semi-conducteurs (donnée matérielle). Elle doit être confrontée à au moins deux
+contre-hypothèses~: que le moteur premier soit le dilemme de sécurité, la reconnaissance n'étant
+qu'un habillage~; ou que la dépendance technologique soit la variable décisive. Un signal
+d'invalidation clair serait la résolution durable de la tension par des arrangements de sécurité
+\emph{sans} composante de statut. Le statut probatoire raisonnable demeure
+\textsc{moderately\_supported}, avec une confiance moyenne~: un diagnostic prudent, conforme à la
+discipline de la \S\ref{sec:preuve}.
+
+Ce cas illustre la valeur ajoutée de la SIPC~: il ne se contente pas de lister des facteurs, il
+les \emph{hiérarchise} autour d'un mécanisme dominant, les ordonne en trajectoires
+conditionnelles, et expose les conditions auxquelles l'analyse devrait être révisée.
+
+\section{Formalisation~: une ontologie testable}
+\label{sec:ontologie}
+
+L'appareil se traduit en une ontologie JSON dont l'objet racine, \texttt{situation\_analysis},
+agrège des profils d'acteurs, de relations, de champs, de capitaux, de dépendances, de normes,
+d'institutions, de mécanismes, de trajectoires, de preuves et de diagnostic. Deux niveaux de
+validation accompagnent l'ontologie~: une validation \emph{structurelle} par schémas JSON, et
+une validation \emph{doctrinale} qui encode les règles non exprimables par le schéma --- présence
+d'un mécanisme dominant, d'au moins une contre-hypothèse, de signaux d'invalidation, intégrité
+référentielle entre objets, et interdiction des scores non justifiés. Le cas de Taïwan de la
+\S\ref{sec:taiwan} existe ainsi sous forme d'objet JSON validé et conforme à ces règles. C'est
+cette vérifiabilité qui distingue la SIPC d'une grille purement discursive.
+
+\section{Limites et risques}
+
+La SIPC affiche ses limites, condition de son sérieux. Elle ne produit pas de certitude et ne
+prédit pas mécaniquement l'avenir~; elle ne remplace ni le droit international, ni l'économie
+politique, ni la stratégie. Trois risques internes la guettent. Le premier est
+l'\emph{anthropomorphisme}~: prêter une intention unitaire à un composite~; on le contient en
+rappelant que les attributs de la personne collective sont produits par des appareils. Le
+deuxième est l'\emph{hypertrophie conceptuelle}~: la multiplication des notions sans hiérarchie~;
+on le contient par la discipline du mécanisme dominant. Le troisième est la \emph{fausse
+précision}~: l'apparence de rigueur des scores numériques non calibrés~; on le contient en
+maintenant les scores prudents et toujours justifiés. Enfin, le cadre n'échappe pas à la
+\emph{réflexivité}~: les catégories qu'il mobilise sont elles-mêmes des instruments de
+classement, ce que l'analyste doit assumer.
+
+\section{Conclusion}
+
+La SIPC propose de lire la politique mondiale comme une société de personnes collectives
+inégales, et d'organiser cette lecture autour d'une unité d'analyse claire, d'une causalité par
+mécanismes et d'une discipline probatoire. Sa singularité n'est pas conceptuelle mais
+architecturale~: intégrer des héritages dispersés en un appareil cohérent et le rendre
+\emph{testable}. L'étude du détroit de Taïwan suggère qu'un tel cadre peut hiérarchiser les
+causes, expliciter les trajectoires et nommer ses propres conditions d'invalidation --- ce qui,
+pour une sociologie appliquée des relations internationales, constitue déjà une exigence
+salutaire.
+
+\printbibliography[heading=bibintoc,title={Bibliographie}]
+
+\end{document}

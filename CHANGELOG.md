@@ -3,6 +3,24 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [1.1.0] — 2026-05-27
+
+### Ajouté
+- Papier académique en **LaTeX** (`paper/sipc_paper.tex`) érigé en **source de vérité** :
+  version resserrée intégrant une **étude de cas développée** (détroit de Taïwan) et un
+  positionnement explicite (héritages vs. apport propre).
+- Compilation du PDF **en CI** via `xu-cheng/latex-action`, puis publication dans le site ;
+  PDF **téléchargeable** depuis l'accueil et la page Bibliographie (`assets/sipc_paper.pdf`).
+- Cible `make paper` et service Docker `latex` (TeX Live) pour la compilation locale.
+- 6 références spécialisées ajoutées à la bibliographie (Jervis, Schelling, Farrell & Newman,
+  Beach & Pedersen, Honneth, Ringmar).
+
+### Modifié
+- `make docs` dépend désormais de `make paper` (le PDF doit exister pour le build strict).
+
+### Supprimé
+- `references/papier_academique_long_v1.md` : remplacé par la source LaTeX faisant foi.
+
 ## [1.0.0] — 2026-05-27
 
 ### Ajouté

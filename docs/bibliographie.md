@@ -1,8 +1,13 @@
 # Bibliographie
 
+!!! tip "Papier académique (PDF)"
+    Le papier académique complet est rédigé en **LaTeX** (`paper/sipc_paper.tex`, source de
+    vérité) et compilé automatiquement en CI.
+    👉 **[Télécharger le PDF](assets/sipc_paper.pdf)**
+
 La bibliographie complète est maintenue au format BibTeX dans
 [`references/sipc_bibliographie.bib`](https://github.com/s-geffroy/SIPC/blob/main/references/sipc_bibliographie.bib)
-(33 entrées).
+(39 entrées). C'est cette base qui alimente le papier LaTeX.
 
 ## Filiations principales
 
@@ -21,7 +26,8 @@ La bibliographie complète est maintenue au format BibTeX dans
   mécanismes.
 
 !!! note "Statut éditorial"
-    Le papier académique long reste une **version de travail**. Avant soumission externe :
-    compléter les références spécialisées, clarifier le positionnement face à l'École anglaise,
-    au constructivisme et à l'économie politique internationale, et adoucir certaines
-    formulations doctrinales. Voir [Limites](limites.md).
+    Le papier (V1) resserre la version longue de travail et y intègre une étude de cas
+    développée (détroit de Taïwan, voir [Exemples](06_exemples/index.md)). Il explicite
+    désormais son positionnement (héritages vs. apport propre). Avant soumission à une revue,
+    une relecture par les pairs et un approfondissement empirique du cas restent souhaitables.
+    Voir [Limites](limites.md).

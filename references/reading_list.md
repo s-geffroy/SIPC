@@ -29,6 +29,7 @@ Lectures structurantes derrière la SIPC, par filiation. La bibliographie formel
 - Derek Beach & Rasmus Brun Pedersen, *Process-Tracing Methods*.
 - Alexander George & Andrew Bennett, *Case Studies and Theory Development*.
 
-## Document de travail
-- `papier_academique_long_v1.md` — version longue de travail (à resserrer avant soumission,
-  voir `note_editoriale_et_limites.md`).
+## Papier académique
+- `../paper/sipc_paper.tex` — **source de vérité** du papier académique (LaTeX), compilé en PDF
+  par la CI et téléchargeable depuis le site. La note `note_editoriale_et_limites.md` conserve
+  l'historique des choix éditoriaux de la version longue initiale.
