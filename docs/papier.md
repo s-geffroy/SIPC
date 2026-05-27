@@ -18,10 +18,10 @@ internationale**. Sa contribution propre n'est pas l'invention de concepts isol�
 **intégration disciplinée** et leur **formalisation en une ontologie testable**. La méthode est
 renforcée par une calibration probabiliste ancrée, une analyse des hypothèses concurrentes
 (ACH), une traçabilité des sources et une boucle de suivi et de backtesting. L'appareil est
-appliqué à **sept situations contrastées** — détroit de Taïwan, guerre en Ukraine, rivalité
-technologique États-Unis / Chine, mer de Chine méridionale, Arctique, Sahel central et Corée du
-Nord — avant une discussion des limites (anthropomorphisme, hypertrophie conceptuelle, fausse
-précision).
+appliqué à **huit situations contrastées** — détroit de Taïwan, guerre en Ukraine, rivalité
+technologique États-Unis / Chine, mer de Chine méridionale, Arctique, Sahel central, Corée du
+Nord et gouvernance mondiale de l'IA — avant une discussion des limites (anthropomorphisme,
+hypertrophie conceptuelle, fausse précision).
 
 ## Plan
 
@@ -36,7 +36,7 @@ précision).
 9. Domination, contestation et ordre
 10. Causalité configurationnelle et mécanismes
 11. Preuve, contre-hypothèses et invalidation
-12. **Études de cas : le détroit de Taïwan et un corpus de sept situations**
+12. **Études de cas : le détroit de Taïwan et un corpus de huit situations**
 13. Formalisation : une ontologie testable
 14. Limites et risques
 15. Conclusion

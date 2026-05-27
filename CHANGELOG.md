@@ -3,6 +3,12 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.7.1] — 2026-05-27
+
+### Corrigé
+- Page **Papier académique** (`papier.md`) : résumé et plan synchronisés au corpus de **huit**
+  cas (ajout de la gouvernance mondiale de l'IA) ; la page était restée à sept.
+
 ## [2.7.0] — 2026-05-27
 
 ### Ajouté
