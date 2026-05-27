@@ -3,6 +3,12 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.4.1] — 2026-05-27
+
+### Supprimé
+- Section « Prompt d'implémentation LLM » du guide du dépôt et toute allusion aux LLM / à l'IA
+  dans le site (le papier n'en contenait aucune).
+
 ## [2.4.0] — 2026-05-27
 
 ### Ajouté

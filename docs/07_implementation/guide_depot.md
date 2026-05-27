@@ -49,10 +49,3 @@ make serve      # site local sur http://localhost:8000
 À chaque `push` sur `main`, GitHub Actions exécute `validate` + `lint` + `pytest`, puis
 construit et déploie le site sur GitHub Pages. Voir
 [Règles de validation](../03_ontologie/regles_validation.md).
-
-## Prompt d'implémentation LLM
-
-Pour régénérer ou étendre le dépôt avec un LLM, le prompt doit **exiger** preuve,
-contre-hypothèse et signal d'invalidation, et **interdire** : inventer des faits, produire des
-probabilités précises sans justification, supprimer les incertitudes, confondre source et
-preuve, ou remplir mécaniquement tous les modules.
