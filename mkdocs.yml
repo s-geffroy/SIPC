@@ -49,6 +49,7 @@ nav:
   - Preuve: 05_preuve/triangulation_probatoire.md
   - Exemples: 06_exemples/index.md
   - Implémentation: 07_implementation/guide_depot.md
+  - Papier académique: papier.md
   - Glossaire: glossaire.md
   - Limites: limites.md
   - Bibliographie: bibliographie.md
