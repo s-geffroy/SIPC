@@ -3,6 +3,15 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.1.0] — 2026-05-27
+
+### Ajouté
+- Exemple **Guerre en Ukraine** promu « gold standard » au tier VALIDATED : ACH à trois
+  hypothèses (activation normative la moins infirmée, via une preuve `SMOKING_GUN` sur le
+  soutien coûteux maintenu), sources gradées Admiralty, Key Assumptions Check, premortem,
+  `outcome` de trajectoire et `revision_history`.
+- `analysis.md` régénéré avec la matrice ACH.
+
 ## [2.0.0] — 2026-05-27
 
 ### Ajouté — renforcement de la méthode (4 axes)

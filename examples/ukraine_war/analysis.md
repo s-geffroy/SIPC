@@ -28,3 +28,24 @@ Guerre d'usure où l'activation normative autour de la souveraineté soutient un
 
 > **Confiance** : MEDIUM (0.58) · **Statut probatoire** : `MODERATELY_SUPPORTED`
 
+## Matrice ACH
+
+Légende : `+` consistant, `−` inconsistant, `·` neutre. Diag. = diagnosticité de la preuve.
+
+| Preuve | Diag. | Activation normative dominante | Calcul géopolitique dominant | Résilience matérielle dominante |
+|---|---|---|---|---|
+| EVID_UKRAINE_RESOLUTIONS_001 | MEDIUM | + | · | − |
+| EVID_UKRAINE_AID_FLOWS_001 | MEDIUM | + | + | · |
+| EVID_UKRAINE_COSTLY_SUPPORT_001 | HIGH | + | − | · |
+
+## Décompte des preuves inconsistantes (plus c'est bas, mieux c'est)
+
+- **Activation normative dominante** : 0 inconsistance(s) ← hypothèse dominante
+- **Calcul géopolitique dominant** : 1 inconsistance(s)
+- **Résilience matérielle dominante** : 1 inconsistance(s)
+
+## Hypothèses clés (Key Assumptions Check)
+
+- **La cohésion de la coalition occidentale se maintient malgré la fatigue.** — `UNCERTAIN` : Si fausse, l'aide se tarit et la trajectoire d'usure bascule vers un gel imposé.
+- **L'escalade nucléaire reste mutuellement dissuadée.** — `SUPPORTED` : Si fausse, la nature même du conflit change et le cadre d'analyse doit être révisé.
+

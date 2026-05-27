@@ -5,11 +5,15 @@ commentaire vague. Les trois analyses JSON **valident contre les schémas** et *
 linter doctrinal** (mécanisme dominant, contre-hypothèses, signaux d'invalidation, intégrité
 référentielle).
 
-| Cas | Mécanisme dominant | Briques testées |
-|---|---|---|
-| Détroit de Taïwan | crise de reconnaissance | reconnaissance, dissuasion, dépendance tech, ordre régional |
-| Guerre en Ukraine | activation normative | souveraineté, normes, sanctions, résilience de coalition |
-| Rivalité tech US-Chine | weaponisation de chokepoints | dépendance, hégémonie, standards, fragmentation |
+| Cas | Mécanisme dominant | Tier | Briques testées |
+|---|---|---|---|
+| Détroit de Taïwan | crise de reconnaissance | **VALIDATED** | reconnaissance, dissuasion, dépendance tech, ordre régional |
+| Guerre en Ukraine | activation normative | **VALIDATED** | souveraineté, normes, sanctions, résilience de coalition |
+| Rivalité tech US-Chine | weaponisation de chokepoints | REVIEW_REQUIRED | dépendance, hégémonie, standards, fragmentation |
+
+Taïwan et Ukraine sont des exemples **« gold standard »** au [tier VALIDATED](../03_ontologie/regles_validation.md)
+(sources gradées, [ACH](../05_preuve/ach.md) cohérente, calibration, suivi des signaux) ;
+US-Chine illustre le tier REVIEW_REQUIRED.
 
 ## Détroit de Taïwan
 
