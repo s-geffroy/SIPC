@@ -3,6 +3,17 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.5.0] — 2026-05-27
+
+### Ajouté
+- Nouvel exemple **Sahel central** au tier VALIDATED (« gold standard ») : mécanisme dominant de
+  **conversion d'un capital souverainiste** en légitimité de régime (coups d'État, réalignement
+  France → Russie, AES contre CEDEAO), ACH à trois hypothèses (preuve `SMOKING_GUN` sur la
+  légitimité maintenue malgré l'insécurité), sources gradées Admiralty, Key Assumptions Check,
+  premortem, `outcome` de trajectoire et `revision_history`.
+- **Six** exemples « gold standard » désormais. Papier (corpus porté à six cas), page d'accueil,
+  page Exemples et test de comptage (5 → 6) mis à jour.
+
 ## [2.4.1] — 2026-05-27
 
 ### Supprimé

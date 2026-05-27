@@ -1,0 +1,671 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "ANALYSIS_SAHEL_001",
+  "situation": {
+    "situation_id": "SIT_SAHEL_001",
+    "name": "Situation sociale internationale du Sahel central",
+    "scope": {
+      "geographic": "Sahel central (Mali, Burkina Faso, Niger) et voisinage ouest-africain",
+      "temporal": "Phase contemporaine (vague de coups d'État et réalignement)",
+      "fields": ["MIL", "SYM", "DIP", "HUM", "INST", "ECO"]
+    },
+    "situation_type": ["SECURITY_TENSION", "HUMANITARIAN_CRISIS", "REGIONAL_ORDER_STRESS", "INSTITUTIONAL_CRISIS"],
+    "current_phase": "junta_consolidation_amid_insurgency_and_realignment"
+  },
+  "actors": [
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_MALI",
+      "name": "Mali (régime de transition)",
+      "actor_type": "STATE",
+      "aliases": [],
+      "description": "État dirigé par une junte issue d'un coup d'État, mobilisant un récit de souveraineté restaurée et réorientant ses alignements extérieurs.",
+      "primary_fields": ["MIL", "SYM", "DIP"],
+      "claimed_roles": ["sovereignty_restorer", "security_provider"],
+      "recognized_roles": ["transitional_government"],
+      "contested_roles": ["legitimate_constitutional_authority"],
+      "main_capitals": ["MILITARY", "SYMBOLIC"],
+      "main_vulnerabilities": ["persistent_insurgency", "economic_fragility", "diplomatic_isolation"],
+      "main_dependencies": ["DEP_SAHEL_EXTERNAL_SECURITY_001"],
+      "main_audiences": ["domestic_public", "armed_forces", "regional_youth"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_AES",
+      "name": "Alliance des États du Sahel (AES)",
+      "actor_type": "REGIONAL_ORGANIZATION",
+      "aliases": ["AES"],
+      "description": "Bloc réunissant Mali, Burkina Faso et Niger, vecteur d'un projet souverainiste et alternative revendiquée à la CEDEAO.",
+      "primary_fields": ["DIP", "MIL", "SYM"],
+      "claimed_roles": ["sovereign_bloc", "mutual_defense_community"],
+      "recognized_roles": ["emerging_regional_grouping"],
+      "contested_roles": ["effective_security_provider"],
+      "main_capitals": ["SYMBOLIC", "MILITARY"],
+      "main_vulnerabilities": ["resource_scarcity", "external_dependence"],
+      "main_dependencies": [],
+      "main_audiences": ["member_publics", "pan_african_opinion"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_ECOWAS",
+      "name": "Communauté économique des États de l'Afrique de l'Ouest (CEDEAO)",
+      "actor_type": "REGIONAL_ORGANIZATION",
+      "aliases": ["CEDEAO", "ECOWAS"],
+      "description": "Organisation régionale porteuse d'une norme anti-coup, affaiblie par le retrait des États sahéliens.",
+      "primary_fields": ["DIP", "INST", "ECO"],
+      "claimed_roles": ["regional_order_guardian", "anti_coup_norm_carrier"],
+      "recognized_roles": ["regional_organization"],
+      "contested_roles": ["legitimate_arbiter_for_the_sahel"],
+      "main_capitals": ["INSTITUTIONAL", "ECONOMIC"],
+      "main_vulnerabilities": ["member_defection", "credibility_after_failed_threats"],
+      "main_dependencies": [],
+      "main_audiences": ["member_states", "external_partners"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_FRANCE",
+      "name": "France",
+      "actor_type": "STATE",
+      "aliases": [],
+      "description": "Ancien partenaire sécuritaire prééminent, contraint au retrait militaire et cible d'une mobilisation anti-française.",
+      "primary_fields": ["MIL", "DIP", "SYM"],
+      "claimed_roles": ["counterterrorism_partner"],
+      "recognized_roles": ["former_security_patron"],
+      "contested_roles": ["legitimate_regional_actor"],
+      "main_capitals": ["MILITARY", "ECONOMIC", "INSTITUTIONAL"],
+      "main_vulnerabilities": ["reputational_rejection", "loss_of_access"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "european_partners"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_RUSSIA",
+      "name": "Fédération de Russie",
+      "actor_type": "STATE",
+      "aliases": [],
+      "description": "Nouveau partenaire sécuritaire (forces paramilitaires, conseillers), offrant un substitut à la présence occidentale.",
+      "primary_fields": ["MIL", "DIP", "INF"],
+      "claimed_roles": ["alternative_security_partner"],
+      "recognized_roles": ["external_power"],
+      "contested_roles": ["stabilizing_actor"],
+      "main_capitals": ["MILITARY", "INFORMATIONAL"],
+      "main_vulnerabilities": ["overextension", "limited_economic_offer"],
+      "main_dependencies": [],
+      "main_audiences": ["host_regimes", "domestic_public"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_JNIM",
+      "name": "Coalition jihadiste (type JNIM)",
+      "actor_type": "ARMED_GROUP",
+      "aliases": [],
+      "description": "Insurrection armée contestant le contrôle territorial de l'État et imposant des coûts sécuritaires majeurs.",
+      "primary_fields": ["MIL", "SOC"],
+      "claimed_roles": ["alternative_order_provider"],
+      "recognized_roles": ["insurgent_armed_group"],
+      "contested_roles": [],
+      "main_capitals": ["MILITARY", "SOCIAL"],
+      "main_vulnerabilities": ["internal_fragmentation", "local_backlash"],
+      "main_dependencies": [],
+      "main_audiences": ["rural_populations", "recruits"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    }
+  ],
+  "relations": [
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_JNIM_MALI_CONTESTATION_001",
+      "source_actor_id": "ACT_JNIM",
+      "target_actor_id": "ACT_MALI",
+      "relation_type": "CONTESTATION",
+      "fields": ["MIL", "SOC"],
+      "description": "Contestation armée du contrôle territorial et de l'autorité de l'État.",
+      "asymmetry_level": 0.5,
+      "trust_level": 0.05,
+      "credibility_level": 0.6,
+      "reversibility": 0.2,
+      "exit_cost": 0.8,
+      "main_tensions": ["territorial_control", "population_governance"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_MALI_FRANCE_CONTESTATION_001",
+      "source_actor_id": "ACT_MALI",
+      "target_actor_id": "ACT_FRANCE",
+      "relation_type": "CONTESTATION",
+      "fields": ["MIL", "SYM", "DIP"],
+      "description": "Rupture du partenariat sécuritaire, expulsion des forces et mobilisation symbolique anti-française.",
+      "asymmetry_level": 0.5,
+      "trust_level": 0.05,
+      "credibility_level": 0.6,
+      "reversibility": 0.3,
+      "exit_cost": 0.6,
+      "main_tensions": ["sovereignty_assertion", "neocolonialism_framing"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_MALI_RUSSIA_COOPERATION_001",
+      "source_actor_id": "ACT_MALI",
+      "target_actor_id": "ACT_RUSSIA",
+      "relation_type": "COOPERATION",
+      "fields": ["MIL", "INF"],
+      "description": "Partenariat sécuritaire de substitution (forces paramilitaires, soutien informationnel).",
+      "asymmetry_level": 0.55,
+      "trust_level": 0.45,
+      "credibility_level": 0.5,
+      "reversibility": 0.4,
+      "exit_cost": 0.6,
+      "main_tensions": ["dependence_substitution", "cost_and_results"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_AES_ECOWAS_CONTESTATION_001",
+      "source_actor_id": "ACT_AES",
+      "target_actor_id": "ACT_ECOWAS",
+      "relation_type": "CONTESTATION",
+      "fields": ["DIP", "INST", "SYM"],
+      "description": "Retrait de la CEDEAO et contestation de sa légitimité, au nom de la souveraineté.",
+      "asymmetry_level": 0.4,
+      "trust_level": 0.2,
+      "credibility_level": 0.55,
+      "reversibility": 0.4,
+      "exit_cost": 0.55,
+      "main_tensions": ["anti_coup_norm_vs_sovereignty", "regional_realignment"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_MALI_AES_ALLIANCE_001",
+      "source_actor_id": "ACT_MALI",
+      "target_actor_id": "ACT_AES",
+      "relation_type": "ALLIANCE",
+      "fields": ["MIL", "DIP", "SYM"],
+      "description": "Adhésion au bloc souverainiste de défense mutuelle.",
+      "asymmetry_level": 0.3,
+      "trust_level": 0.6,
+      "credibility_level": 0.55,
+      "reversibility": 0.4,
+      "exit_cost": 0.5,
+      "main_tensions": ["burden_sharing", "coordination"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    }
+  ],
+  "activated_fields": [
+    { "field": "MIL", "intensity": 0.88, "role_in_situation": "Insurrection jihadiste et réponse sécuritaire." },
+    { "field": "SYM", "intensity": 0.85, "role_in_situation": "Récit souverainiste et mobilisation anti-française." },
+    { "field": "HUM", "intensity": 0.8, "role_in_situation": "Déplacements massifs et crise humanitaire." },
+    { "field": "INST", "intensity": 0.72, "role_in_situation": "Recomposition régionale (AES contre CEDEAO)." }
+  ],
+  "capital_structure": [
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_MALI_SYMBOLIC_SOVEREIGNTY_001",
+      "actor_id": "ACT_MALI",
+      "capital_type": "SYMBOLIC",
+      "field": "SYM",
+      "description": "Capital symbolique souverainiste et anti-colonial, fortement mobilisable auprès des opinions.",
+      "level": 0.8,
+      "convertibility": 0.75,
+      "conversion_paths": ["domestic_legitimacy", "regime_consolidation", "regional_appeal"],
+      "constraints": ["dependence_on_security_results", "economic_reality"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_JNIM_TERRITORIAL_001",
+      "actor_id": "ACT_JNIM",
+      "capital_type": "MILITARY",
+      "field": "MIL",
+      "description": "Contrôle de fait de zones rurales et capacité de coercition locale.",
+      "level": 0.65,
+      "convertibility": 0.55,
+      "conversion_paths": ["parallel_governance", "taxation", "coercion"],
+      "constraints": ["limited_urban_reach", "local_resistance"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    }
+  ],
+  "dependencies": [
+    {
+      "schema_version": "1.0",
+      "dependency_id": "DEP_SAHEL_EXTERNAL_SECURITY_001",
+      "dependent_actor_id": "ACT_MALI",
+      "controller_actor_or_network": "Partenaires sécuritaires externes (auparavant la France, désormais la Russie)",
+      "dependency_type": "SECURITY",
+      "dependent_capacity": ["counterinsurgency", "air_support", "training"],
+      "criticality_level": 0.85,
+      "substitutability": 0.4,
+      "time_to_substitute": "Réorientation rapide d'un patron à l'autre, mais résultats incertains.",
+      "asymmetry_level": 0.6,
+      "visibility_level": 0.8,
+      "politicization_level": 0.9,
+      "weaponization_potential": 0.5,
+      "exit_cost": 0.7,
+      "current_strategy": ["patron_substitution", "domestic_force_buildup"],
+      "main_risk": "Substitution de dépendance sans gain sécuritaire durable.",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    }
+  ],
+  "norms": [
+    {
+      "schema_version": "1.0",
+      "norm_id": "NORM_ANTI_COUP_CONSTITUTIONAL_ORDER",
+      "name": "Ordre constitutionnel et norme anti-coup",
+      "norm_family": "SOVEREIGNTY",
+      "core_prescription": "Les changements anticonstitutionnels de gouvernement sont prohibés et sanctionnés par l'organisation régionale.",
+      "institutionalization_level": 0.6,
+      "main_institutions": ["ECOWAS", "AU"],
+      "carrier_audiences": ["regional_organizations", "external_partners"],
+      "main_beneficiaries": ["incumbent_civilian_governments"],
+      "main_constrained_actors": ["military_juntas"],
+      "violation_costs": ["suspension", "sanctions"],
+      "contestation_patterns": ["sovereignty_counter_framing", "anti_neocolonialism"],
+      "conversion_paths": ["delegitimation", "isolation"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    }
+  ],
+  "institutions": [
+    {
+      "schema_version": "1.0",
+      "institution_id": "INST_ECOWAS",
+      "name": "CEDEAO",
+      "institution_type": "FORMAL_ORGANIZATION",
+      "core_functions": ["regional_integration", "anti_coup_enforcement", "mediation"],
+      "rules_and_procedures": ["sanctions", "suspension", "summitry"],
+      "dominant_capitals": ["INSTITUTIONAL", "ECONOMIC"],
+      "classification_power": ["who_is_a_legitimate_government"],
+      "main_tensions": ["member_withdrawal", "credibility_after_failed_threats"],
+      "current_stress_level": 0.8,
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.64
+    },
+    {
+      "schema_version": "1.0",
+      "institution_id": "INST_AES",
+      "name": "Alliance des États du Sahel",
+      "institution_type": "INTERNATIONAL_REGIME",
+      "core_functions": ["mutual_defense", "sovereignty_assertion", "alternative_integration"],
+      "rules_and_procedures": ["mutual_defense_clause", "summit_coordination"],
+      "dominant_capitals": ["SYMBOLIC", "MILITARY"],
+      "classification_power": ["who_speaks_for_sahelian_sovereignty"],
+      "main_tensions": ["resource_limits", "external_dependence"],
+      "current_stress_level": 0.6,
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.56
+    }
+  ],
+  "dominant_mechanism": {
+    "schema_version": "1.0",
+    "mechanism_id": "MECH_SOVEREIGNTY_CAPITAL_CONVERSION_001",
+    "name": "Conversion d'un capital souverainiste en légitimité de régime",
+    "mechanism_type": "CAPITAL_CONVERSION",
+    "minimal_definition": "Les juntes convertissent l'insécurité et un capital symbolique anti-occidental en légitimité interne et en récit de souveraineté restaurée, réorientant les alignements extérieurs.",
+    "activation_conditions": ["security_crisis", "available_anti_colonial_capital", "discredited_former_patron"],
+    "typical_sequence": ["coup", "sovereignty_narrative", "patron_reorientation", "regime_consolidation"],
+    "amplifiers": ["anti_french_sentiment", "regional_demonstration_effect", "information_operations"],
+    "dampeners": ["persistent_insecurity", "economic_collapse", "loss_of_external_support"],
+    "possible_outputs": ["authoritarian_consolidation", "fragmentation", "negotiated_reintegration"],
+    "invalidation_signals": [
+      {
+        "signal": "regime_collapse_despite_sovereignty_narrative",
+        "why_it_matters": "Montrerait que le récit souverainiste ne suffit pas à convertir l'insécurité en légitimité durable.",
+        "monitoring_indicators": ["counter_coup", "mass_unrest"]
+      }
+    ],
+    "evidence_status": "MODERATELY_SUPPORTED",
+    "confidence": 0.6
+  },
+  "secondary_mechanisms": [
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_DEPENDENCY_WEAPONIZATION_SECURITY_001",
+      "name": "Recomposition de la dépendance sécuritaire",
+      "mechanism_type": "DEPENDENCY_WEAPONIZATION",
+      "minimal_definition": "La dépendance sécuritaire est réorientée d'un patron à l'autre, devenant un levier réciproque.",
+      "activation_conditions": ["critical_security_need", "available_alternative_patron"],
+      "typical_sequence": ["patron_rupture", "substitution", "new_leverage"],
+      "amplifiers": ["sovereignty_framing", "great_power_rivalry"],
+      "dampeners": ["poor_security_outcomes", "cost"],
+      "possible_outputs": ["new_dependence", "security_vacuum"],
+      "invalidation_signals": [
+        {
+          "signal": "return_to_western_security_partnership",
+          "why_it_matters": "Indiquerait l'échec de la substitution.",
+          "monitoring_indicators": ["renewed_cooperation_agreements"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.56
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_CLASSIFICATION_STRUGGLE_LEGITIMACY_001",
+      "name": "Lutte de classement (légitimité du pouvoir)",
+      "mechanism_type": "CLASSIFICATION_STRUGGLE",
+      "minimal_definition": "Bataille sur les catégories : « gouvernement légitime » contre « junte », « souveraineté » contre « néocolonialisme ».",
+      "activation_conditions": ["competing_legitimacy_frames", "norm_contestation"],
+      "typical_sequence": ["norm_invocation", "counter_framing", "audience_split"],
+      "amplifiers": ["pan_african_opinion", "information_campaigns"],
+      "dampeners": ["institutional_norm_strength"],
+      "possible_outputs": ["normative_erosion", "legitimacy_realignment"],
+      "invalidation_signals": [
+        {
+          "signal": "broad_reacceptance_of_anti_coup_norm",
+          "why_it_matters": "Réduirait la lutte de classement.",
+          "monitoring_indicators": ["return_to_constitutional_order"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.56
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_HEGEMONIC_CONTESTATION_REGIONAL_001",
+      "name": "Contestation de l'ordre régional",
+      "mechanism_type": "HEGEMONIC_CONTESTATION",
+      "minimal_definition": "L'AES conteste l'ordre régional porté par la CEDEAO et l'ancienne prééminence française.",
+      "activation_conditions": ["rule_dissatisfaction", "alternative_bloc_formation"],
+      "typical_sequence": ["challenge", "withdrawal", "bloc_consolidation"],
+      "amplifiers": ["external_patron_support", "demonstration_effect"],
+      "dampeners": ["economic_interdependence", "resource_limits"],
+      "possible_outputs": ["regional_fragmentation", "parallel_order"],
+      "invalidation_signals": [
+        {
+          "signal": "reintegration_into_ecowas",
+          "why_it_matters": "Indiquerait un reflux de la contestation.",
+          "monitoring_indicators": ["membership_restoration"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    }
+  ],
+  "trajectories": [
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_SAHEL_AUTHORITARIAN_CONSOLIDATION_001",
+      "situation_id": "SIT_SAHEL_001",
+      "trajectory_type": "NORMALIZATION",
+      "name": "Consolidation autoritaire souverainiste",
+      "mechanism_path": "Le récit souverainiste convertit l'insécurité en légitimité ; les régimes se consolident et l'AES s'institutionnalise malgré une insécurité persistante.",
+      "conditions": ["sustained_domestic_legitimacy", "tolerable_security_baseline", "external_patron_support"],
+      "bifurcation_points": ["major_security_collapse", "economic_crisis", "counter_coup"],
+      "probability_band": "MEDIUM_HIGH",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "wave_of_counter_coups_or_mass_unrest",
+          "why_it_matters": "Mettrait fin à la consolidation.",
+          "monitoring_indicators": ["regime_changes", "large_protests"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58,
+      "outcome": {
+        "status": "PENDING",
+        "notes": "Trajectoire dominante en cours d'observation ; à rescorer lors des révisions."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_SAHEL_FRAGMENTATION_001",
+      "situation_id": "SIT_SAHEL_001",
+      "trajectory_type": "FRAGMENTATION",
+      "name": "Fragmentation territoriale et effondrement sécuritaire",
+      "mechanism_path": "L'insurrection s'étend et l'État perd le contrôle de pans du territoire, le substitut sécuritaire échouant à inverser la tendance.",
+      "conditions": ["worsening_insurgency", "failed_security_substitution", "economic_strain"],
+      "bifurcation_points": ["loss_of_major_towns", "external_disengagement"],
+      "probability_band": "MEDIUM",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "durable_reconquest_and_stabilization",
+          "why_it_matters": "Invaliderait l'hypothèse de fragmentation.",
+          "monitoring_indicators": ["territorial_recovery", "decline_in_attacks"]
+        }
+      ],
+      "evidence_status": "WEAKLY_SUPPORTED",
+      "confidence": 0.48
+    }
+  ],
+  "evidence": {
+    "schema_version": "1.0",
+    "hypothesis_id": "HYP_SAHEL_SOVEREIGNTY_CONVERSION_DOMINANT_001",
+    "situation_id": "SIT_SAHEL_001",
+    "hypothesis": "Le mécanisme dominant est la conversion d'un capital souverainiste en légitimité de régime : les juntes transforment l'insécurité et le sentiment anti-occidental en légitimité interne et en réalignement, plutôt que d'être de simples produits de l'effondrement sécuritaire ou d'un jeu de procuration.",
+    "mechanism_tested": "Conversion d'un capital souverainiste en légitimité de régime",
+    "evidence_items": [
+      {
+        "evidence_id": "EVID_SAHEL_COUPS_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Vague de coups d'État (Mali, Burkina Faso, Niger) justifiés par l'échec sécuritaire et la restauration de la souveraineté.",
+        "source_ids": ["SRC_OFFICIAL_STATEMENTS"],
+        "strength": 0.82,
+        "reliability": 0.78,
+        "interpretation_risk": 0.25,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "HOOP",
+        "consistency": [
+          { "hypothesis_id": "HYP_SOVEREIGNTY_CONVERSION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_SECURITY_COLLAPSE", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_GREAT_POWER_PROXY", "consistency": "NEUTRAL" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_SAHEL_FRANCE_EXIT_RUSSIA_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Expulsion des forces françaises et arrivée de partenaires sécuritaires russes, accompagnées d'une mobilisation anti-française.",
+        "source_ids": ["SRC_FIELD_REPORTING", "SRC_OFFICIAL_STATEMENTS"],
+        "strength": 0.78,
+        "reliability": 0.7,
+        "interpretation_risk": 0.3,
+        "credibility_grade": "2",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "STRAW_IN_THE_WIND",
+        "consistency": [
+          { "hypothesis_id": "HYP_SOVEREIGNTY_CONVERSION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_SECURITY_COLLAPSE", "consistency": "NEUTRAL" },
+          { "hypothesis_id": "HYP_GREAT_POWER_PROXY", "consistency": "CONSISTENT" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_SAHEL_AES_ECOWAS_001",
+        "type": "DOCTRINAL_DOCUMENT",
+        "description": "Création de l'AES et retrait de la CEDEAO, présentés comme une affirmation de souveraineté contre une organisation jugée alignée sur l'extérieur.",
+        "source_ids": ["SRC_OFFICIAL_STATEMENTS"],
+        "strength": 0.8,
+        "reliability": 0.78,
+        "interpretation_risk": 0.25,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "STRAW_IN_THE_WIND",
+        "consistency": [
+          { "hypothesis_id": "HYP_SOVEREIGNTY_CONVERSION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_SECURITY_COLLAPSE", "consistency": "INCONSISTENT" },
+          { "hypothesis_id": "HYP_GREAT_POWER_PROXY", "consistency": "NEUTRAL" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_SAHEL_LEGITIMACY_DESPITE_INSECURITY_001",
+        "type": "EXPERT_ASSESSMENT",
+        "description": "Les juntes conservent ou renforcent leur légitimité interne par le récit souverainiste alors même que la sécurité se dégrade, ce qui discrimine la conversion politique d'un simple produit de l'effondrement sécuritaire ou d'un jeu de procuration.",
+        "source_ids": ["SRC_EXPERT_ANALYSIS"],
+        "strength": 0.74,
+        "reliability": 0.68,
+        "interpretation_risk": 0.35,
+        "credibility_grade": "2",
+        "diagnosticity": "HIGH",
+        "process_tracing_test": "SMOKING_GUN",
+        "consistency": [
+          { "hypothesis_id": "HYP_SOVEREIGNTY_CONVERSION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_SECURITY_COLLAPSE", "consistency": "INCONSISTENT" },
+          { "hypothesis_id": "HYP_GREAT_POWER_PROXY", "consistency": "INCONSISTENT" }
+        ]
+      }
+    ],
+    "hypotheses": [
+      { "hypothesis_id": "HYP_SOVEREIGNTY_CONVERSION", "label": "Conversion souverainiste dominante", "is_lead": true },
+      { "hypothesis_id": "HYP_SECURITY_COLLAPSE", "label": "Effondrement sécuritaire dominant", "is_lead": false },
+      { "hypothesis_id": "HYP_GREAT_POWER_PROXY", "label": "Jeu de procuration de grande puissance dominant", "is_lead": false }
+    ],
+    "key_assumptions": [
+      {
+        "assumption": "Les régimes maintiennent une légitimité interne malgré la dégradation sécuritaire.",
+        "status": "UNCERTAIN",
+        "impact_if_wrong": "La consolidation autoritaire bascule vers la fragmentation et l'effondrement."
+      },
+      {
+        "assumption": "Le partenariat sécuritaire de substitution fournit un palliatif suffisant à court terme.",
+        "status": "UNCERTAIN",
+        "impact_if_wrong": "Un vide sécuritaire aggravé compromet le récit souverainiste."
+      }
+    ],
+    "premortem": [
+      "Le diagnostic serait faux si l'effondrement sécuritaire emportait les régimes malgré le récit souverainiste (primat de l'effondrement sécuritaire).",
+      "Le diagnostic serait faux si la dynamique se réduisait à un simple jeu de procuration russo-occidental."
+    ],
+    "counter_hypotheses": [
+      {
+        "hypothesis": "Le moteur premier est l'effondrement sécuritaire et l'incapacité de l'État, la politique n'étant qu'une conséquence.",
+        "plausibility": 0.5,
+        "status": "MODERATELY_SUPPORTED"
+      },
+      {
+        "hypothesis": "Le moteur premier est une compétition de grande puissance (Russie supplantant la France).",
+        "plausibility": 0.4,
+        "status": "WEAKLY_SUPPORTED"
+      }
+    ],
+    "contradictory_evidence": [
+      "Persistance, voire aggravation, de l'insécurité malgré le réalignement, ce qui nuance le succès du récit souverainiste."
+    ],
+    "unknowns": [
+      "Durabilité réelle de la légitimité des régimes.",
+      "Efficacité sécuritaire du partenariat de substitution."
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "regime_collapse_or_return_to_constitutional_order",
+        "why_it_matters": "Affaiblirait l'hypothèse de la conversion souverainiste comme mécanisme dominant.",
+        "monitoring_indicators": ["counter_coups", "negotiated_transitions"]
+      }
+    ],
+    "overall_confidence": 0.58,
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "diagnostic": {
+    "schema_version": "1.0",
+    "analysis_id": "ANALYSIS_SAHEL_001",
+    "situation_id": "SIT_SAHEL_001",
+    "executive_summary": "Des juntes convertissent l'insécurité et un capital symbolique souverainiste en légitimité interne et en réalignement (France → Russie), recomposant l'ordre régional (AES contre CEDEAO) malgré une insurrection persistante.",
+    "analytical_summary": "Le Sahel central n'est pas réductible à un simple effondrement sécuritaire ni à un jeu de procuration. Le mécanisme dominant est une conversion de capital souverainiste en légitimité de régime, amplifiée par la recomposition de la dépendance sécuritaire, une lutte de classement sur la légitimité du pouvoir et une contestation de l'ordre régional. L'issue probable est une consolidation autoritaire souverainiste, sauf effondrement sécuritaire majeur.",
+    "dominant_mechanism_id": "MECH_SOVEREIGNTY_CAPITAL_CONVERSION_001",
+    "secondary_mechanism_ids": ["MECH_DEPENDENCY_WEAPONIZATION_SECURITY_001", "MECH_CLASSIFICATION_STRUGGLE_LEGITIMACY_001", "MECH_HEGEMONIC_CONTESTATION_REGIONAL_001"],
+    "dominant_trajectory_id": "TRAJ_SAHEL_AUTHORITARIAN_CONSOLIDATION_001",
+    "main_risk": "Effondrement sécuritaire majeur emportant la légitimité des régimes et fragmentant les territoires.",
+    "main_watch_signals": [
+      "évolution du nombre et de l'intensité des attaques",
+      "contre-coups ou troubles de masse",
+      "résultats du partenariat sécuritaire de substitution",
+      "consolidation ou délitement de l'AES"
+    ],
+    "main_uncertainties": [
+      "durabilité de la légitimité interne",
+      "efficacité sécuritaire de la substitution",
+      "tenue de la recomposition régionale"
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "return_to_constitutional_order_and_western_partnership",
+        "why_it_matters": "Sortirait la situation de la dynamique de conversion souverainiste analysée.",
+        "monitoring_indicators": ["constitutional_transitions", "renewed_western_cooperation"]
+      }
+    ],
+    "confidence": 0.56,
+    "confidence_label": "MEDIUM",
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "analytical_status": "VALIDATED",
+  "sources": [
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_OFFICIAL_STATEMENTS",
+      "name": "Déclarations et communiqués officiels",
+      "source_type": "OFFICIAL",
+      "reliability": "B",
+      "description": "Communiqués des régimes, de l'AES et de la CEDEAO."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_CONFLICT_DATA",
+      "name": "Données d'événements de conflit",
+      "source_type": "DATA",
+      "reliability": "B",
+      "description": "Jeux de données sur les attaques, victimes et déplacements."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_FIELD_REPORTING",
+      "name": "Reportages de terrain",
+      "source_type": "MEDIA",
+      "reliability": "C",
+      "description": "Comptes rendus journalistiques sur le retrait et le réalignement."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_EXPERT_ANALYSIS",
+      "name": "Analyses d'experts sur le Sahel",
+      "source_type": "EXPERT",
+      "reliability": "C",
+      "description": "Évaluations académiques et de think tanks."
+    }
+  ],
+  "revision_history": [
+    {
+      "version": "1.0",
+      "date": "2026-05-27",
+      "change_summary": "Analyse initiale au tier VALIDATED (gold standard) : ACH, sources gradées, calibration, suivi des signaux."
+    }
+  ],
+  "created_at": "2026-05-27",
+  "last_updated": "2026-05-27"
+}

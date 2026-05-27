@@ -1,7 +1,7 @@
 # Exemples appliqués
 
-Cinq cas démontrent que la SIPC fonctionne sur des situations réelles sans devenir un
-commentaire vague. Les cinq analyses JSON **valident contre les schémas** et **passent le
+Six cas démontrent que la SIPC fonctionne sur des situations réelles sans devenir un
+commentaire vague. Les six analyses JSON **valident contre les schémas** et **passent le
 linter doctrinal** (mécanisme dominant, contre-hypothèses, signaux d'invalidation, intégrité
 référentielle).
 
@@ -12,8 +12,9 @@ référentielle).
 | Rivalité tech US-Chine | weaponisation de chokepoints | **VALIDATED** | dépendance, hégémonie, standards, fragmentation |
 | Mer de Chine méridionale | conversion en zone grise | **VALIDATED** | coercition de zone grise, droit de la mer, alliances, fait accompli |
 | Arctique | désynchronisation d'ordre | **VALIDATED** | environnement, gouvernance bloquée, militarisation, plateau continental |
+| Sahel central | conversion souverainiste | **VALIDATED** | insurrection, coups d'État, réalignement, recomposition régionale |
 
-Les cinq cas sont des exemples **« gold standard »** au [tier VALIDATED](../03_ontologie/regles_validation.md) :
+Les six cas sont des exemples **« gold standard »** au [tier VALIDATED](../03_ontologie/regles_validation.md) :
 sources gradées (Admiralty), [ACH](../05_preuve/ach.md) cohérente (hypothèse dominante la moins
 infirmée, départagée par une preuve `SMOKING_GUN`), calibration ancrée et suivi des signaux
 d'invalidation.
@@ -65,6 +66,17 @@ Trajectoire dominante : gouvernance fragmentée ; alternative : coexistence gér
 politique.
 
 - JSON : [`examples/arctic/situation_analysis.json`](https://github.com/s-geffroy/SIPC/blob/main/examples/arctic/situation_analysis.json)
+
+## Sahel central
+
+**Conversion d'un capital souverainiste en légitimité de régime** : des juntes transforment
+l'insécurité et un capital symbolique anti-occidental en légitimité interne et en réalignement
+(retrait français, partenariat russe), recomposant l'ordre régional (AES contre CEDEAO).
+Secondaires : recomposition de la dépendance sécuritaire, lutte de classement sur la légitimité
+du pouvoir, contestation de l'ordre régional. Trajectoire dominante : consolidation autoritaire
+souverainiste ; alternative : fragmentation territoriale.
+
+- JSON : [`examples/sahel/situation_analysis.json`](https://github.com/s-geffroy/SIPC/blob/main/examples/sahel/situation_analysis.json)
 
 ## Structure d'un exemple
 
