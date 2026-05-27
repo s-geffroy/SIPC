@@ -3,6 +3,18 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.7.0] — 2026-05-27
+
+### Ajouté
+- Nouvel exemple **Gouvernance mondiale de l'IA** au tier VALIDATED (« gold standard ») —
+  l'IA comme **objet d'étude** (situation analysée), non comme outil. Mécanisme dominant :
+  **lutte de classement** sur les catégories et standards ; secondaires : désynchronisation
+  d'ordre, contestation hégémonique, weaponisation de la dépendance au calcul. ACH cohérente
+  (preuve `SMOKING_GUN` sur la bataille des taxonomies), sources gradées Admiralty, Key
+  Assumptions Check, premortem, `outcome` de trajectoire et `revision_history`.
+- **Huit** exemples « gold standard » désormais. Papier (corpus porté à huit cas), page
+  d'accueil, page Exemples et test de comptage (7 → 8) mis à jour.
+
 ## [2.6.2] — 2026-05-27
 
 ### Ajouté

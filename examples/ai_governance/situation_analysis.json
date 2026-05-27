@@ -1,0 +1,671 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "ANALYSIS_AI_GOVERNANCE_001",
+  "situation": {
+    "situation_id": "SIT_AI_GOVERNANCE_001",
+    "name": "Situation sociale internationale de la gouvernance mondiale de l'intelligence artificielle",
+    "scope": {
+      "geographic": "Échelle mondiale (foyers États-Unis, Union européenne, Chine, Royaume-Uni)",
+      "temporal": "Phase contemporaine (régulation fragmentée, capacités en croissance rapide)",
+      "fields": ["TEC", "INST", "LEGAL", "ECO", "DIP", "INF", "COG"]
+    },
+    "situation_type": ["NORMATIVE_CONFLICT", "INSTITUTIONAL_CRISIS", "ORDER_TRANSITION", "TECHNOLOGY_DEPENDENCY"],
+    "current_phase": "fragmented_rule_making_amid_rapid_capability_growth"
+  },
+  "actors": [
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_USA",
+      "name": "États-Unis d'Amérique",
+      "actor_type": "STATE",
+      "aliases": ["USA"],
+      "description": "Promoteur d'une approche centrée sur l'innovation et les engagements volontaires, siège des principaux laboratoires de pointe.",
+      "primary_fields": ["TEC", "ECO", "INST"],
+      "claimed_roles": ["innovation_leader", "standard_shaper"],
+      "recognized_roles": ["technology_superpower"],
+      "contested_roles": ["legitimate_global_rule_maker"],
+      "main_capitals": ["TECHNOLOGICAL", "FINANCIAL", "INSTITUTIONAL"],
+      "main_vulnerabilities": ["regulatory_fragmentation_at_home", "concentration_in_few_firms"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_industry", "allies", "congress"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_EU",
+      "name": "Union européenne",
+      "actor_type": "REGIONAL_ORGANIZATION",
+      "aliases": ["UE"],
+      "description": "Promotrice d'une régulation fondée sur les risques, cherchant à exporter ses catégories normatives (effet Bruxelles).",
+      "primary_fields": ["LEGAL", "INST", "DIP"],
+      "claimed_roles": ["rights_based_regulator", "global_standard_setter"],
+      "recognized_roles": ["regulatory_power"],
+      "contested_roles": ["legitimate_global_rule_maker"],
+      "main_capitals": ["INSTITUTIONAL", "NORMATIVE", "LEGAL"],
+      "main_vulnerabilities": ["limited_frontier_capacity", "compliance_cost_critique"],
+      "main_dependencies": [],
+      "main_audiences": ["member_states", "global_regulators", "industry"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_CHINA",
+      "name": "République populaire de Chine",
+      "actor_type": "STATE",
+      "aliases": ["PRC"],
+      "description": "Promotrice d'un modèle de contrôle étatique de l'IA, combinant développement rapide et gouvernance souveraine.",
+      "primary_fields": ["TEC", "INST", "INF"],
+      "claimed_roles": ["sovereign_governance_model", "rising_ai_power"],
+      "recognized_roles": ["major_ai_power"],
+      "contested_roles": ["trustworthy_standard_setter"],
+      "main_capitals": ["TECHNOLOGICAL", "INSTITUTIONAL", "ECONOMIC"],
+      "main_vulnerabilities": ["compute_access_constraints", "trust_deficit_abroad"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_industry", "party_state", "developing_partners"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_UK",
+      "name": "Royaume-Uni",
+      "actor_type": "STATE",
+      "aliases": ["UK"],
+      "description": "Acteur intermédiaire promouvant des sommets de sécurité et l'évaluation des modèles de pointe.",
+      "primary_fields": ["DIP", "TEC", "INST"],
+      "claimed_roles": ["safety_convener", "evaluation_broker"],
+      "recognized_roles": ["middle_power_facilitator"],
+      "contested_roles": [],
+      "main_capitals": ["INSTITUTIONAL", "SYMBOLIC"],
+      "main_vulnerabilities": ["limited_leverage", "dependence_on_major_powers"],
+      "main_dependencies": [],
+      "main_audiences": ["international_community", "industry"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_AI_LABS",
+      "name": "Laboratoires d'IA de pointe",
+      "actor_type": "MULTINATIONAL_FIRM",
+      "aliases": [],
+      "description": "Développeurs de modèles de pointe détenant un capital technique et cognitif rare, façonnant de fait les normes par leurs pratiques.",
+      "primary_fields": ["TEC", "COG", "ECO"],
+      "claimed_roles": ["responsible_developers", "self_regulators"],
+      "recognized_roles": ["systemic_technology_nodes"],
+      "contested_roles": ["legitimate_norm_setters"],
+      "main_capitals": ["TECHNOLOGICAL", "COGNITIVE", "ECONOMIC"],
+      "main_vulnerabilities": ["regulatory_exposure", "compute_dependence", "reputational_risk"],
+      "main_dependencies": ["DEP_AI_COMPUTE_001"],
+      "main_audiences": ["investors", "regulators", "users"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_UN",
+      "name": "Nations unies (organes consultatifs sur l'IA)",
+      "actor_type": "INTERNATIONAL_ORGANIZATION",
+      "aliases": ["ONU"],
+      "description": "Tentatives de coordination et de cadrage inclusif, à faible pouvoir contraignant.",
+      "primary_fields": ["DIP", "INST"],
+      "claimed_roles": ["inclusive_convener", "global_coordinator"],
+      "recognized_roles": ["legitimacy_forum"],
+      "contested_roles": ["effective_governance_body"],
+      "main_capitals": ["INSTITUTIONAL", "SYMBOLIC"],
+      "main_vulnerabilities": ["lack_of_enforcement", "great_power_divergence"],
+      "main_dependencies": [],
+      "main_audiences": ["member_states", "global_south"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    }
+  ],
+  "relations": [
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_USA_CHINA_RIVALRY_001",
+      "source_actor_id": "ACT_USA",
+      "target_actor_id": "ACT_CHINA",
+      "relation_type": "RIVALRY",
+      "fields": ["TEC", "INST", "DIP"],
+      "description": "Rivalité pour le leadership de l'IA et pour la définition des règles globales.",
+      "asymmetry_level": 0.4,
+      "trust_level": 0.15,
+      "credibility_level": 0.6,
+      "reversibility": 0.3,
+      "exit_cost": 0.6,
+      "main_tensions": ["rule_setting_competition", "capability_race"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_USA_EU_COMPETITION_001",
+      "source_actor_id": "ACT_USA",
+      "target_actor_id": "ACT_EU",
+      "relation_type": "COMPETITION",
+      "fields": ["LEGAL", "INST", "ECO"],
+      "description": "Approches réglementaires divergentes (volontaire vs fondée sur les risques) et friction transatlantique sur les standards.",
+      "asymmetry_level": 0.3,
+      "trust_level": 0.55,
+      "credibility_level": 0.6,
+      "reversibility": 0.5,
+      "exit_cost": 0.4,
+      "main_tensions": ["standards_divergence", "compliance_burden"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_EU_AILABS_CONTESTATION_001",
+      "source_actor_id": "ACT_EU",
+      "target_actor_id": "ACT_AI_LABS",
+      "relation_type": "CONTESTATION",
+      "fields": ["LEGAL", "TEC"],
+      "description": "Imposition contestée d'obligations de conformité fondées sur des catégories de risque.",
+      "asymmetry_level": 0.5,
+      "trust_level": 0.4,
+      "credibility_level": 0.55,
+      "reversibility": 0.5,
+      "exit_cost": 0.5,
+      "main_tensions": ["risk_classification", "innovation_vs_compliance"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.56
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_AILABS_USA_INFLUENCE_001",
+      "source_actor_id": "ACT_AI_LABS",
+      "target_actor_id": "ACT_USA",
+      "relation_type": "INFORMATION_INFLUENCE",
+      "fields": ["INST", "COG", "INF"],
+      "description": "Influence des laboratoires sur le cadrage réglementaire par expertise et engagements volontaires.",
+      "asymmetry_level": 0.4,
+      "trust_level": 0.5,
+      "credibility_level": 0.55,
+      "reversibility": 0.5,
+      "exit_cost": 0.4,
+      "main_tensions": ["regulatory_capture_risk", "self_regulation_credibility"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_USA_UK_COOPERATION_001",
+      "source_actor_id": "ACT_USA",
+      "target_actor_id": "ACT_UK",
+      "relation_type": "COOPERATION",
+      "fields": ["TEC", "DIP"],
+      "description": "Coopération sur l'évaluation des modèles de pointe et les sommets de sécurité.",
+      "asymmetry_level": 0.6,
+      "trust_level": 0.7,
+      "credibility_level": 0.6,
+      "reversibility": 0.5,
+      "exit_cost": 0.4,
+      "main_tensions": ["scope_of_evaluation", "binding_vs_voluntary"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.56
+    }
+  ],
+  "activated_fields": [
+    { "field": "INST", "intensity": 0.85, "role_in_situation": "Bataille des standards et des régimes de gouvernance." },
+    { "field": "LEGAL", "intensity": 0.8, "role_in_situation": "Catégories réglementaires (risque, modèles de pointe) et effet Bruxelles." },
+    { "field": "TEC", "intensity": 0.9, "role_in_situation": "Croissance rapide des capacités des modèles." },
+    { "field": "DIP", "intensity": 0.7, "role_in_situation": "Sommets, déclarations et coordination internationale." }
+  ],
+  "capital_structure": [
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_AILABS_TECHNICAL_001",
+      "actor_id": "ACT_AI_LABS",
+      "capital_type": "TECHNOLOGICAL",
+      "field": "TEC",
+      "description": "Maîtrise des modèles de pointe et de leur évaluation, capital rare conférant une influence normative de fait.",
+      "level": 0.9,
+      "convertibility": 0.65,
+      "conversion_paths": ["de_facto_standard_setting", "regulatory_framing", "indispensability"],
+      "constraints": ["regulatory_exposure", "compute_dependence"],
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.66
+    },
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_EU_REGULATORY_001",
+      "actor_id": "ACT_EU",
+      "capital_type": "NORMATIVE",
+      "field": "LEGAL",
+      "description": "Capital réglementaire et normatif permettant d'exporter des catégories de risque (effet Bruxelles).",
+      "level": 0.8,
+      "convertibility": 0.6,
+      "conversion_paths": ["brussels_effect", "compliance_default", "delegitimation_of_rivals"],
+      "constraints": ["limited_frontier_capacity", "enforcement_reach"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    }
+  ],
+  "dependencies": [
+    {
+      "schema_version": "1.0",
+      "dependency_id": "DEP_AI_COMPUTE_001",
+      "dependent_actor_id": "ACT_AI_LABS",
+      "controller_actor_or_network": "Chaîne de valeur des semi-conducteurs avancés et fournisseurs de calcul",
+      "dependency_type": "TECHNOLOGICAL",
+      "dependent_capacity": ["model_training", "frontier_capability"],
+      "criticality_level": 0.9,
+      "substitutability": 0.25,
+      "time_to_substitute": "Plusieurs années (capacité de calcul concentrée).",
+      "asymmetry_level": 0.7,
+      "visibility_level": 0.8,
+      "politicization_level": 0.8,
+      "weaponization_potential": 0.65,
+      "exit_cost": 0.85,
+      "current_strategy": ["compute_diversification", "efficiency_gains", "alignment_with_chip_policy"],
+      "main_risk": "Le contrôle du calcul devient un levier de gouvernance et de coercition.",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    }
+  ],
+  "norms": [
+    {
+      "schema_version": "1.0",
+      "norm_id": "NORM_AI_SAFETY_RISK",
+      "name": "Sécurité et gestion des risques de l'IA",
+      "norm_family": "TECHNOLOGICAL",
+      "core_prescription": "Les systèmes d'IA, en particulier de pointe, doivent être évalués et encadrés selon leur niveau de risque.",
+      "institutionalization_level": 0.5,
+      "main_institutions": ["EU_AI_ACT", "AI_STANDARDS_BODIES"],
+      "carrier_audiences": ["regulators", "civil_society", "industry"],
+      "main_beneficiaries": ["regulatory_powers"],
+      "main_constrained_actors": ["frontier_developers"],
+      "violation_costs": ["fines", "market_access_loss", "reputation"],
+      "contestation_patterns": ["innovation_vs_precaution", "definition_disputes"],
+      "conversion_paths": ["compliance_default", "delegitimation"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    }
+  ],
+  "institutions": [
+    {
+      "schema_version": "1.0",
+      "institution_id": "INST_EU_AI_ACT",
+      "name": "Régime réglementaire fondé sur les risques (type AI Act)",
+      "institution_type": "INTERNATIONAL_REGIME",
+      "core_functions": ["risk_classification", "compliance_enforcement", "standard_export"],
+      "rules_and_procedures": ["risk_tiers", "conformity_assessment", "obligations"],
+      "dominant_capitals": ["NORMATIVE", "LEGAL", "INSTITUTIONAL"],
+      "classification_power": ["what_counts_as_high_risk_or_frontier_ai"],
+      "main_tensions": ["compliance_cost", "extraterritorial_reach", "pace_of_capability"],
+      "current_stress_level": 0.7,
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "institution_id": "INST_AI_STANDARDS_BODIES",
+      "name": "Organismes de normalisation et d'évaluation de l'IA",
+      "institution_type": "TECHNICAL_STANDARD_BODY",
+      "core_functions": ["standard_setting", "model_evaluation", "interoperability"],
+      "rules_and_procedures": ["technical_standards", "benchmarks", "audits"],
+      "dominant_capitals": ["TECHNOLOGICAL", "INSTITUTIONAL"],
+      "classification_power": ["how_capabilities_and_risks_are_measured"],
+      "main_tensions": ["whose_standards_prevail", "industry_influence"],
+      "current_stress_level": 0.6,
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    }
+  ],
+  "dominant_mechanism": {
+    "schema_version": "1.0",
+    "mechanism_id": "MECH_AI_CLASSIFICATION_STRUGGLE_001",
+    "name": "Lutte de classement sur les catégories et standards de l'IA",
+    "mechanism_type": "CLASSIFICATION_STRUGGLE",
+    "minimal_definition": "La gouvernance se joue d'abord comme une bataille sur les catégories (« IA à haut risque », « modèle de pointe », seuils de capacité) et les standards : qui fixe les définitions et le régime de conformité oriente la gouvernance mondiale.",
+    "activation_conditions": ["competing_regulatory_frames", "high_stakes_of_default_standard", "ambiguous_categories"],
+    "typical_sequence": ["framework_proposal", "definition_dispute", "standard_diffusion_or_fragmentation"],
+    "amplifiers": ["brussels_effect", "industry_framing", "great_power_rivalry"],
+    "dampeners": ["interoperability_demand", "shared_safety_interest"],
+    "possible_outputs": ["fragmented_regimes", "convergent_minimal_standards", "dominant_default"],
+    "invalidation_signals": [
+      {
+        "signal": "convergence_on_a_single_shared_taxonomy",
+        "why_it_matters": "Réduirait la lutte de classement au profit d'un standard commun.",
+        "monitoring_indicators": ["mutual_recognition_agreements", "shared_definitions_adopted"]
+      }
+    ],
+    "evidence_status": "MODERATELY_SUPPORTED",
+    "confidence": 0.6
+  },
+  "secondary_mechanisms": [
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_ORDER_DESYNCHRONIZATION_AI_001",
+      "name": "Désynchronisation d'ordre (capacités vs régulation)",
+      "mechanism_type": "ORDER_DESYNCHRONIZATION",
+      "minimal_definition": "Le rythme de croissance des capacités dépasse celui de l'adaptation institutionnelle, créant un déficit de gouvernance.",
+      "activation_conditions": ["rapid_capability_growth", "slow_institutions"],
+      "typical_sequence": ["capability_jump", "regulatory_lag", "ad_hoc_responses"],
+      "amplifiers": ["compute_scaling", "commercial_race"],
+      "dampeners": ["anticipatory_regulation", "evaluation_capacity"],
+      "possible_outputs": ["governance_gap", "reactive_patchwork"],
+      "invalidation_signals": [
+        {
+          "signal": "regulation_keeping_pace_with_capability",
+          "why_it_matters": "Désactiverait la désynchronisation.",
+          "monitoring_indicators": ["timely_binding_rules", "pre_deployment_oversight"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_HEGEMONIC_CONTESTATION_AI_001",
+      "name": "Contestation hégémonique du leadership de l'IA",
+      "mechanism_type": "HEGEMONIC_CONTESTATION",
+      "minimal_definition": "Les grandes puissances se disputent le leadership et le droit de fixer les règles de l'IA.",
+      "activation_conditions": ["capability_competition", "rule_setting_stakes"],
+      "typical_sequence": ["challenge", "bloc_formation", "standard_rivalry"],
+      "amplifiers": ["national_security_framing", "industrial_policy"],
+      "dampeners": ["interdependence", "shared_risks"],
+      "possible_outputs": ["bipolar_standards", "managed_competition"],
+      "invalidation_signals": [
+        {
+          "signal": "joint_great_power_governance_framework",
+          "why_it_matters": "Indiquerait un reflux de la contestation.",
+          "monitoring_indicators": ["us_china_joint_commitments"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.56
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_DEPENDENCY_WEAPONIZATION_COMPUTE_001",
+      "name": "Weaponisation de la dépendance au calcul",
+      "mechanism_type": "DEPENDENCY_WEAPONIZATION",
+      "minimal_definition": "Le contrôle de la puissance de calcul et des puces avancées devient un levier de gouvernance et de coercition.",
+      "activation_conditions": ["compute_chokepoint", "low_substitutability"],
+      "typical_sequence": ["access_control", "leverage", "adaptation"],
+      "amplifiers": ["export_controls", "supply_concentration"],
+      "dampeners": ["efficiency_gains", "diversification"],
+      "possible_outputs": ["compute_governance", "decoupling"],
+      "invalidation_signals": [
+        {
+          "signal": "broad_compute_access_equalization",
+          "why_it_matters": "Réduirait le levier de dépendance.",
+          "monitoring_indicators": ["distributed_compute_capacity"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.56
+    }
+  ],
+  "trajectories": [
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_AI_FRAGMENTED_REGIMES_001",
+      "situation_id": "SIT_AI_GOVERNANCE_001",
+      "trajectory_type": "FRAGMENTATION",
+      "name": "Régimes réglementaires fragmentés et standards concurrents",
+      "mechanism_path": "Les catégories et standards divergent durablement, produisant des blocs réglementaires et des problèmes d'interopérabilité, avec un effet Bruxelles partiel.",
+      "conditions": ["persistent_definition_disputes", "great_power_rivalry", "partial_brussels_effect"],
+      "bifurcation_points": ["mutual_recognition", "major_incident", "capability_shock"],
+      "probability_band": "MEDIUM_HIGH",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "broad_interoperable_standard_adoption",
+          "why_it_matters": "Mettrait fin à la fragmentation.",
+          "monitoring_indicators": ["mutual_recognition_agreements"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6,
+      "outcome": {
+        "status": "PENDING",
+        "notes": "Trajectoire dominante en cours d'observation ; à rescorer lors des révisions."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_AI_MINIMAL_CONVERGENCE_001",
+      "situation_id": "SIT_AI_GOVERNANCE_001",
+      "trajectory_type": "INSTITUTIONALIZATION",
+      "name": "Convergence sur des standards minimaux interopérables",
+      "mechanism_path": "Les sommets, organismes de normalisation et l'exigence d'interopérabilité produisent un socle commun minimal, sans unifier les régimes.",
+      "conditions": ["interoperability_demand", "shared_safety_interest", "evaluation_consensus"],
+      "bifurcation_points": ["standards_body_consensus", "great_power_deadlock"],
+      "probability_band": "MEDIUM",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "breakdown_of_standards_cooperation",
+          "why_it_matters": "Invaliderait l'hypothèse de convergence minimale.",
+          "monitoring_indicators": ["withdrawal_from_standards_bodies"]
+        }
+      ],
+      "evidence_status": "WEAKLY_SUPPORTED",
+      "confidence": 0.48
+    }
+  ],
+  "evidence": {
+    "schema_version": "1.0",
+    "hypothesis_id": "HYP_AI_CLASSIFICATION_DOMINANT_001",
+    "situation_id": "SIT_AI_GOVERNANCE_001",
+    "hypothesis": "Le mécanisme dominant est une lutte de classement sur les catégories et standards de l'IA : qui fixe les définitions (« haut risque », « modèle de pointe ») et le régime de conformité oriente la gouvernance, au-delà du seul déficit de régulation ou de la seule course à la suprématie.",
+    "mechanism_tested": "Lutte de classement sur les catégories et standards de l'IA",
+    "evidence_items": [
+      {
+        "evidence_id": "EVID_AIGOV_DIVERGENT_FRAMEWORKS_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Émergence d'approches réglementaires divergentes (fondée sur les risques, volontaire, contrôle étatique) et compétition pour les exporter.",
+        "source_ids": ["SRC_OFFICIAL_DOCUMENTS"],
+        "strength": 0.8,
+        "reliability": 0.78,
+        "interpretation_risk": 0.25,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "HOOP",
+        "consistency": [
+          { "hypothesis_id": "HYP_CLASSIFICATION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_DESYNC", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_HEGEMONIC", "consistency": "NEUTRAL" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_AIGOV_STANDARD_DIPLOMACY_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Diplomatie intense des standards (sommets, déclarations, évaluations de modèles) et attraction du standard par défaut (effet Bruxelles).",
+        "source_ids": ["SRC_OFFICIAL_DOCUMENTS", "SRC_STANDARDS_BODIES"],
+        "strength": 0.76,
+        "reliability": 0.7,
+        "interpretation_risk": 0.3,
+        "credibility_grade": "2",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "STRAW_IN_THE_WIND",
+        "consistency": [
+          { "hypothesis_id": "HYP_CLASSIFICATION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_DESYNC", "consistency": "NEUTRAL" },
+          { "hypothesis_id": "HYP_HEGEMONIC", "consistency": "CONSISTENT" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_AIGOV_DEFINITION_FIGHT_001",
+        "type": "EXPERT_ASSESSMENT",
+        "description": "Les acteurs investissent dans la fixation des catégories (seuils de capacité, « modèle de pointe », niveaux de risque) en amont et indépendamment de la maturité des capacités, l'adoption d'une taxonomie conférant un avantage réglementaire — ce qui discrimine la lutte de classement d'un simple déficit de gouvernance et d'une pure course à la suprématie.",
+        "source_ids": ["SRC_EXPERT_ANALYSIS", "SRC_STANDARDS_BODIES"],
+        "strength": 0.74,
+        "reliability": 0.68,
+        "interpretation_risk": 0.35,
+        "credibility_grade": "2",
+        "diagnosticity": "HIGH",
+        "process_tracing_test": "SMOKING_GUN",
+        "consistency": [
+          { "hypothesis_id": "HYP_CLASSIFICATION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_DESYNC", "consistency": "INCONSISTENT" },
+          { "hypothesis_id": "HYP_HEGEMONIC", "consistency": "INCONSISTENT" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_AIGOV_CAPABILITY_PACE_001",
+        "type": "MATERIAL_DATA",
+        "description": "Montée rapide des capacités des modèles (calcul, performances aux évaluations) dépassant le rythme de la réponse institutionnelle.",
+        "source_ids": ["SRC_TECHNICAL_REPORTS"],
+        "strength": 0.82,
+        "reliability": 0.78,
+        "interpretation_risk": 0.25,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "STRAW_IN_THE_WIND",
+        "consistency": [
+          { "hypothesis_id": "HYP_CLASSIFICATION", "consistency": "NEUTRAL" },
+          { "hypothesis_id": "HYP_DESYNC", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_HEGEMONIC", "consistency": "NEUTRAL" }
+        ]
+      }
+    ],
+    "hypotheses": [
+      { "hypothesis_id": "HYP_CLASSIFICATION", "label": "Lutte de classement (standards) dominante", "is_lead": true },
+      { "hypothesis_id": "HYP_DESYNC", "label": "Déficit de gouvernance (désynchronisation) dominant", "is_lead": false },
+      { "hypothesis_id": "HYP_HEGEMONIC", "label": "Course à la suprématie dominante", "is_lead": false }
+    ],
+    "key_assumptions": [
+      {
+        "assumption": "Aucun acteur ne peut imposer seul un standard mondial unique à court terme.",
+        "status": "SUPPORTED",
+        "impact_if_wrong": "Un effet Bruxelles total ou un standard hégémonique ferait basculer vers une institutionnalisation."
+      },
+      {
+        "assumption": "Le rythme des capacités reste supérieur à celui de la régulation.",
+        "status": "SUPPORTED",
+        "impact_if_wrong": "Si la régulation rattrape, le déficit de gouvernance se résorbe et le cadre dominant change."
+      }
+    ],
+    "premortem": [
+      "Le diagnostic serait faux si la régulation rattrapait et stabilisait rapidement le champ (primat de la désynchronisation, résolue).",
+      "Le diagnostic serait faux si la dynamique se réduisait à une pure course à la suprématie sans enjeu de standards."
+    ],
+    "counter_hypotheses": [
+      {
+        "hypothesis": "Le moteur premier est un déficit de gouvernance (les capacités dépassent la régulation), la lutte de classement n'étant qu'un symptôme.",
+        "plausibility": 0.5,
+        "status": "MODERATELY_SUPPORTED"
+      },
+      {
+        "hypothesis": "Le moteur premier est une course à la suprématie entre grandes puissances, la gouvernance étant instrumentale.",
+        "plausibility": 0.45,
+        "status": "MODERATELY_SUPPORTED"
+      }
+    ],
+    "contradictory_evidence": [
+      "Initiatives de coopération sur l'évaluation et la sécurité, suggérant un intérêt partagé qui nuance la pure rivalité de standards."
+    ],
+    "unknowns": [
+      "Ampleur réelle de l'effet Bruxelles hors de l'UE.",
+      "Trajectoire des capacités et survenue éventuelle d'un saut majeur."
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "single_global_taxonomy_adopted_without_classification_contest",
+        "why_it_matters": "Affaiblirait l'hypothèse de la lutte de classement comme mécanisme dominant.",
+        "monitoring_indicators": ["universal_definitions", "mutual_recognition"]
+      }
+    ],
+    "overall_confidence": 0.58,
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "diagnostic": {
+    "schema_version": "1.0",
+    "analysis_id": "ANALYSIS_AI_GOVERNANCE_001",
+    "situation_id": "SIT_AI_GOVERNANCE_001",
+    "executive_summary": "La gouvernance mondiale de l'IA se joue d'abord comme une lutte de classement sur les catégories et standards (qui définit « haut risque » et « modèle de pointe »), sur fond de déficit de gouvernance, de rivalité de grande puissance et de dépendance au calcul.",
+    "analytical_summary": "La situation n'est ni un simple retard réglementaire ni une pure course à la suprématie. Le mécanisme dominant est une lutte de classement : la maîtrise des catégories et des standards (et de leur diffusion par effet Bruxelles ou par les organismes de normalisation) constitue le véritable enjeu de pouvoir. Elle est amplifiée par une désynchronisation d'ordre (capacités vs régulation), une contestation hégémonique et la weaponisation de la dépendance au calcul. L'issue probable est une fragmentation des régimes, sauf convergence sur des standards minimaux interopérables.",
+    "dominant_mechanism_id": "MECH_AI_CLASSIFICATION_STRUGGLE_001",
+    "secondary_mechanism_ids": ["MECH_ORDER_DESYNCHRONIZATION_AI_001", "MECH_HEGEMONIC_CONTESTATION_AI_001", "MECH_DEPENDENCY_WEAPONIZATION_COMPUTE_001"],
+    "dominant_trajectory_id": "TRAJ_AI_FRAGMENTED_REGIMES_001",
+    "main_risk": "Fragmentation durable des standards et déficit de gouvernance face à un saut de capacités, sans socle commun pour gérer les risques.",
+    "main_watch_signals": [
+      "adoption ou rejet de taxonomies communes",
+      "accords de reconnaissance mutuelle des évaluations",
+      "extension ou contournement des contrôles sur le calcul",
+      "sauts de capacités des modèles de pointe"
+    ],
+    "main_uncertainties": [
+      "ampleur de l'effet Bruxelles",
+      "rythme futur des capacités",
+      "tenue de la coopération sur l'évaluation"
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "convergent_interoperable_global_standard",
+        "why_it_matters": "Sortirait la situation de la dynamique de lutte de classement analysée.",
+        "monitoring_indicators": ["mutual_recognition_agreements", "shared_definitions"]
+      }
+    ],
+    "confidence": 0.56,
+    "confidence_label": "MEDIUM",
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "analytical_status": "VALIDATED",
+  "sources": [
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_OFFICIAL_DOCUMENTS",
+      "name": "Textes réglementaires et déclarations officielles",
+      "source_type": "OFFICIAL",
+      "reliability": "B",
+      "description": "Règlements, déclarations de sommets et engagements publics."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_STANDARDS_BODIES",
+      "name": "Documents d'organismes de normalisation",
+      "source_type": "OFFICIAL",
+      "reliability": "B",
+      "description": "Standards techniques, référentiels d'évaluation et audits."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_TECHNICAL_REPORTS",
+      "name": "Rapports techniques d'évaluation des capacités",
+      "source_type": "DATA",
+      "reliability": "B",
+      "description": "Mesures de capacité, de calcul et de performances aux évaluations."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_EXPERT_ANALYSIS",
+      "name": "Analyses d'experts en gouvernance de l'IA",
+      "source_type": "EXPERT",
+      "reliability": "C",
+      "description": "Évaluations académiques et de think tanks."
+    }
+  ],
+  "revision_history": [
+    {
+      "version": "1.0",
+      "date": "2026-05-27",
+      "change_summary": "Analyse initiale au tier VALIDATED (gold standard) : ACH, sources gradées, calibration, suivi des signaux."
+    }
+  ],
+  "created_at": "2026-05-27",
+  "last_updated": "2026-05-27"
+}

@@ -49,14 +49,15 @@ La conformité est **graduée** selon la maturité de l'analyse (`DRAFT` → `RE
 
 ## Papier académique
 
-Le fondement théorique et les sept études de cas sont exposés dans un papier académique
+Le fondement théorique et les huit études de cas sont exposés dans un papier académique
 (LaTeX, source de vérité, compilé en CI) : **[📄 Télécharger le PDF](assets/sipc_paper.pdf)**
 ou lire en ligne sur la page [Papier académique](papier.md).
 
-## Sept cas appliqués et validés
+## Huit cas appliqués et validés
 
 Détroit de Taïwan, guerre en Ukraine, rivalité technologique États-Unis / Chine, mer de Chine
-méridionale, Arctique, Sahel central et Corée du Nord — tous au tier `VALIDATED`. Voir [Exemples](06_exemples/index.md).
+méridionale, Arctique, Sahel central, Corée du Nord et gouvernance mondiale de l'IA — tous au
+tier `VALIDATED`. Voir [Exemples](06_exemples/index.md).
 
 ## Parcours recommandé
 
@@ -65,6 +66,6 @@ méridionale, Arctique, Sahel central et Corée du Nord — tous au tier `VALIDA
 3. [Ontologie](03_ontologie/vue_ensemble.md) — objets JSON, [enums](03_ontologie/enums_controles.md) et [règles de validation](03_ontologie/regles_validation.md).
 4. [Mécanismes](04_mecanismes/index.md) — le cœur causal.
 5. [Preuve](05_preuve/triangulation_probatoire.md) — triangulation, calibration, ACH, sources, backtesting.
-6. [Exemples](06_exemples/index.md) — sept cas appliqués et validés.
+6. [Exemples](06_exemples/index.md) — huit cas appliqués et validés.
 7. [Papier académique](papier.md) — synthèse théorique et études de cas.
 8. [Implémentation](07_implementation/guide_depot.md) — outillage, Docker et conventions.

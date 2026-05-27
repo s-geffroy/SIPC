@@ -1,7 +1,7 @@
 # Exemples appliqués
 
-Sept cas démontrent que la SIPC fonctionne sur des situations réelles sans devenir un
-commentaire vague. Les sept analyses JSON **valident contre les schémas** et **passent le
+Huit cas démontrent que la SIPC fonctionne sur des situations réelles sans devenir un
+commentaire vague. Les huit analyses JSON **valident contre les schémas** et **passent le
 linter doctrinal** (mécanisme dominant, contre-hypothèses, signaux d'invalidation, intégrité
 référentielle).
 
@@ -14,8 +14,9 @@ référentielle).
 | Arctique | désynchronisation d'ordre | **VALIDATED** | environnement, gouvernance bloquée, militarisation, plateau continental |
 | Sahel central | conversion souverainiste | **VALIDATED** | insurrection, coups d'État, réalignement, recomposition régionale |
 | Corée du Nord | conversion du capital nucléaire | **VALIDATED** | dissuasion, survie du régime, reconnaissance, non-prolifération |
+| Gouvernance mondiale de l'IA | lutte de classement (standards) | **VALIDATED** | standards, déficit de gouvernance, hégémonie, dépendance au calcul |
 
-Les sept cas sont des exemples **« gold standard »** au [tier VALIDATED](../03_ontologie/regles_validation.md) :
+Les huit cas sont des exemples **« gold standard »** au [tier VALIDATED](../03_ontologie/regles_validation.md) :
 sources gradées (Admiralty), [ACH](../05_preuve/ach.md) cohérente (hypothèse dominante la moins
 infirmée, départagée par une preuve `SMOKING_GUN`), calibration ancrée et suivi des signaux
 d'invalidation.
@@ -89,6 +90,18 @@ dépendance économique. Trajectoire dominante : statut nucléaire de fait enrac
 gérée ; alternative : escalade de crise par provocation ou méprise.
 
 - JSON : [`examples/north_korea/situation_analysis.json`](https://github.com/s-geffroy/SIPC/blob/main/examples/north_korea/situation_analysis.json)
+
+## Gouvernance mondiale de l'IA
+
+*(L'intelligence artificielle est ici la **situation analysée**, non un outil d'analyse.)*
+
+**Lutte de classement sur les catégories et standards** : qui fixe les définitions (« IA à haut
+risque », « modèle de pointe ») et le régime de conformité oriente la gouvernance mondiale.
+Secondaires : désynchronisation d'ordre (capacités vs régulation), contestation hégémonique,
+weaponisation de la dépendance au calcul. Trajectoire dominante : régimes réglementaires
+fragmentés ; alternative : convergence sur des standards minimaux interopérables.
+
+- JSON : [`examples/ai_governance/situation_analysis.json`](https://github.com/s-geffroy/SIPC/blob/main/examples/ai_governance/situation_analysis.json)
 
 ## Structure d'un exemple
 
