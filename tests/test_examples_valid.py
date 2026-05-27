@@ -11,7 +11,7 @@ EXAMPLES = sorted((Path(__file__).resolve().parents[1] / "examples").rglob("situ
 
 
 def test_examples_exist():
-    assert len(EXAMPLES) == 6, "six exemples attendus"
+    assert len(EXAMPLES) == 7, "sept exemples attendus"
 
 
 @pytest.mark.parametrize("path", EXAMPLES, ids=lambda p: p.parent.name)

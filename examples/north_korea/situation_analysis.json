@@ -1,0 +1,663 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "ANALYSIS_NORTH_KOREA_001",
+  "situation": {
+    "situation_id": "SIT_NORTH_KOREA_001",
+    "name": "Situation sociale internationale de la péninsule coréenne (programme nucléaire nord-coréen)",
+    "scope": {
+      "geographic": "Péninsule coréenne et Asie du Nord-Est",
+      "temporal": "Phase contemporaine (statut nucléaire de fait, impasse diplomatique)",
+      "fields": ["MIL", "DIP", "SYM", "ECO", "LEGAL", "INF"]
+    },
+    "situation_type": ["SECURITY_TENSION", "RECOGNITION_CONFLICT", "NORMATIVE_CONFLICT", "REGIONAL_ORDER_STRESS"],
+    "current_phase": "entrenched_nuclear_status_with_diplomatic_deadlock"
+  },
+  "actors": [
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_DPRK",
+      "name": "République populaire démocratique de Corée",
+      "actor_type": "STATE",
+      "aliases": ["DPRK", "Corée du Nord"],
+      "description": "État ayant converti un programme nucléaire et balistique en garantie de survie du régime et en levier de marchandage, refusant toute dénucléarisation sans garanties de sécurité.",
+      "primary_fields": ["MIL", "SYM", "DIP"],
+      "claimed_roles": ["nuclear_weapons_state", "sovereign_equal"],
+      "recognized_roles": ["de_facto_nuclear_possessor"],
+      "contested_roles": ["legitimate_nuclear_weapons_state"],
+      "main_capitals": ["MILITARY", "SYMBOLIC"],
+      "main_vulnerabilities": ["economic_isolation", "dependence_on_a_few_partners"],
+      "main_dependencies": ["DEP_DPRK_ECONOMIC_LIFELINE_001"],
+      "main_audiences": ["domestic_public", "regime_elite", "military"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_USA",
+      "name": "États-Unis d'Amérique",
+      "actor_type": "STATE",
+      "aliases": ["USA"],
+      "description": "Puissance garante des alliances régionales, promotrice de la dénucléarisation et de la non-prolifération.",
+      "primary_fields": ["MIL", "DIP", "LEGAL"],
+      "claimed_roles": ["nonproliferation_leader", "alliance_guarantor"],
+      "recognized_roles": ["superpower", "security_guarantor"],
+      "contested_roles": ["impartial_negotiator"],
+      "main_capitals": ["MILITARY", "FINANCIAL", "INSTITUTIONAL"],
+      "main_vulnerabilities": ["credibility_of_extended_deterrence", "alliance_management"],
+      "main_dependencies": [],
+      "main_audiences": ["regional_allies", "domestic_public", "congress"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_SOUTH_KOREA",
+      "name": "République de Corée",
+      "actor_type": "STATE",
+      "aliases": ["ROK", "Corée du Sud"],
+      "description": "État allié des États-Unis, exposé en première ligne, oscillant entre dissuasion renforcée et tentation d'autonomie nucléaire.",
+      "primary_fields": ["MIL", "DIP", "ECO"],
+      "claimed_roles": ["defended_democracy"],
+      "recognized_roles": ["us_ally", "regional_power"],
+      "contested_roles": [],
+      "main_capitals": ["MILITARY", "ECONOMIC", "TECHNOLOGICAL"],
+      "main_vulnerabilities": ["proximity_to_dprk_artillery", "alliance_dependence"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "us_alliance"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_CHINA",
+      "name": "République populaire de Chine",
+      "actor_type": "STATE",
+      "aliases": ["PRC"],
+      "description": "Principal partenaire économique et bouée de sauvetage de la Corée du Nord, soucieuse d'éviter à la fois l'effondrement et l'escalade.",
+      "primary_fields": ["ECO", "DIP", "MIL"],
+      "claimed_roles": ["responsible_neighbor"],
+      "recognized_roles": ["major_power", "dprk_lifeline"],
+      "contested_roles": [],
+      "main_capitals": ["ECONOMIC", "INSTITUTIONAL"],
+      "main_vulnerabilities": ["instability_on_border", "dilemma_of_pressure"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "regional_actors"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_RUSSIA",
+      "name": "Fédération de Russie",
+      "actor_type": "STATE",
+      "aliases": [],
+      "description": "Partenaire en rapprochement (coopération militaire), contribuant à relâcher la pression des sanctions.",
+      "primary_fields": ["MIL", "DIP"],
+      "claimed_roles": ["sovereign_partner"],
+      "recognized_roles": ["major_power"],
+      "contested_roles": [],
+      "main_capitals": ["MILITARY", "ENERGY"],
+      "main_vulnerabilities": ["overextension", "sanctions_exposure"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "non_western_partners"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_JAPAN",
+      "name": "Japon",
+      "actor_type": "STATE",
+      "aliases": [],
+      "description": "Allié des États-Unis exposé aux tirs balistiques, soutien du régime de non-prolifération.",
+      "primary_fields": ["MIL", "DIP"],
+      "claimed_roles": ["regional_stabilizer"],
+      "recognized_roles": ["us_ally"],
+      "contested_roles": [],
+      "main_capitals": ["ECONOMIC", "MILITARY"],
+      "main_vulnerabilities": ["missile_overflight_risk"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "us_alliance"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    }
+  ],
+  "relations": [
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_DPRK_USA_RIVALRY_001",
+      "source_actor_id": "ACT_DPRK",
+      "target_actor_id": "ACT_USA",
+      "relation_type": "RIVALRY",
+      "fields": ["MIL", "DIP"],
+      "description": "Rivalité de dissuasion : signalement nucléaire et balistique face à la pression et aux exercices alliés.",
+      "asymmetry_level": 0.7,
+      "trust_level": 0.05,
+      "credibility_level": 0.6,
+      "reversibility": 0.3,
+      "exit_cost": 0.8,
+      "main_tensions": ["deterrence_signalling", "denuclearization_deadlock"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_DPRK_SOUTHKOREA_RIVALRY_001",
+      "source_actor_id": "ACT_DPRK",
+      "target_actor_id": "ACT_SOUTH_KOREA",
+      "relation_type": "RIVALRY",
+      "fields": ["MIL", "SYM"],
+      "description": "Hostilité structurelle et compétition de légitimité entre les deux Corées.",
+      "asymmetry_level": 0.5,
+      "trust_level": 0.05,
+      "credibility_level": 0.55,
+      "reversibility": 0.3,
+      "exit_cost": 0.7,
+      "main_tensions": ["border_incidents", "regime_legitimacy"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_DPRK_RUSSIA_COOPERATION_001",
+      "source_actor_id": "ACT_DPRK",
+      "target_actor_id": "ACT_RUSSIA",
+      "relation_type": "COOPERATION",
+      "fields": ["MIL", "DIP"],
+      "description": "Rapprochement militaire récent desserrant l'étau des sanctions et offrant débouchés et contreparties.",
+      "asymmetry_level": 0.45,
+      "trust_level": 0.5,
+      "credibility_level": 0.55,
+      "reversibility": 0.5,
+      "exit_cost": 0.5,
+      "main_tensions": ["arms_cooperation", "sanctions_erosion"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_DPRK_CHINA_DEPENDENCY_001",
+      "source_actor_id": "ACT_DPRK",
+      "target_actor_id": "ACT_CHINA",
+      "relation_type": "DEPENDENCY",
+      "fields": ["ECO", "ENERGY"],
+      "description": "Dépendance vitale aux échanges, à l'énergie et à l'alimentation passant par la Chine.",
+      "asymmetry_level": 0.8,
+      "trust_level": 0.45,
+      "credibility_level": 0.55,
+      "reversibility": 0.2,
+      "exit_cost": 0.85,
+      "main_tensions": ["leverage_vs_collapse_risk", "border_control"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_USA_SOUTHKOREA_PROTECTION_001",
+      "source_actor_id": "ACT_USA",
+      "target_actor_id": "ACT_SOUTH_KOREA",
+      "relation_type": "PROTECTION",
+      "fields": ["MIL", "DIP"],
+      "description": "Alliance et dissuasion élargie (parapluie nucléaire), sous tension de crédibilité.",
+      "asymmetry_level": 0.6,
+      "trust_level": 0.7,
+      "credibility_level": 0.6,
+      "reversibility": 0.3,
+      "exit_cost": 0.7,
+      "main_tensions": ["extended_deterrence_credibility", "burden_sharing"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    }
+  ],
+  "activated_fields": [
+    { "field": "MIL", "intensity": 0.9, "role_in_situation": "Programme nucléaire/balistique et dissuasion." },
+    { "field": "SYM", "intensity": 0.8, "role_in_situation": "Statut nucléaire revendiqué et survie du régime." },
+    { "field": "DIP", "intensity": 0.72, "role_in_situation": "Impasse des négociations de dénucléarisation." },
+    { "field": "ECO", "intensity": 0.65, "role_in_situation": "Sanctions et dépendance économique." }
+  ],
+  "capital_structure": [
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_DPRK_NUCLEAR_001",
+      "actor_id": "ACT_DPRK",
+      "capital_type": "MILITARY",
+      "field": "MIL",
+      "description": "Arsenal nucléaire et vecteurs balistiques, capital rare conférant dissuasion et levier.",
+      "level": 0.8,
+      "convertibility": 0.75,
+      "conversion_paths": ["regime_survival_insurance", "coercive_bargaining", "status_claim"],
+      "constraints": ["sanctions", "risk_of_preemption"],
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.68
+    },
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_DPRK_SYMBOLIC_001",
+      "actor_id": "ACT_DPRK",
+      "capital_type": "SYMBOLIC",
+      "field": "SYM",
+      "description": "Capital symbolique de souveraineté et d'invulnérabilité, central pour la légitimité interne.",
+      "level": 0.7,
+      "convertibility": 0.6,
+      "conversion_paths": ["domestic_legitimacy", "mobilization"],
+      "constraints": ["economic_hardship"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    }
+  ],
+  "dependencies": [
+    {
+      "schema_version": "1.0",
+      "dependency_id": "DEP_DPRK_ECONOMIC_LIFELINE_001",
+      "dependent_actor_id": "ACT_DPRK",
+      "controller_actor_or_network": "ACT_CHINA (et, de manière croissante, ACT_RUSSIA)",
+      "dependency_type": "ENERGY",
+      "dependent_capacity": ["fuel", "food", "trade_access"],
+      "criticality_level": 0.85,
+      "substitutability": 0.3,
+      "time_to_substitute": "Difficile ; diversification partielle vers la Russie.",
+      "asymmetry_level": 0.8,
+      "visibility_level": 0.7,
+      "politicization_level": 0.8,
+      "weaponization_potential": 0.5,
+      "exit_cost": 0.85,
+      "current_strategy": ["partner_diversification", "sanctions_evasion", "self_reliance_narrative"],
+      "main_risk": "Étranglement économique en cas de durcissement coordonné des partenaires.",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    }
+  ],
+  "norms": [
+    {
+      "schema_version": "1.0",
+      "norm_id": "NORM_NONPROLIFERATION",
+      "name": "Non-prolifération nucléaire (TNP)",
+      "norm_family": "SECURITY",
+      "core_prescription": "La prolifération des armes nucléaires est prohibée ; les États non dotés s'engagent à ne pas en acquérir.",
+      "institutionalization_level": 0.8,
+      "main_institutions": ["NPT", "UNSC"],
+      "carrier_audiences": ["nuclear_weapon_states", "international_community"],
+      "main_beneficiaries": ["status_quo_powers"],
+      "main_constrained_actors": ["aspiring_proliferators"],
+      "violation_costs": ["sanctions", "isolation"],
+      "contestation_patterns": ["double_standards_critique", "security_justification"],
+      "conversion_paths": ["sanction", "delegitimation"],
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.66
+    }
+  ],
+  "institutions": [
+    {
+      "schema_version": "1.0",
+      "institution_id": "INST_UNSC_SANCTIONS",
+      "name": "Régime de sanctions du Conseil de sécurité",
+      "institution_type": "SECURITY_INSTITUTION",
+      "core_functions": ["sanctioning", "monitoring", "signalling"],
+      "rules_and_procedures": ["resolutions", "sanctions_committees"],
+      "dominant_capitals": ["INSTITUTIONAL", "FINANCIAL", "LEGAL"],
+      "classification_power": ["who_is_a_norm_violator"],
+      "main_tensions": ["great_power_disagreement", "enforcement_erosion"],
+      "current_stress_level": 0.8,
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.64
+    },
+    {
+      "schema_version": "1.0",
+      "institution_id": "INST_NPT",
+      "name": "Régime du Traité de non-prolifération",
+      "institution_type": "INTERNATIONAL_REGIME",
+      "core_functions": ["norm_setting", "verification", "legitimation"],
+      "rules_and_procedures": ["safeguards", "review_conferences"],
+      "dominant_capitals": ["NORMATIVE", "LEGAL"],
+      "classification_power": ["who_is_a_legitimate_nuclear_state"],
+      "main_tensions": ["withdrawal_precedent", "double_standards"],
+      "current_stress_level": 0.7,
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    }
+  ],
+  "dominant_mechanism": {
+    "schema_version": "1.0",
+    "mechanism_id": "MECH_NUCLEAR_CAPITAL_CONVERSION_001",
+    "name": "Conversion du capital nucléaire en garantie de survie du régime",
+    "mechanism_type": "CAPITAL_CONVERSION",
+    "minimal_definition": "L'arme nucléaire est convertie en assurance de survie contre tout changement de régime imposé de l'extérieur, ce qui rend la dénucléarisation structurellement improbable et borne le marchandage.",
+    "activation_conditions": ["perceived_existential_threat", "nuclear_capability", "lessons_from_disarmed_regimes"],
+    "typical_sequence": ["capability_buildup", "doctrine_codification", "deterrence_signalling", "deadlock"],
+    "amplifiers": ["external_regime_change_precedents", "sanctions_pressure", "alliance_exercises"],
+    "dampeners": ["credible_security_guarantees", "economic_inducements", "great_power_pressure"],
+    "possible_outputs": ["entrenched_deterrence", "managed_tension", "crisis_escalation"],
+    "invalidation_signals": [
+      {
+        "signal": "verifiable_dismantlement_in_exchange_for_guarantees",
+        "why_it_matters": "Montrerait que l'arsenal est négociable, contredisant la logique de survie.",
+        "monitoring_indicators": ["irreversible_disablement_steps", "intrusive_verification_accepted"]
+      }
+    ],
+    "evidence_status": "MODERATELY_SUPPORTED",
+    "confidence": 0.62
+  },
+  "secondary_mechanisms": [
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_RECOGNITION_CRISIS_NUCLEAR_001",
+      "name": "Crise de reconnaissance du statut nucléaire",
+      "mechanism_type": "RECOGNITION_CRISIS",
+      "minimal_definition": "Écart entre le statut de puissance nucléaire revendiqué et la reconnaissance refusée par le régime de non-prolifération.",
+      "activation_conditions": ["status_claim", "recognition_refusal"],
+      "typical_sequence": ["claim", "refusal", "signalling"],
+      "amplifiers": ["domestic_audience", "double_standards_perception"],
+      "dampeners": ["face_saving_formulas"],
+      "possible_outputs": ["status_stalemate", "tacit_acceptance"],
+      "invalidation_signals": [
+        {
+          "signal": "formal_or_tacit_recognition_resolving_status",
+          "why_it_matters": "Réduirait la crise de reconnaissance.",
+          "monitoring_indicators": ["arms_control_talks_as_equals"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_NORM_ACTIVATION_NONPROLIF_001",
+      "name": "Activation normative (non-prolifération)",
+      "mechanism_type": "NORM_ACTIVATION",
+      "minimal_definition": "La norme de non-prolifération est mobilisée pour sanctionner et délégitimer le programme.",
+      "activation_conditions": ["norm_violation", "available_enforcement_coalition"],
+      "typical_sequence": ["violation", "norm_invocation", "sanctions"],
+      "amplifiers": ["test_events", "alliance_solidarity"],
+      "dampeners": ["great_power_veto", "enforcement_fatigue"],
+      "possible_outputs": ["sustained_sanctions", "selective_enforcement"],
+      "invalidation_signals": [
+        {
+          "signal": "collapse_of_sanctions_consensus",
+          "why_it_matters": "Affaiblirait l'activation normative.",
+          "monitoring_indicators": ["unsc_paralysis", "open_sanctions_breaches"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_DEPENDENCY_WEAPONIZATION_SANCTIONS_001",
+      "name": "Weaponisation croisée de la dépendance économique",
+      "mechanism_type": "DEPENDENCY_WEAPONIZATION",
+      "minimal_definition": "Les sanctions weaponisent la dépendance économique, tandis que le rapprochement avec la Russie en érode l'effet.",
+      "activation_conditions": ["economic_dependence", "sanctions_regime"],
+      "typical_sequence": ["pressure", "evasion", "partner_substitution"],
+      "amplifiers": ["enforcement", "partner_alignment"],
+      "dampeners": ["alternative_partners", "smuggling"],
+      "possible_outputs": ["coercion", "sanctions_erosion"],
+      "invalidation_signals": [
+        {
+          "signal": "full_economic_normalization_or_total_blockade",
+          "why_it_matters": "Désactiverait le levier de dépendance dans un sens ou l'autre.",
+          "monitoring_indicators": ["trade_volumes", "enforcement_actions"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.56
+    }
+  ],
+  "trajectories": [
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_NK_ENTRENCHED_DETERRENCE_001",
+      "situation_id": "SIT_NORTH_KOREA_001",
+      "trajectory_type": "NORMALIZATION",
+      "name": "Statut nucléaire de fait enraciné et tension gérée",
+      "mechanism_path": "L'arsenal reste la garantie de survie ; la dénucléarisation est gelée et la situation se routinise autour d'une dissuasion mutuelle sous tension.",
+      "conditions": ["mutual_deterrence_holds", "no_credible_security_guarantee", "partial_sanctions_erosion"],
+      "bifurcation_points": ["major_provocation", "alliance_nuclearization", "grand_bargain"],
+      "probability_band": "MEDIUM_HIGH",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "breakthrough_denuclearization_agreement",
+          "why_it_matters": "Mettrait fin au statut nucléaire de fait.",
+          "monitoring_indicators": ["verified_dismantlement"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6,
+      "outcome": {
+        "status": "PENDING",
+        "notes": "Trajectoire dominante en cours d'observation ; à rescorer lors des révisions."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_NK_CRISIS_ESCALATION_001",
+      "situation_id": "SIT_NORTH_KOREA_001",
+      "trajectory_type": "ESCALATION",
+      "name": "Escalade de crise par provocation ou méprise",
+      "mechanism_path": "Une provocation (essai, incident frontalier) franchit un seuil et déclenche une spirale d'escalade difficile à contenir.",
+      "conditions": ["provocation", "miscalculation", "weak_crisis_channels"],
+      "bifurcation_points": ["alliance_response", "de_escalation_signal"],
+      "probability_band": "MEDIUM_LOW",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "robust_crisis_communication_mechanisms",
+          "why_it_matters": "Réduirait la probabilité d'escalade par méprise.",
+          "monitoring_indicators": ["hotlines", "rapid_de_escalation"]
+        }
+      ],
+      "evidence_status": "WEAKLY_SUPPORTED",
+      "confidence": 0.45
+    }
+  ],
+  "evidence": {
+    "schema_version": "1.0",
+    "hypothesis_id": "HYP_NK_SURVIVAL_CONVERSION_DOMINANT_001",
+    "situation_id": "SIT_NORTH_KOREA_001",
+    "hypothesis": "Le mécanisme dominant est la conversion du capital nucléaire en garantie de survie du régime, ce qui rend la dénucléarisation structurellement improbable et borne tout marchandage, au-delà de la simple monnaie d'échange ou de la quête de statut.",
+    "mechanism_tested": "Conversion du capital nucléaire en garantie de survie du régime",
+    "evidence_items": [
+      {
+        "evidence_id": "EVID_NK_TESTS_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Poursuite des essais nucléaires et balistiques malgré les sanctions et les phases de diplomatie.",
+        "source_ids": ["SRC_TECHNICAL_MONITORING"],
+        "strength": 0.85,
+        "reliability": 0.8,
+        "interpretation_risk": 0.2,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "HOOP",
+        "consistency": [
+          { "hypothesis_id": "HYP_SURVIVAL_CONVERSION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_BARGAINING_CHIP", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_STATUS_RECOGNITION", "consistency": "NEUTRAL" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_NK_LAW_IRREVERSIBLE_001",
+        "type": "DOCTRINAL_DOCUMENT",
+        "description": "Inscription du statut nucléaire dans la loi fondamentale et déclaration de son caractère irréversible.",
+        "source_ids": ["SRC_OFFICIAL_STATEMENTS"],
+        "strength": 0.8,
+        "reliability": 0.78,
+        "interpretation_risk": 0.25,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "STRAW_IN_THE_WIND",
+        "consistency": [
+          { "hypothesis_id": "HYP_SURVIVAL_CONVERSION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_BARGAINING_CHIP", "consistency": "INCONSISTENT" },
+          { "hypothesis_id": "HYP_STATUS_RECOGNITION", "consistency": "CONSISTENT" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_NK_REGIME_SECURITY_LINKAGE_001",
+        "type": "EXPERT_ASSESSMENT",
+        "description": "Liaison explicite de l'arsenal à la survie du régime (leçons des régimes désarmés puis renversés) et refus des accords ne garantissant pas la sécurité — ce qui discrimine la logique de survie d'une simple monnaie d'échange ou d'une quête de statut négociable.",
+        "source_ids": ["SRC_EXPERT_ANALYSIS", "SRC_OFFICIAL_STATEMENTS"],
+        "strength": 0.74,
+        "reliability": 0.68,
+        "interpretation_risk": 0.35,
+        "credibility_grade": "2",
+        "diagnosticity": "HIGH",
+        "process_tracing_test": "SMOKING_GUN",
+        "consistency": [
+          { "hypothesis_id": "HYP_SURVIVAL_CONVERSION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_BARGAINING_CHIP", "consistency": "INCONSISTENT" },
+          { "hypothesis_id": "HYP_STATUS_RECOGNITION", "consistency": "INCONSISTENT" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_NK_DIPLOMACY_COLLAPSE_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Échec des négociations de dénucléarisation lorsque les accords n'offraient pas de garanties de sécurité, malgré des incitations économiques.",
+        "source_ids": ["SRC_OFFICIAL_STATEMENTS", "SRC_EXPERT_ANALYSIS"],
+        "strength": 0.76,
+        "reliability": 0.7,
+        "interpretation_risk": 0.3,
+        "credibility_grade": "2",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "HOOP",
+        "consistency": [
+          { "hypothesis_id": "HYP_SURVIVAL_CONVERSION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_BARGAINING_CHIP", "consistency": "INCONSISTENT" },
+          { "hypothesis_id": "HYP_STATUS_RECOGNITION", "consistency": "NEUTRAL" }
+        ]
+      }
+    ],
+    "hypotheses": [
+      { "hypothesis_id": "HYP_SURVIVAL_CONVERSION", "label": "Garantie de survie du régime dominante", "is_lead": true },
+      { "hypothesis_id": "HYP_BARGAINING_CHIP", "label": "Monnaie d'échange dominante", "is_lead": false },
+      { "hypothesis_id": "HYP_STATUS_RECOGNITION", "label": "Quête de statut dominante", "is_lead": false }
+    ],
+    "key_assumptions": [
+      {
+        "assumption": "Le régime perçoit l'arme nucléaire comme la garantie ultime de survie.",
+        "status": "SUPPORTED",
+        "impact_if_wrong": "Si le programme était réellement négociable, une dénucléarisation conditionnelle redeviendrait envisageable."
+      },
+      {
+        "assumption": "La dissuasion mutuelle tient et aucune partie ne recherche un conflit majeur.",
+        "status": "SUPPORTED",
+        "impact_if_wrong": "Le risque bascule vers une escalade potentiellement nucléaire."
+      }
+    ],
+    "premortem": [
+      "Le diagnostic serait faux si Pyongyang acceptait un démantèlement vérifiable contre des garanties (primat du marchandage).",
+      "Le diagnostic serait faux si la dynamique se réduisait à une quête de statut symbolique négociable."
+    ],
+    "counter_hypotheses": [
+      {
+        "hypothesis": "Le programme est avant tout une monnaie d'échange en vue de gains économiques et de la levée des sanctions.",
+        "plausibility": 0.4,
+        "status": "WEAKLY_SUPPORTED"
+      },
+      {
+        "hypothesis": "Le moteur premier est la quête de statut et de reconnaissance comme puissance nucléaire.",
+        "plausibility": 0.45,
+        "status": "MODERATELY_SUPPORTED"
+      }
+    ],
+    "contradictory_evidence": [
+      "Phases de diplomatie et signaux d'ouverture ponctuels, suggérant une part de marchandage tactique."
+    ],
+    "unknowns": [
+      "Conditions exactes auxquelles le régime jugerait sa survie garantie.",
+      "Seuils réels d'emploi et lignes rouges."
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "verifiable_denuclearization_for_guarantees",
+        "why_it_matters": "Affaiblirait l'hypothèse de la survie comme mécanisme dominant.",
+        "monitoring_indicators": ["irreversible_dismantlement"]
+      }
+    ],
+    "overall_confidence": 0.6,
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "diagnostic": {
+    "schema_version": "1.0",
+    "analysis_id": "ANALYSIS_NORTH_KOREA_001",
+    "situation_id": "SIT_NORTH_KOREA_001",
+    "executive_summary": "L'arme nucléaire fonctionne d'abord comme assurance de survie du régime, ce qui enracine un statut nucléaire de fait et borne le marchandage ; la crise de reconnaissance et les sanctions en sont les amplificateurs.",
+    "analytical_summary": "La péninsule coréenne n'est pas réductible à une négociation sur des armes ni à une quête de prestige. Le mécanisme dominant est la conversion d'un capital nucléaire en garantie de survie, rendant la dénucléarisation structurellement improbable. Il est amplifié par une crise de reconnaissance du statut nucléaire, l'activation de la norme de non-prolifération et une weaponisation croisée de la dépendance économique. L'issue probable est l'enracinement d'un statut de fait sous dissuasion gérée.",
+    "dominant_mechanism_id": "MECH_NUCLEAR_CAPITAL_CONVERSION_001",
+    "secondary_mechanism_ids": ["MECH_RECOGNITION_CRISIS_NUCLEAR_001", "MECH_NORM_ACTIVATION_NONPROLIF_001", "MECH_DEPENDENCY_WEAPONIZATION_SANCTIONS_001"],
+    "dominant_trajectory_id": "TRAJ_NK_ENTRENCHED_DETERRENCE_001",
+    "main_risk": "Escalade par provocation ou méprise dans un contexte de canaux de crise faibles et de dissuasion sous tension.",
+    "main_watch_signals": [
+      "essais nucléaires ou balistiques majeurs",
+      "érosion ou durcissement du régime de sanctions",
+      "débat sur une nucléarisation alliée",
+      "ouverture ou rupture de canaux diplomatiques"
+    ],
+    "main_uncertainties": [
+      "conditions de garantie de survie acceptables pour le régime",
+      "solidité de la dissuasion mutuelle",
+      "effets du rapprochement avec la Russie"
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "verified_irreversible_denuclearization",
+        "why_it_matters": "Sortirait la situation de la dynamique de survie analysée.",
+        "monitoring_indicators": ["dismantlement_with_intrusive_verification"]
+      }
+    ],
+    "confidence": 0.6,
+    "confidence_label": "MEDIUM",
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "analytical_status": "VALIDATED",
+  "sources": [
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_OFFICIAL_STATEMENTS",
+      "name": "Déclarations et documents officiels",
+      "source_type": "OFFICIAL",
+      "reliability": "B",
+      "description": "Communiqués, textes juridiques et déclarations des parties."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_TECHNICAL_MONITORING",
+      "name": "Surveillance technique (essais et activités)",
+      "source_type": "DATA",
+      "reliability": "B",
+      "description": "Détection sismique, imagerie et suivi des essais et installations."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_EXPERT_ANALYSIS",
+      "name": "Analyses d'experts en non-prolifération",
+      "source_type": "EXPERT",
+      "reliability": "C",
+      "description": "Évaluations académiques et de think tanks."
+    }
+  ],
+  "revision_history": [
+    {
+      "version": "1.0",
+      "date": "2026-05-27",
+      "change_summary": "Analyse initiale au tier VALIDATED (gold standard) : ACH, sources gradées, calibration, suivi des signaux."
+    }
+  ],
+  "created_at": "2026-05-27",
+  "last_updated": "2026-05-27"
+}

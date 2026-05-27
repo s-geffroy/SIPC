@@ -3,6 +3,17 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.6.0] — 2026-05-27
+
+### Ajouté
+- Nouvel exemple **Corée du Nord** au tier VALIDATED (« gold standard ») : mécanisme dominant de
+  **conversion du capital nucléaire** en garantie de survie du régime (statut nucléaire de fait,
+  impasse de la dénucléarisation), ACH à trois hypothèses (preuve `SMOKING_GUN` sur la liaison
+  arsenal–survie), sources gradées Admiralty, Key Assumptions Check, premortem, `outcome` de
+  trajectoire et `revision_history`.
+- **Sept** exemples « gold standard » désormais. Papier (corpus porté à sept cas), page
+  d'accueil, page Exemples et test de comptage (6 → 7) mis à jour.
+
 ## [2.5.0] — 2026-05-27
 
 ### Ajouté

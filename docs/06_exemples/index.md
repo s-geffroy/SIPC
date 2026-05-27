@@ -1,7 +1,7 @@
 # Exemples appliqués
 
-Six cas démontrent que la SIPC fonctionne sur des situations réelles sans devenir un
-commentaire vague. Les six analyses JSON **valident contre les schémas** et **passent le
+Sept cas démontrent que la SIPC fonctionne sur des situations réelles sans devenir un
+commentaire vague. Les sept analyses JSON **valident contre les schémas** et **passent le
 linter doctrinal** (mécanisme dominant, contre-hypothèses, signaux d'invalidation, intégrité
 référentielle).
 
@@ -13,8 +13,9 @@ référentielle).
 | Mer de Chine méridionale | conversion en zone grise | **VALIDATED** | coercition de zone grise, droit de la mer, alliances, fait accompli |
 | Arctique | désynchronisation d'ordre | **VALIDATED** | environnement, gouvernance bloquée, militarisation, plateau continental |
 | Sahel central | conversion souverainiste | **VALIDATED** | insurrection, coups d'État, réalignement, recomposition régionale |
+| Corée du Nord | conversion du capital nucléaire | **VALIDATED** | dissuasion, survie du régime, reconnaissance, non-prolifération |
 
-Les six cas sont des exemples **« gold standard »** au [tier VALIDATED](../03_ontologie/regles_validation.md) :
+Les sept cas sont des exemples **« gold standard »** au [tier VALIDATED](../03_ontologie/regles_validation.md) :
 sources gradées (Admiralty), [ACH](../05_preuve/ach.md) cohérente (hypothèse dominante la moins
 infirmée, départagée par une preuve `SMOKING_GUN`), calibration ancrée et suivi des signaux
 d'invalidation.
@@ -77,6 +78,17 @@ du pouvoir, contestation de l'ordre régional. Trajectoire dominante : consolida
 souverainiste ; alternative : fragmentation territoriale.
 
 - JSON : [`examples/sahel/situation_analysis.json`](https://github.com/s-geffroy/SIPC/blob/main/examples/sahel/situation_analysis.json)
+
+## Corée du Nord
+
+**Conversion du capital nucléaire en garantie de survie du régime** : l'arme nucléaire fonctionne
+d'abord comme assurance contre un changement de régime imposé, ce qui rend la dénucléarisation
+structurellement improbable et borne le marchandage. Secondaires : crise de reconnaissance du
+statut nucléaire, activation de la norme de non-prolifération, weaponisation croisée de la
+dépendance économique. Trajectoire dominante : statut nucléaire de fait enraciné sous dissuasion
+gérée ; alternative : escalade de crise par provocation ou méprise.
+
+- JSON : [`examples/north_korea/situation_analysis.json`](https://github.com/s-geffroy/SIPC/blob/main/examples/north_korea/situation_analysis.json)
 
 ## Structure d'un exemple
 
