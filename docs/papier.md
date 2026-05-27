@@ -39,7 +39,7 @@ hypertrophie conceptuelle, fausse précision).
 
 ## Lecture en ligne
 
-<object data="assets/sipc_paper.pdf" type="application/pdf" width="100%" height="800px">
-  <p>Votre navigateur ne peut pas afficher le PDF intégré.
-  <a href="assets/sipc_paper.pdf">Téléchargez-le ici</a>.</p>
-</object>
+<iframe src="../assets/sipc_paper.pdf" width="100%" height="800px" style="border: 1px solid #ccc;">
+</iframe>
+
+<p>Si le PDF ne s'affiche pas ci-dessus, <a href="../assets/sipc_paper.pdf">téléchargez-le directement</a>.</p>
