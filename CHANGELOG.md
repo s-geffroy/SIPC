@@ -3,6 +3,12 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.6.2] — 2026-05-27
+
+### Ajouté
+- `examples/catalogue_exemples.md` : catalogue recensant les sept cas implémentés (tier
+  VALIDATED) et une liste de cas candidats, chacun rattaché à un mécanisme dominant pressenti.
+
 ## [2.6.1] — 2026-05-27
 
 ### Corrigé
