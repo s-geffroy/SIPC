@@ -3,6 +3,13 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.6.1] — 2026-05-27
+
+### Corrigé
+- Page **Papier académique** (`papier.md`) : résumé et plan synchronisés avec le papier actuel
+  (sept études de cas, méthode renforcée, titre de la section « Études de cas » mis à jour). La
+  page mentionnait encore un seul cas (Taïwan).
+
 ## [2.6.0] — 2026-05-27
 
 ### Ajouté

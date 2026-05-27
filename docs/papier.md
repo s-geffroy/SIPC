@@ -15,9 +15,13 @@ mondiale stratifiée de personnes collectives inégales — dotées de capitaux 
 rôles revendiqués et reconnus, de dépendances activables et de trajectoires dépendantes du
 chemin. Son unité d'analyse n'est ni l'État ni la crise, mais la **situation sociale
 internationale**. Sa contribution propre n'est pas l'invention de concepts isolés mais leur
-**intégration disciplinée** et leur **formalisation en une ontologie testable**. L'appareil est
-appliqué au cas du **détroit de Taïwan**, avant une discussion des limites (anthropomorphisme,
-hypertrophie conceptuelle, fausse précision).
+**intégration disciplinée** et leur **formalisation en une ontologie testable**. La méthode est
+renforcée par une calibration probabiliste ancrée, une analyse des hypothèses concurrentes
+(ACH), une traçabilité des sources et une boucle de suivi et de backtesting. L'appareil est
+appliqué à **sept situations contrastées** — détroit de Taïwan, guerre en Ukraine, rivalité
+technologique États-Unis / Chine, mer de Chine méridionale, Arctique, Sahel central et Corée du
+Nord — avant une discussion des limites (anthropomorphisme, hypertrophie conceptuelle, fausse
+précision).
 
 ## Plan
 
@@ -32,7 +36,7 @@ hypertrophie conceptuelle, fausse précision).
 9. Domination, contestation et ordre
 10. Causalité configurationnelle et mécanismes
 11. Preuve, contre-hypothèses et invalidation
-12. **Étude de cas : le détroit de Taïwan**
+12. **Études de cas : le détroit de Taïwan et un corpus de sept situations**
 13. Formalisation : une ontologie testable
 14. Limites et risques
 15. Conclusion
