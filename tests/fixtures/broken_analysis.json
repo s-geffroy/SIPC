@@ -81,5 +81,5 @@
     "confidence_label": "HIGH",
     "evidence_status": "SPECULATIVE"
   },
-  "analytical_status": "DRAFT"
+  "analytical_status": "REVIEW_REQUIRED"
 }

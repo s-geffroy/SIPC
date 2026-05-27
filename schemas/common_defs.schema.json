@@ -296,6 +296,92 @@
         "UNKNOWN"
       ]
     },
+    "diagnosticity_level": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "process_tracing_test": {
+      "type": "string",
+      "enum": [
+        "STRAW_IN_THE_WIND",
+        "HOOP",
+        "SMOKING_GUN",
+        "DOUBLY_DECISIVE"
+      ]
+    },
+    "ach_consistency": {
+      "type": "string",
+      "enum": [
+        "CONSISTENT",
+        "INCONSISTENT",
+        "NEUTRAL"
+      ]
+    },
+    "assumption_status": {
+      "type": "string",
+      "enum": [
+        "SUPPORTED",
+        "UNSUPPORTED",
+        "UNCERTAIN"
+      ]
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "PRIMARY",
+        "SECONDARY",
+        "OFFICIAL",
+        "MEDIA",
+        "EXPERT",
+        "DATA",
+        "OTHER"
+      ]
+    },
+    "admiralty_reliability": {
+      "type": "string",
+      "description": "Fiabilité de la source (code Admiralty/OTAN). A = totalement fiable … F = ne peut être évaluée.",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ]
+    },
+    "admiralty_credibility": {
+      "type": "string",
+      "description": "Crédibilité de l'information (code Admiralty/OTAN). 1 = confirmée … 6 = ne peut être évaluée.",
+      "enum": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    "monitoring_status": {
+      "type": "string",
+      "enum": [
+        "NOT_OBSERVED",
+        "PARTIALLY_OBSERVED",
+        "OBSERVED"
+      ]
+    },
+    "trajectory_outcome_status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "REALIZED",
+        "PARTIAL",
+        "NOT_REALIZED"
+      ]
+    },
     "string_array": {
       "type": "array",
       "items": {
@@ -374,6 +460,13 @@
             "type": "string"
           },
           "default": []
+        },
+        "monitoring_status": {
+          "$ref": "#/$defs/monitoring_status"
+        },
+        "last_checked": {
+          "type": "string",
+          "format": "date"
         }
       }
     }

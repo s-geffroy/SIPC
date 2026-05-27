@@ -28,3 +28,25 @@ Situation latente de crise mêlant reconnaissance souveraine contestée, dissuas
 
 > **Confiance** : MEDIUM (0.6) · **Statut probatoire** : `MODERATELY_SUPPORTED`
 
+## Matrice ACH
+
+Légende : `+` consistant, `−` inconsistant, `·` neutre. Diag. = diagnosticité de la preuve.
+
+| Preuve | Diag. | Conflit de reconnaissance dominant | Dilemme de sécurité dominant | Dépendance technologique dominante |
+|---|---|---|---|---|
+| EVID_TAIWAN_OFFICIAL_DISCOURSE_001 | MEDIUM | + | · | − |
+| EVID_TAIWAN_MILITARY_PRACTICE_001 | MEDIUM | + | + | · |
+| EVID_TAIWAN_CHIP_DATA_001 | MEDIUM | · | · | + |
+| EVID_TAIWAN_STATUS_REDLINE_001 | HIGH | + | − | − |
+
+## Décompte des preuves inconsistantes (plus c'est bas, mieux c'est)
+
+- **Conflit de reconnaissance dominant** : 0 inconsistance(s) ← hypothèse dominante
+- **Dilemme de sécurité dominant** : 1 inconsistance(s)
+- **Dépendance technologique dominante** : 2 inconsistance(s)
+
+## Hypothèses clés (Key Assumptions Check)
+
+- **Les canaux de communication de crise restent fonctionnels.** — `UNCERTAIN` : Hausse marquée du risque d'escalade accidentelle, affaiblissant la trajectoire de tension gérée.
+- **L'interdépendance économique reste un frein crédible à la guerre majeure.** — `SUPPORTED` : Le coût d'escalade perçu chute, renforçant la trajectoire d'escalade coercitive.
+

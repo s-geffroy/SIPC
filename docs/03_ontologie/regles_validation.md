@@ -2,6 +2,19 @@
 
 La SIPC distingue deux niveaux de validation, **tous deux outillés et exécutés en CI**.
 
+## Modèle de conformité gradué
+
+Les règles doctrinales s'appliquent selon la maturité de l'analyse (`analytical_status`) :
+
+| Tier | Exigences |
+|---|---|
+| `DRAFT` | validité structurelle (JSON Schema) ; règles doctrinales en simple avertissement |
+| `REVIEW_REQUIRED` | règles de base **bloquantes** (mécanisme dominant, contre-hypothèse, signaux d'invalidation, intégrité référentielle, cohérence de [calibration](../05_preuve/calibration.md)) |
+| `VALIDATED` | règles de base **+** règles strictes V2 : [ACH](../05_preuve/ach.md) renseignée et cohérente, [sources gradées](../05_preuve/sources_et_claims.md) et reliées, suivi des signaux d'invalidation, confiance/statut probatoire cohérents |
+
+Ce modèle permet d'amorcer une analyse en `DRAFT` sans blocage, puis de la durcir
+progressivement jusqu'au tier `VALIDATED` (exemple « gold standard » : le cas Taïwan).
+
 ## 1. Validation structurelle (JSON Schema)
 
 Outil : [`tools/validate_json_files.py`](https://github.com/s-geffroy/SIPC/blob/main/tools/validate_json_files.py).

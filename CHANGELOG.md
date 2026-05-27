@@ -3,6 +3,34 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.0.0] — 2026-05-27
+
+### Ajouté — renforcement de la méthode (4 axes)
+- **Modèle de conformité gradué** adossé à `analytical_status` (DRAFT → REVIEW_REQUIRED →
+  VALIDATED) dans `check_doctrine.py`.
+- **Calibration probabiliste** : échelle estimative ancrée (bandes ↔ plages numériques),
+  cohérence `numeric_estimate`/bande et `confidence`/`confidence_label` vérifiée ; module
+  partagé `tools/sipc_rules.py`. Page `05_preuve/calibration.md`.
+- **ACH + débiaisage** : hypothèses concurrentes, diagnosticité, tests de process tracing,
+  matrice de consistance, Key Assumptions Check, premortem (schéma `evidence_profile`) ; outil
+  `tools/render_ach.py` ; règle de cohérence ACH (hypothèse dominante = la moins infirmée).
+  Page `05_preuve/ach.md`.
+- **Traçabilité des sources** : nouveau schéma `source_profile` (fiabilité Admiralty A–F),
+  `credibility_grade` (1–6) sur les preuves, intégrité référentielle preuve→source au tier
+  VALIDATED. Page `05_preuve/sources_et_claims.md`.
+- **Dynamique & rétroaction** : `revision_history`, `outcome` de trajectoire, suivi des signaux
+  (`monitoring_status`) ; outil `tools/score_backtest.py` (score de Brier). Pages
+  `02_methode/suivi_et_mise_a_jour.md` et `05_preuve/backtesting.md`.
+- Exemple **Taïwan** promu « gold standard » au tier VALIDATED (sources, ACH, calibration,
+  suivi, historique de révision).
+- Tests étendus (10 → 18) : règles de calibration/ACH/sources/suivi par mutation, outils ACH et
+  Brier ; papier LaTeX mis à jour (section Preuve V2).
+
+### Modifié
+- `check_doctrine.py` réécrit en tiers ; `render_summary.py` affiche la matrice ACH.
+- Nouveaux enums dans `common_defs` ; `invalidation_signal` étendu (suivi). Schémas additifs et
+  rétrocompatibles (les exemples existants restent valides).
+
 ## [1.1.0] — 2026-05-27
 
 ### Ajouté

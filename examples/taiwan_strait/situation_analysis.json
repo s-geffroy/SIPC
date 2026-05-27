@@ -390,7 +390,11 @@
         }
       ],
       "evidence_status": "MODERATELY_SUPPORTED",
-      "confidence": 0.58
+      "confidence": 0.58,
+      "outcome": {
+        "status": "PENDING",
+        "notes": "Trajectoire dominante en cours d'observation ; à rescorer lors des révisions."
+      }
     },
     {
       "schema_version": "1.0",
@@ -425,29 +429,91 @@
         "evidence_id": "EVID_TAIWAN_OFFICIAL_DISCOURSE_001",
         "type": "OFFICIAL_DISCOURSE",
         "description": "Réaffirmations officielles récurrentes de la revendication de souveraineté et du refus de l'indépendance formelle.",
-        "source_ids": [],
+        "source_ids": ["SRC_OFFICIAL_STATEMENTS"],
         "strength": 0.7,
         "reliability": 0.75,
-        "interpretation_risk": 0.3
+        "interpretation_risk": 0.3,
+        "credibility_grade": "2",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "STRAW_IN_THE_WIND",
+        "consistency": [
+          { "hypothesis_id": "HYP_RECOGNITION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_SECURITY_DILEMMA", "consistency": "NEUTRAL" },
+          { "hypothesis_id": "HYP_TECH_DEPENDENCY", "consistency": "INCONSISTENT" }
+        ]
       },
       {
         "evidence_id": "EVID_TAIWAN_MILITARY_PRACTICE_001",
         "type": "OBSERVABLE_PRACTICE",
         "description": "Exercices militaires et incursions répétés autour de Taïwan servant de signalement de statut et de coercition.",
-        "source_ids": [],
+        "source_ids": ["SRC_MILITARY_OSINT"],
         "strength": 0.75,
         "reliability": 0.7,
-        "interpretation_risk": 0.35
+        "interpretation_risk": 0.35,
+        "credibility_grade": "2",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "HOOP",
+        "consistency": [
+          { "hypothesis_id": "HYP_RECOGNITION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_SECURITY_DILEMMA", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_TECH_DEPENDENCY", "consistency": "NEUTRAL" }
+        ]
       },
       {
         "evidence_id": "EVID_TAIWAN_CHIP_DATA_001",
         "type": "MATERIAL_DATA",
         "description": "Concentration de la production mondiale de semi-conducteurs avancés à Taïwan, attestée par les parts de marché des fonderies.",
-        "source_ids": [],
+        "source_ids": ["SRC_INDUSTRY_REPORTS"],
         "strength": 0.85,
         "reliability": 0.8,
-        "interpretation_risk": 0.2
+        "interpretation_risk": 0.2,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "STRAW_IN_THE_WIND",
+        "consistency": [
+          { "hypothesis_id": "HYP_RECOGNITION", "consistency": "NEUTRAL" },
+          { "hypothesis_id": "HYP_SECURITY_DILEMMA", "consistency": "NEUTRAL" },
+          { "hypothesis_id": "HYP_TECH_DEPENDENCY", "consistency": "CONSISTENT" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_TAIWAN_STATUS_REDLINE_001",
+        "type": "DOCTRINAL_DOCUMENT",
+        "description": "L'indépendance formelle est traitée comme casus belli indépendamment d'éventuels arrangements de sécurité, ce qui discrimine un moteur de statut d'un pur calcul de sécurité.",
+        "source_ids": ["SRC_OFFICIAL_STATEMENTS", "SRC_EXPERT_ANALYSIS"],
+        "strength": 0.78,
+        "reliability": 0.72,
+        "interpretation_risk": 0.3,
+        "credibility_grade": "2",
+        "diagnosticity": "HIGH",
+        "process_tracing_test": "SMOKING_GUN",
+        "consistency": [
+          { "hypothesis_id": "HYP_RECOGNITION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_SECURITY_DILEMMA", "consistency": "INCONSISTENT" },
+          { "hypothesis_id": "HYP_TECH_DEPENDENCY", "consistency": "INCONSISTENT" }
+        ]
       }
+    ],
+    "hypotheses": [
+      { "hypothesis_id": "HYP_RECOGNITION", "label": "Conflit de reconnaissance dominant", "is_lead": true },
+      { "hypothesis_id": "HYP_SECURITY_DILEMMA", "label": "Dilemme de sécurité dominant", "is_lead": false },
+      { "hypothesis_id": "HYP_TECH_DEPENDENCY", "label": "Dépendance technologique dominante", "is_lead": false }
+    ],
+    "key_assumptions": [
+      {
+        "assumption": "Les canaux de communication de crise restent fonctionnels.",
+        "status": "UNCERTAIN",
+        "impact_if_wrong": "Hausse marquée du risque d'escalade accidentelle, affaiblissant la trajectoire de tension gérée."
+      },
+      {
+        "assumption": "L'interdépendance économique reste un frein crédible à la guerre majeure.",
+        "status": "SUPPORTED",
+        "impact_if_wrong": "Le coût d'escalade perçu chute, renforçant la trajectoire d'escalade coercitive."
+      }
+    ],
+    "premortem": [
+      "Le diagnostic serait faux si un incident accidentel déclenchait une guerre sans logique de statut (primat du dilemme de sécurité).",
+      "Le diagnostic serait faux si Pékin acceptait un compromis de statut durable à faible coût."
     ],
     "counter_hypotheses": [
       {
@@ -510,7 +576,54 @@
     "confidence_label": "MEDIUM",
     "evidence_status": "MODERATELY_SUPPORTED"
   },
-  "analytical_status": "REVIEW_REQUIRED",
-  "created_at": "2026-05-27",
+  "analytical_status": "VALIDATED",
+  "sources": [
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_OFFICIAL_STATEMENTS",
+      "name": "Déclarations et documents officiels",
+      "source_type": "OFFICIAL",
+      "reliability": "B",
+      "description": "Communiqués, livres blancs et déclarations officielles des parties."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_MILITARY_OSINT",
+      "name": "Renseignement de sources ouvertes (activité militaire)",
+      "source_type": "DATA",
+      "reliability": "C",
+      "description": "Suivi OSINT des exercices, incursions et mouvements navals."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_INDUSTRY_REPORTS",
+      "name": "Rapports sectoriels semi-conducteurs",
+      "source_type": "DATA",
+      "reliability": "B",
+      "description": "Parts de marché et capacités des fonderies."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_EXPERT_ANALYSIS",
+      "name": "Analyses d'experts en relations internationales",
+      "source_type": "EXPERT",
+      "reliability": "C",
+      "description": "Évaluations académiques et de think tanks."
+    }
+  ],
+  "revision_history": [
+    {
+      "version": "1.0",
+      "date": "2026-05-24",
+      "change_summary": "Première analyse minimale (tier REVIEW_REQUIRED)."
+    },
+    {
+      "version": "2.0",
+      "date": "2026-05-27",
+      "change_summary": "Enrichissement gold standard : ACH, sources gradées, calibration, suivi des signaux.",
+      "fired_signals": []
+    }
+  ],
+  "created_at": "2026-05-24",
   "last_updated": "2026-05-27"
 }

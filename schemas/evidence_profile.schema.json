@@ -71,8 +71,95 @@
           },
           "interpretation_risk": {
             "$ref": "common_defs.schema.json#/$defs/score_0_1"
+          },
+          "credibility_grade": {
+            "$ref": "common_defs.schema.json#/$defs/admiralty_credibility"
+          },
+          "diagnosticity": {
+            "$ref": "common_defs.schema.json#/$defs/diagnosticity_level"
+          },
+          "process_tracing_test": {
+            "$ref": "common_defs.schema.json#/$defs/process_tracing_test"
+          },
+          "consistency": {
+            "type": "array",
+            "description": "Consistance de cette preuve avec chaque hypothèse concurrente (matrice ACH).",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "hypothesis_id",
+                "consistency"
+              ],
+              "properties": {
+                "hypothesis_id": {
+                  "$ref": "common_defs.schema.json#/$defs/object_id"
+                },
+                "consistency": {
+                  "$ref": "common_defs.schema.json#/$defs/ach_consistency"
+                }
+              }
+            },
+            "default": []
           }
         }
+      },
+      "default": []
+    },
+    "hypotheses": {
+      "type": "array",
+      "description": "Ensemble des hypothèses concurrentes mises en compétition (ACH).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "hypothesis_id",
+          "label"
+        ],
+        "properties": {
+          "hypothesis_id": {
+            "$ref": "common_defs.schema.json#/$defs/object_id"
+          },
+          "label": {
+            "type": "string"
+          },
+          "is_lead": {
+            "type": "boolean"
+          }
+        }
+      },
+      "default": []
+    },
+    "key_assumptions": {
+      "type": "array",
+      "description": "Key Assumptions Check : hypothèses implicites dont dépend le diagnostic.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assumption",
+          "status",
+          "impact_if_wrong"
+        ],
+        "properties": {
+          "assumption": {
+            "type": "string"
+          },
+          "status": {
+            "$ref": "common_defs.schema.json#/$defs/assumption_status"
+          },
+          "impact_if_wrong": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "premortem": {
+      "type": "array",
+      "description": "Scénarios par lesquels le diagnostic dominant se révélerait faux.",
+      "items": {
+        "type": "string"
       },
       "default": []
     },

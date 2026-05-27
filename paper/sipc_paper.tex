@@ -241,6 +241,23 @@ explicite. La SIPC recommande une échelle de statuts probatoires (de \textsc{sp
 Un diagnostic incertain n'est pas un échec~; un diagnostic faussement certain est une faute.
 \end{quote}
 
+La SIPC renforce cette discipline par quatre dispositifs. \emph{Premièrement}, une
+\textbf{calibration probabiliste ancrée}~: les bandes verbales (de \textsc{low} à \textsc{high})
+sont reliées à des plages numériques fixes, et toute estimation chiffrée doit y être cohérente,
+ce qui prévient la fausse précision. \emph{Deuxièmement}, une \textbf{analyse des hypothèses
+concurrentes} (ACH) à la Heuer~: on construit une matrice hypothèses~$\times$~preuves et l'on
+retient l'hypothèse la \emph{moins infirmée} plutôt que la plus confirmée, en pondérant chaque
+preuve par sa \emph{diagnosticité} et son type de test de \emph{process tracing} (indice,
+\emph{hoop}, \emph{smoking gun}, doublement décisif) \autocite{beachPedersen2013}. On y adjoint
+un \emph{Key Assumptions Check} et un \emph{premortem} comme garde-fous de débiaisage.
+\emph{Troisièmement}, une \textbf{traçabilité des sources} qui sépare la fiabilité de la source
+(échelle A--F) de la crédibilité de l'information (1--6), selon le code Admiralty, afin que
+« source » ne soit jamais confondu avec « preuve ». \emph{Quatrièmement}, une \textbf{boucle de
+rétroaction}~: les signaux d'invalidation sont surveillés, les analyses versionnées, et le
+dénouement des trajectoires fait l'objet d'un \emph{backtesting} par score de Brier, seule voie
+vers une calibration empirique progressive. Ces exigences sont graduées selon la maturité de
+l'analyse et vérifiées automatiquement.
+
 \section{Étude de cas~: le détroit de Taïwan}
 \label{sec:taiwan}
 
@@ -290,7 +307,11 @@ un faisceau convergent~: réaffirmations officielles récurrentes (discours), ex
 incursions répétés (pratique observable), concentration documentée de la production de
 semi-conducteurs (donnée matérielle). Elle doit être confrontée à au moins deux
 contre-hypothèses~: que le moteur premier soit le dilemme de sécurité, la reconnaissance n'étant
-qu'un habillage~; ou que la dépendance technologique soit la variable décisive. Un signal
+qu'un habillage~; ou que la dépendance technologique soit la variable décisive. Une matrice ACH
+départage ces hypothèses~: une preuve à forte diagnosticité (le traitement de l'indépendance
+formelle comme \emph{casus belli} indépendamment des arrangements de sécurité, de type
+\emph{smoking gun}) infirme à la fois l'hypothèse de pur dilemme de sécurité et celle de pure
+dépendance, laissant la reconnaissance comme hypothèse la moins infirmée. Un signal
 d'invalidation clair serait la résolution durable de la tension par des arrangements de sécurité
 \emph{sans} composante de statut. Le statut probatoire raisonnable demeure
 \textsc{moderately\_supported}, avec une confiance moyenne~: un diagnostic prudent, conforme à la
@@ -309,9 +330,12 @@ d'institutions, de mécanismes, de trajectoires, de preuves et de diagnostic. De
 validation accompagnent l'ontologie~: une validation \emph{structurelle} par schémas JSON, et
 une validation \emph{doctrinale} qui encode les règles non exprimables par le schéma --- présence
 d'un mécanisme dominant, d'au moins une contre-hypothèse, de signaux d'invalidation, intégrité
-référentielle entre objets, et interdiction des scores non justifiés. Le cas de Taïwan de la
-\S\ref{sec:taiwan} existe ainsi sous forme d'objet JSON validé et conforme à ces règles. C'est
-cette vérifiabilité qui distingue la SIPC d'une grille purement discursive.
+référentielle entre objets, et interdiction des scores non justifiés. Cette validation
+doctrinale est \emph{graduée} selon la maturité de l'analyse (\textsc{draft},
+\textsc{review\_required}, \textsc{validated})~: les tiers supérieurs exigent une ACH cohérente,
+des sources gradées (profil \texttt{source\_profile}) et un suivi des signaux d'invalidation. Le
+cas de Taïwan de la \S\ref{sec:taiwan} existe ainsi sous forme d'objet JSON validé au tier le
+plus exigeant. C'est cette vérifiabilité qui distingue la SIPC d'une grille purement discursive.
 
 \section{Limites et risques}
 

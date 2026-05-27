@@ -19,7 +19,9 @@ Il représente une situation sociale internationale et agrège tous les autres p
 - `trajectory_profile` — trajectoires conditionnelles
 
 ### Couche probatoire
-- `evidence_profile` — hypothèse, preuves, contre-hypothèses
+- `evidence_profile` — hypothèses concurrentes ([ACH](../05_preuve/ach.md)), preuves,
+  contre-hypothèses, Key Assumptions Check, premortem
+- `source_profile` — sources d'information gradées ([fiabilité Admiralty](../05_preuve/sources_et_claims.md))
 - `diagnostic_profile` — synthèse finale hiérarchisée
 
 ### Objet racine
@@ -31,8 +33,9 @@ Il représente une situation sociale internationale et agrège tous les autres p
 `dominant_mechanism`, `trajectories` (≥ 1), `evidence`, `diagnostic`, `analytical_status`.
 
 Les blocs `capital_structure`, `dependencies`, `norms`, `institutions`,
-`secondary_mechanisms` sont **optionnels** : on ne remplit pas mécaniquement un module si la
-situation ne l'active pas.
+`secondary_mechanisms`, `sources` et `revision_history` sont **optionnels** : on ne remplit pas
+mécaniquement un module si la situation ne l'active pas (mais le tier `VALIDATED` exige `sources`
+et une [ACH](../05_preuve/ach.md) renseignées).
 
 ## Format de sortie recommandé
 

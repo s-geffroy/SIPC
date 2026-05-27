@@ -51,8 +51,21 @@ Elles garantissent un vocabulaire stable et machine-lisible.
 - `evidence_status` : `SPECULATIVE`, `WEAKLY_SUPPORTED`, `MODERATELY_SUPPORTED`,
   `STRONGLY_SUPPORTED`, `CONTESTED`, `DISCONFIRMED`, `INSUFFICIENT_EVIDENCE`.
 - `confidence_label` : `LOW`, `MEDIUM_LOW`, `MEDIUM`, `MEDIUM_HIGH`, `HIGH`.
-- `analytical_status` : `DRAFT`, `REVIEW_REQUIRED`, `VALIDATED`, `CONTESTED`, `ARCHIVED`.
-- `probability_band` : `LOW`, `MEDIUM_LOW`, `MEDIUM`, `MEDIUM_HIGH`, `HIGH`, `UNKNOWN`.
+- `analytical_status` : `DRAFT`, `REVIEW_REQUIRED`, `VALIDATED`, `CONTESTED`, `ARCHIVED`
+  (pilote le [tier de conformité](regles_validation.md)).
+- `probability_band` : `LOW`, `MEDIUM_LOW`, `MEDIUM`, `MEDIUM_HIGH`, `HIGH`, `UNKNOWN`
+  (plages numériques : voir [Calibration](../05_preuve/calibration.md)).
+
+## Enums V2 (méthode renforcée)
+- `diagnosticity_level` : `LOW`, `MEDIUM`, `HIGH` — pouvoir discriminant d'une preuve ([ACH](../05_preuve/ach.md)).
+- `process_tracing_test` : `STRAW_IN_THE_WIND`, `HOOP`, `SMOKING_GUN`, `DOUBLY_DECISIVE`.
+- `ach_consistency` : `CONSISTENT`, `INCONSISTENT`, `NEUTRAL`.
+- `assumption_status` : `SUPPORTED`, `UNSUPPORTED`, `UNCERTAIN` (Key Assumptions Check).
+- `source_type` : `PRIMARY`, `SECONDARY`, `OFFICIAL`, `MEDIA`, `EXPERT`, `DATA`, `OTHER`.
+- `admiralty_reliability` : `A`–`F` (fiabilité de la source) ;
+  `admiralty_credibility` : `1`–`6` (crédibilité de l'information). Voir [Sources et crédibilité](../05_preuve/sources_et_claims.md).
+- `monitoring_status` : `NOT_OBSERVED`, `PARTIALLY_OBSERVED`, `OBSERVED` (suivi des signaux).
+- `trajectory_outcome_status` : `PENDING`, `REALIZED`, `PARTIAL`, `NOT_REALIZED` ([backtesting](../05_preuve/backtesting.md)).
 
 !!! warning "Réflexivité des classements"
     Certains enums (`HEGEMONIC_CONTESTATION`, catégories de statut) sont eux-mêmes des

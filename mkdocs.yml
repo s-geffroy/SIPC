@@ -41,12 +41,18 @@ nav:
       - Causalité, preuve, limites: 01_theorie/causalite_preuve_limites.md
   - Méthode:
       - Protocole général: 02_methode/protocole_general.md
+      - Suivi et mise à jour: 02_methode/suivi_et_mise_a_jour.md
   - Ontologie:
       - Vue d'ensemble: 03_ontologie/vue_ensemble.md
       - Enums contrôlés: 03_ontologie/enums_controles.md
       - Règles de validation: 03_ontologie/regles_validation.md
   - Mécanismes: 04_mecanismes/index.md
-  - Preuve: 05_preuve/triangulation_probatoire.md
+  - Preuve:
+      - Triangulation probatoire: 05_preuve/triangulation_probatoire.md
+      - Calibration probabiliste: 05_preuve/calibration.md
+      - Analyse des hypothèses concurrentes: 05_preuve/ach.md
+      - Sources et crédibilité: 05_preuve/sources_et_claims.md
+      - Backtesting: 05_preuve/backtesting.md
   - Exemples: 06_exemples/index.md
   - Implémentation: 07_implementation/guide_depot.md
   - Papier académique: papier.md

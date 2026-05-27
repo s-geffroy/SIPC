@@ -74,6 +74,26 @@
     },
     "confidence": {
       "$ref": "common_defs.schema.json#/$defs/confidence"
+    },
+    "outcome": {
+      "type": "object",
+      "description": "Résultat observé de la trajectoire (rétroaction et backtesting).",
+      "additionalProperties": false,
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "$ref": "common_defs.schema.json#/$defs/trajectory_outcome_status"
+        },
+        "observed_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
     }
   }
 }

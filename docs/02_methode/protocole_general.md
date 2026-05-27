@@ -11,9 +11,12 @@ La SIPC s'applique selon un protocole progressif en dix étapes.
 5. **Identifier** rôles, audiences, classements, légitimité et crédibilité.
 6. **Cartographier** normes et institutions.
 7. **Sélectionner** le mécanisme dominant.
-8. **Construire** les trajectoires conditionnelles.
-9. **Tester** par preuves et contre-hypothèses.
+8. **Construire** les trajectoires conditionnelles, avec probabilités [calibrées](../05_preuve/calibration.md).
+9. **Tester** par [ACH](../05_preuve/ach.md) et tests de *process tracing*, avec
+   [sources gradées](../05_preuve/sources_et_claims.md), *Key Assumptions Check* et premortem.
 10. **Produire** le diagnostic final (risque, incertitudes, confiance, signaux d'invalidation).
+11. **Suivre et mettre à jour** : surveiller les signaux d'invalidation, réviser, et
+    [backtester](../05_preuve/backtesting.md). Voir [Suivi et mise à jour](suivi_et_mise_a_jour.md).
 
 ## Critères d'entrée
 

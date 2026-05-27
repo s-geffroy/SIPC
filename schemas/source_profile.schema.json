@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/source_profile.schema.json",
+  "title": "source_profile",
+  "description": "Profil d'une source d'information, avec gradation de fiabilité (code Admiralty/OTAN). Distinct de la crédibilité de l'information, portée par chaque pièce de preuve.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_id",
+    "name",
+    "source_type",
+    "reliability"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "source_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "name": {
+      "type": "string"
+    },
+    "source_type": {
+      "$ref": "common_defs.schema.json#/$defs/source_type"
+    },
+    "reliability": {
+      "$ref": "common_defs.schema.json#/$defs/admiralty_reliability"
+    },
+    "description": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

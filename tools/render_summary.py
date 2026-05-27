@@ -13,6 +13,8 @@ import json
 import sys
 from pathlib import Path
 
+import render_ach
+
 
 def render(data: dict) -> str:
     situation = data.get("situation", {})
@@ -57,6 +59,18 @@ def render(data: dict) -> str:
                  f"({diagnostic.get('confidence', '—')}) · "
                  f"**Statut probatoire** : `{diagnostic.get('evidence_status', '—')}`")
     lines.append("")
+
+    evidence = data.get("evidence", {}) or {}
+    if evidence.get("hypotheses"):
+        ach = render_ach.render(data).replace("# Matrice ACH", "## Matrice ACH", 1)
+        lines.append(ach)
+        if evidence.get("key_assumptions"):
+            lines.append("## Hypothèses clés (Key Assumptions Check)")
+            lines.append("")
+            for ka in evidence["key_assumptions"]:
+                lines.append(f"- **{ka.get('assumption')}** — `{ka.get('status')}` : {ka.get('impact_if_wrong')}")
+            lines.append("")
+
     return "\n".join(lines)
 
 

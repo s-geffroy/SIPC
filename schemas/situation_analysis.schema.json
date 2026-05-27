@@ -151,6 +151,46 @@
     "analytical_status": {
       "$ref": "common_defs.schema.json#/$defs/analytical_status"
     },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "source_profile.schema.json"
+      },
+      "default": []
+    },
+    "revision_history": {
+      "type": "array",
+      "description": "Historique des révisions de l'analyse (dynamique et suivi).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "version",
+          "date",
+          "change_summary"
+        ],
+        "properties": {
+          "version": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "change_summary": {
+            "type": "string"
+          },
+          "fired_signals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "default": []
+          }
+        }
+      },
+      "default": []
+    },
     "created_at": {
       "type": "string",
       "format": "date"
