@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/actor_profile.schema.json",
+  "title": "actor_profile",
+  "description": "Profil d’une personne collective internationale ou d’un acteur analytique pertinent.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "actor_id",
+    "name",
+    "actor_type",
+    "description",
+    "analytical_status",
+    "evidence_status",
+    "confidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "actor_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "name": {
+      "type": "string"
+    },
+    "actor_type": {
+      "$ref": "common_defs.schema.json#/$defs/actor_type"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "description": {
+      "type": "string"
+    },
+    "primary_fields": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/field_code"
+      },
+      "default": []
+    },
+    "claimed_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "recognized_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "contested_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "main_capitals": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/capital_type"
+      },
+      "default": []
+    },
+    "main_vulnerabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "main_dependencies": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/object_id"
+      },
+      "default": []
+    },
+    "main_audiences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "analytical_status": {
+      "$ref": "common_defs.schema.json#/$defs/analytical_status"
+    },
+    "evidence_status": {
+      "$ref": "common_defs.schema.json#/$defs/evidence_status"
+    },
+    "confidence": {
+      "$ref": "common_defs.schema.json#/$defs/confidence"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

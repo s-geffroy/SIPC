@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/situation_analysis.schema.json",
+  "title": "situation_analysis",
+  "description": "Objet racine d’analyse SIPC pour une situation sociale internationale.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "analysis_id",
+    "situation",
+    "actors",
+    "relations",
+    "activated_fields",
+    "dominant_mechanism",
+    "trajectories",
+    "evidence",
+    "diagnostic",
+    "analytical_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "analysis_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "situation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "situation_id",
+        "name",
+        "scope",
+        "situation_type",
+        "current_phase"
+      ],
+      "properties": {
+        "situation_id": {
+          "$ref": "common_defs.schema.json#/$defs/object_id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "geographic",
+            "temporal",
+            "fields"
+          ],
+          "properties": {
+            "geographic": {
+              "type": "string"
+            },
+            "temporal": {
+              "type": "string"
+            },
+            "fields": {
+              "type": "array",
+              "items": {
+                "$ref": "common_defs.schema.json#/$defs/field_code"
+              }
+            }
+          }
+        },
+        "situation_type": {
+          "type": "array",
+          "items": {
+            "$ref": "common_defs.schema.json#/$defs/situation_type"
+          }
+        },
+        "current_phase": {
+          "type": "string"
+        }
+      }
+    },
+    "actors": {
+      "type": "array",
+      "items": {
+        "$ref": "actor_profile.schema.json"
+      },
+      "default": []
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "$ref": "relation_profile.schema.json"
+      },
+      "default": []
+    },
+    "activated_fields": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/field_activation"
+      },
+      "default": []
+    },
+    "capital_structure": {
+      "type": "array",
+      "items": {
+        "$ref": "capital_profile.schema.json"
+      },
+      "default": []
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "$ref": "dependency_profile.schema.json"
+      },
+      "default": []
+    },
+    "norms": {
+      "type": "array",
+      "items": {
+        "$ref": "norm_profile.schema.json"
+      },
+      "default": []
+    },
+    "institutions": {
+      "type": "array",
+      "items": {
+        "$ref": "institution_profile.schema.json"
+      },
+      "default": []
+    },
+    "dominant_mechanism": {
+      "$ref": "mechanism_profile.schema.json"
+    },
+    "secondary_mechanisms": {
+      "type": "array",
+      "items": {
+        "$ref": "mechanism_profile.schema.json"
+      },
+      "default": []
+    },
+    "trajectories": {
+      "type": "array",
+      "items": {
+        "$ref": "trajectory_profile.schema.json"
+      },
+      "minItems": 1
+    },
+    "evidence": {
+      "$ref": "evidence_profile.schema.json"
+    },
+    "diagnostic": {
+      "$ref": "diagnostic_profile.schema.json"
+    },
+    "analytical_status": {
+      "$ref": "common_defs.schema.json#/$defs/analytical_status"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

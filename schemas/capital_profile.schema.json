@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/capital_profile.schema.json",
+  "title": "capital_profile",
+  "description": "Capital possédé ou activable par un acteur dans un champ donné.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "capital_id",
+    "actor_id",
+    "capital_type",
+    "field",
+    "description",
+    "level",
+    "convertibility",
+    "evidence_status",
+    "confidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "capital_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "actor_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "capital_type": {
+      "$ref": "common_defs.schema.json#/$defs/capital_type"
+    },
+    "field": {
+      "$ref": "common_defs.schema.json#/$defs/field_code"
+    },
+    "description": {
+      "type": "string"
+    },
+    "level": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "convertibility": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "conversion_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "evidence_status": {
+      "$ref": "common_defs.schema.json#/$defs/evidence_status"
+    },
+    "confidence": {
+      "$ref": "common_defs.schema.json#/$defs/confidence"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/field_profile.schema.json",
+  "title": "field_profile",
+  "description": "Champ international activé dans une situation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "field_id",
+    "field",
+    "field_name",
+    "description",
+    "current_stress_level",
+    "evidence_status",
+    "confidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "field_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "field": {
+      "$ref": "common_defs.schema.json#/$defs/field_code"
+    },
+    "field_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "dominant_capitals": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/capital_type"
+      },
+      "default": []
+    },
+    "key_actors": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/object_id"
+      },
+      "default": []
+    },
+    "current_stress_level": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "rules_or_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "evidence_status": {
+      "$ref": "common_defs.schema.json#/$defs/evidence_status"
+    },
+    "confidence": {
+      "$ref": "common_defs.schema.json#/$defs/confidence"
+    }
+  }
+}

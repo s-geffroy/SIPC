@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/trajectory_profile.schema.json",
+  "title": "trajectory_profile",
+  "description": "Trajectoire conditionnelle d’une situation sociale internationale.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "trajectory_id",
+    "situation_id",
+    "trajectory_type",
+    "name",
+    "mechanism_path",
+    "conditions",
+    "probability_band",
+    "invalidation_signals",
+    "evidence_status",
+    "confidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "trajectory_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "situation_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "trajectory_type": {
+      "$ref": "common_defs.schema.json#/$defs/trajectory_type"
+    },
+    "name": {
+      "type": "string"
+    },
+    "mechanism_path": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "bifurcation_points": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "probability_band": {
+      "$ref": "common_defs.schema.json#/$defs/probability_band"
+    },
+    "numeric_estimate": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "invalidation_signals": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/invalidation_signal"
+      },
+      "default": []
+    },
+    "evidence_status": {
+      "$ref": "common_defs.schema.json#/$defs/evidence_status"
+    },
+    "confidence": {
+      "$ref": "common_defs.schema.json#/$defs/confidence"
+    }
+  }
+}

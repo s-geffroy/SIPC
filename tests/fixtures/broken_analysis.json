@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "ANALYSIS_BROKEN_FIXTURE_001",
+  "situation": {
+    "situation_id": "SIT_BROKEN_001",
+    "name": "Fixture délibérément non conforme (test négatif)",
+    "scope": { "geographic": "n/a", "temporal": "n/a", "fields": ["OTHER"] },
+    "situation_type": ["OTHER"],
+    "current_phase": "test"
+  },
+  "actors": [],
+  "relations": [
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_BROKEN_001",
+      "source_actor_id": "ACT_DOES_NOT_EXIST",
+      "target_actor_id": "ACT_ALSO_MISSING",
+      "relation_type": "OTHER",
+      "description": "Relation pointant vers des acteurs inexistants.",
+      "asymmetry_level": 0.5,
+      "evidence_status": "SPECULATIVE",
+      "confidence": 0.3
+    }
+  ],
+  "activated_fields": [],
+  "dominant_mechanism": {
+    "schema_version": "1.0",
+    "mechanism_id": "MECH_REAL_ID_001",
+    "name": "Mécanisme dominant",
+    "mechanism_type": "OTHER",
+    "minimal_definition": "Mécanisme sans signal d'invalidation (faute).",
+    "activation_conditions": [],
+    "typical_sequence": [],
+    "invalidation_signals": [],
+    "evidence_status": "SPECULATIVE",
+    "confidence": 0.3
+  },
+  "secondary_mechanisms": [],
+  "trajectories": [
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_BROKEN_001",
+      "situation_id": "SIT_WRONG_REFERENCE_999",
+      "trajectory_type": "OTHER",
+      "name": "Trajectoire mal rattachée et sans signal",
+      "mechanism_path": "n/a",
+      "conditions": [],
+      "probability_band": "UNKNOWN",
+      "numeric_estimate": null,
+      "invalidation_signals": [],
+      "evidence_status": "SPECULATIVE",
+      "confidence": 0.3
+    }
+  ],
+  "evidence": {
+    "schema_version": "1.0",
+    "hypothesis_id": "HYP_BROKEN_001",
+    "situation_id": "SIT_BROKEN_001",
+    "hypothesis": "Hypothèse sans contre-hypothèse ni preuve.",
+    "mechanism_tested": "Mécanisme dominant",
+    "evidence_items": [],
+    "counter_hypotheses": [],
+    "invalidation_signals": [],
+    "overall_confidence": 0.9,
+    "evidence_status": "STRONGLY_SUPPORTED"
+  },
+  "diagnostic": {
+    "schema_version": "1.0",
+    "analysis_id": "ANALYSIS_BROKEN_FIXTURE_001",
+    "situation_id": "SIT_BROKEN_001",
+    "executive_summary": "Diagnostic incohérent.",
+    "analytical_summary": "Le dominant_mechanism_id ne correspond pas au mécanisme dominant.",
+    "dominant_mechanism_id": "MECH_MISMATCHED_ID_999",
+    "secondary_mechanism_ids": ["MECH_ABSENT_001"],
+    "dominant_trajectory_id": "TRAJ_ABSENT_999",
+    "main_risk": "n/a",
+    "main_watch_signals": [],
+    "main_uncertainties": [],
+    "invalidation_signals": [],
+    "confidence": 0.95,
+    "confidence_label": "HIGH",
+    "evidence_status": "SPECULATIVE"
+  },
+  "analytical_status": "DRAFT"
+}

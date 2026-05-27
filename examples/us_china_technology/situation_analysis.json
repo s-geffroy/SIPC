@@ -1,0 +1,373 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "ANALYSIS_US_CHINA_TECH_001",
+  "situation": {
+    "situation_id": "SIT_US_CHINA_TECH_001",
+    "name": "Rivalité technologique États-Unis / Chine et fragmentation des chaînes critiques",
+    "scope": {
+      "geographic": "Échelle mondiale, foyers États-Unis, Chine, Asie de l'Est, Europe",
+      "temporal": "Phase de découplage sélectif",
+      "fields": ["TEC", "ECO", "FIN", "INST", "INF", "LEGAL"]
+    },
+    "situation_type": ["TECHNOLOGY_DEPENDENCY", "HEGEMONIC_CONTESTATION", "INSTITUTIONAL_CRISIS", "ORDER_TRANSITION"],
+    "current_phase": "selective_decoupling"
+  },
+  "actors": [
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_USA",
+      "name": "États-Unis d'Amérique",
+      "actor_type": "STATE",
+      "aliases": ["USA"],
+      "description": "Puissance cherchant à préserver son avance technologique par contrôles à l'export, subventions et coordination d'alliés.",
+      "primary_fields": ["TEC", "FIN", "INST"],
+      "claimed_roles": ["technology_leader", "standard_setter"],
+      "recognized_roles": ["superpower"],
+      "contested_roles": ["neutral_market_actor"],
+      "main_capitals": ["TECHNOLOGICAL", "FINANCIAL", "INSTITUTIONAL"],
+      "main_vulnerabilities": ["supply_concentration_abroad", "ally_coordination_cost"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_industry", "allies", "congress"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_CHINA",
+      "name": "République populaire de Chine",
+      "actor_type": "STATE",
+      "aliases": ["PRC"],
+      "description": "Puissance cherchant l'autonomie technologique et la montée en gamme face aux restrictions occidentales.",
+      "primary_fields": ["TEC", "ECO", "INST"],
+      "claimed_roles": ["rising_technology_power", "alternative_pole"],
+      "recognized_roles": ["major_power", "manufacturing_hub"],
+      "contested_roles": ["trustworthy_standard_setter"],
+      "main_capitals": ["ECONOMIC", "TECHNOLOGICAL", "INSTITUTIONAL"],
+      "main_vulnerabilities": ["chokepoint_dependence", "talent_and_tooling_gaps"],
+      "main_dependencies": ["DEP_CHINA_SEMICAP_001"],
+      "main_audiences": ["domestic_industry", "party_state", "developing_partners"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_ASML",
+      "name": "ASML",
+      "actor_type": "MULTINATIONAL_FIRM",
+      "aliases": [],
+      "description": "Fournisseur quasi-unique des machines de lithographie EUV, point de passage obligé de la production de pointe.",
+      "primary_fields": ["TEC"],
+      "claimed_roles": ["commercial_supplier"],
+      "recognized_roles": ["critical_chokepoint_holder"],
+      "contested_roles": [],
+      "main_capitals": ["TECHNOLOGICAL"],
+      "main_vulnerabilities": ["export_control_exposure", "single_market_concentration"],
+      "main_dependencies": [],
+      "main_audiences": ["clients", "host_state", "allied_governments"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.7
+    }
+  ],
+  "relations": [
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_USA_CHINA_TECH_COMPETITION_001",
+      "source_actor_id": "ACT_USA",
+      "target_actor_id": "ACT_CHINA",
+      "relation_type": "COMPETITION",
+      "fields": ["TEC", "ECO", "INST"],
+      "description": "Compétition pour le leadership technologique, doublée d'un régime de contrôles à l'export.",
+      "asymmetry_level": 0.45,
+      "trust_level": 0.15,
+      "credibility_level": 0.6,
+      "reversibility": 0.3,
+      "exit_cost": 0.6,
+      "main_tensions": ["technology_denial", "standard_competition"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_USA_ASML_TECH_INTEGRATION_001",
+      "source_actor_id": "ACT_USA",
+      "target_actor_id": "ACT_ASML",
+      "relation_type": "TECHNOLOGICAL_INTEGRATION",
+      "fields": ["TEC", "LEGAL"],
+      "description": "Coordination via contrôles à l'export pour restreindre l'accès chinois aux machines EUV/DUV avancées.",
+      "asymmetry_level": 0.5,
+      "trust_level": 0.6,
+      "credibility_level": 0.65,
+      "reversibility": 0.4,
+      "exit_cost": 0.7,
+      "main_tensions": ["sovereignty_of_firm", "allied_alignment"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.68
+    }
+  ],
+  "activated_fields": [
+    { "field": "TEC", "intensity": 0.93, "role_in_situation": "Course aux semi-conducteurs et à l'IA." },
+    { "field": "INST", "intensity": 0.7, "role_in_situation": "Bataille des standards et des régimes de contrôle." },
+    { "field": "ECO", "intensity": 0.75, "role_in_situation": "Réorganisation des chaînes de valeur critiques." }
+  ],
+  "capital_structure": [
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_ASML_EUV_001",
+      "actor_id": "ACT_ASML",
+      "capital_type": "TECHNOLOGICAL",
+      "field": "TEC",
+      "description": "Monopole de fait sur la lithographie EUV.",
+      "level": 0.97,
+      "convertibility": 0.6,
+      "conversion_paths": ["chokepoint_leverage", "export_control_enforcement"],
+      "constraints": ["politicized_export_regime"],
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.72
+    }
+  ],
+  "dependencies": [
+    {
+      "schema_version": "1.0",
+      "dependency_id": "DEP_CHINA_SEMICAP_001",
+      "dependent_actor_id": "ACT_CHINA",
+      "controller_actor_or_network": "Réseau allié (ASML, équipementiers US/JP) sous contrôles à l'export",
+      "dependency_type": "TECHNOLOGICAL",
+      "dependent_capacity": ["advanced_chip_fabrication", "ai_compute"],
+      "criticality_level": 0.9,
+      "substitutability": 0.25,
+      "time_to_substitute": "Plusieurs années, effort d'autonomie massif.",
+      "asymmetry_level": 0.7,
+      "visibility_level": 0.85,
+      "politicization_level": 0.9,
+      "weaponization_potential": 0.7,
+      "exit_cost": 0.85,
+      "current_strategy": ["indigenization", "stockpiling", "mature_node_scaling"],
+      "main_risk": "Plafond technologique durable sur les nœuds avancés.",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    }
+  ],
+  "norms": [],
+  "institutions": [
+    {
+      "schema_version": "1.0",
+      "institution_id": "INST_EXPORT_CONTROL_REGIME",
+      "name": "Régime de contrôles à l'exportation technologique",
+      "institution_type": "INTERNATIONAL_REGIME",
+      "core_functions": ["access_filtering", "technology_denial", "ally_coordination"],
+      "rules_and_procedures": ["entity_lists", "licensing", "foreign_direct_product_rules"],
+      "dominant_capitals": ["INSTITUTIONAL", "TECHNOLOGICAL", "LEGAL"],
+      "classification_power": ["who_gets_access_to_advanced_tech"],
+      "main_tensions": ["ally_compliance", "extraterritoriality_disputes"],
+      "current_stress_level": 0.7,
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    }
+  ],
+  "dominant_mechanism": {
+    "schema_version": "1.0",
+    "mechanism_id": "MECH_DEPENDENCY_WEAPONIZATION_CHIPS_001",
+    "name": "Weaponisation des chokepoints technologiques",
+    "mechanism_type": "DEPENDENCY_WEAPONIZATION",
+    "minimal_definition": "Le contrôle de points de passage obligés (EUV, outils, design) est converti en levier de déni technologique.",
+    "activation_conditions": ["critical_chokepoint", "low_substitutability", "ally_coordination"],
+    "typical_sequence": ["identify_chokepoint", "impose_controls", "target_adaptation", "fragmentation"],
+    "amplifiers": ["security_framing", "ally_alignment", "dual_use_concerns"],
+    "dampeners": ["target_indigenization", "ally_defection", "market_pressure"],
+    "possible_outputs": ["technology_denial", "decoupling", "parallel_ecosystems"],
+    "invalidation_signals": [
+      {
+        "signal": "target_achieves_indigenous_advanced_capability",
+        "why_it_matters": "Annulerait l'effet de levier du chokepoint.",
+        "monitoring_indicators": ["domestic_euv_equivalent", "advanced_node_yield"]
+      }
+    ],
+    "evidence_status": "MODERATELY_SUPPORTED",
+    "confidence": 0.62
+  },
+  "secondary_mechanisms": [
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_HEGEMONIC_CONTESTATION_001",
+      "name": "Contestation hégémonique technologique",
+      "mechanism_type": "HEGEMONIC_CONTESTATION",
+      "minimal_definition": "Une puissance montante conteste l'avance et les règles fixées par l'hégémon technologique.",
+      "activation_conditions": ["capability_catch_up", "rule_dissatisfaction"],
+      "typical_sequence": ["challenge", "counter_measures", "bloc_formation"],
+      "amplifiers": ["national_security_framing"],
+      "dampeners": ["interdependence_costs"],
+      "possible_outputs": ["bipolar_tech_order", "managed_competition"],
+      "invalidation_signals": [
+        {
+          "signal": "renewed_deep_interdependence",
+          "why_it_matters": "Indiquerait un recul de la contestation.",
+          "monitoring_indicators": ["cross_investment_recovery"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_ORDER_DESYNCHRONIZATION_001",
+      "name": "Désynchronisation d'ordre technologique",
+      "mechanism_type": "ORDER_DESYNCHRONIZATION",
+      "minimal_definition": "Les standards, régimes et chaînes évoluent à des rythmes divergents, produisant une fragmentation.",
+      "activation_conditions": ["divergent_standards", "security_driven_reshoring"],
+      "typical_sequence": ["divergence", "duplication", "bloc_consolidation"],
+      "amplifiers": ["subsidy_races"],
+      "dampeners": ["interoperability_demand"],
+      "possible_outputs": ["splinternet_of_hardware", "partial_reconvergence"],
+      "invalidation_signals": [
+        {
+          "signal": "convergence_on_shared_standards",
+          "why_it_matters": "Réduirait la fragmentation.",
+          "monitoring_indicators": ["joint_standard_bodies"]
+        }
+      ],
+      "evidence_status": "WEAKLY_SUPPORTED",
+      "confidence": 0.5
+    }
+  ],
+  "trajectories": [
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_TECH_SELECTIVE_DECOUPLING_001",
+      "situation_id": "SIT_US_CHINA_TECH_001",
+      "trajectory_type": "FRAGMENTATION",
+      "name": "Découplage sélectif et écosystèmes parallèles",
+      "mechanism_path": "Les contrôles ciblés sur les nœuds avancés produisent une bifurcation partielle des chaînes sans rupture économique totale.",
+      "conditions": ["sustained_export_controls", "partial_ally_alignment", "continued_low_node_trade"],
+      "bifurcation_points": ["ally_defection", "chinese_breakthrough", "economic_backlash"],
+      "probability_band": "MEDIUM_HIGH",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "broad_relaxation_of_controls",
+          "why_it_matters": "Inverserait la dynamique de fragmentation.",
+          "monitoring_indicators": ["license_approvals_surge"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_TECH_MANAGED_COMPETITION_001",
+      "situation_id": "SIT_US_CHINA_TECH_001",
+      "trajectory_type": "STABILIZATION",
+      "name": "Compétition gérée avec garde-fous",
+      "mechanism_path": "Des canaux de gestion limitent l'escalade des contrôles et préservent une interdépendance résiduelle.",
+      "conditions": ["crisis_communication", "mutual_economic_interest", "bounded_security_concerns"],
+      "bifurcation_points": ["security_incident", "domestic_hardline_shift"],
+      "probability_band": "MEDIUM",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "sharp_escalation_to_full_embargo",
+          "why_it_matters": "Invaliderait l'hypothèse de compétition gérée.",
+          "monitoring_indicators": ["comprehensive_trade_ban"]
+        }
+      ],
+      "evidence_status": "WEAKLY_SUPPORTED",
+      "confidence": 0.48
+    }
+  ],
+  "evidence": {
+    "schema_version": "1.0",
+    "hypothesis_id": "HYP_TECH_WEAPONIZED_CHOKEPOINTS_001",
+    "situation_id": "SIT_US_CHINA_TECH_001",
+    "hypothesis": "Le mécanisme dominant est la weaponisation des chokepoints technologiques, produisant un découplage sélectif plutôt qu'une rupture totale.",
+    "mechanism_tested": "Weaponisation des chokepoints technologiques",
+    "evidence_items": [
+      {
+        "evidence_id": "EVID_TECH_EXPORT_CONTROLS_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Mise en place et extension de contrôles à l'export ciblant les équipements et puces avancés.",
+        "source_ids": [],
+        "strength": 0.8,
+        "reliability": 0.78,
+        "interpretation_risk": 0.25
+      },
+      {
+        "evidence_id": "EVID_TECH_MARKET_CONCENTRATION_001",
+        "type": "MATERIAL_DATA",
+        "description": "Concentration extrême des capacités EUV chez un seul fournisseur, attestant le caractère de chokepoint.",
+        "source_ids": [],
+        "strength": 0.85,
+        "reliability": 0.8,
+        "interpretation_risk": 0.2
+      }
+    ],
+    "counter_hypotheses": [
+      {
+        "hypothesis": "Le moteur premier est une contestation hégémonique large dont les chokepoints ne sont qu'un instrument parmi d'autres.",
+        "plausibility": 0.55,
+        "status": "MODERATELY_SUPPORTED"
+      },
+      {
+        "hypothesis": "La dynamique relève surtout d'une compétition économique de marché, peu pilotée par la sécurité.",
+        "plausibility": 0.3,
+        "status": "WEAKLY_SUPPORTED"
+      }
+    ],
+    "contradictory_evidence": [
+      "Maintien d'échanges importants sur les nœuds matures et les biens non sensibles, contredisant l'idée d'un découplage généralisé."
+    ],
+    "unknowns": [
+      "Rythme réel de l'autonomie technologique chinoise.",
+      "Degré de tenue de l'alignement des alliés."
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "china_reaches_parity_on_advanced_nodes",
+        "why_it_matters": "Annulerait l'efficacité du levier des chokepoints.",
+        "monitoring_indicators": ["domestic_advanced_node_volume"]
+      }
+    ],
+    "overall_confidence": 0.6,
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "diagnostic": {
+    "schema_version": "1.0",
+    "analysis_id": "ANALYSIS_US_CHINA_TECH_001",
+    "situation_id": "SIT_US_CHINA_TECH_001",
+    "executive_summary": "Rivalité technologique structurée par la weaponisation de chokepoints (EUV, outils avancés), menant à un découplage sélectif et à des écosystèmes partiellement parallèles.",
+    "analytical_summary": "La situation combine un mécanisme dominant de déni technologique via points de passage obligés, une contestation hégémonique de fond et une désynchronisation progressive des ordres techniques. L'issue probable est une fragmentation gérée plutôt qu'une rupture totale, conditionnée par l'autonomie chinoise et la cohésion des alliés.",
+    "dominant_mechanism_id": "MECH_DEPENDENCY_WEAPONIZATION_CHIPS_001",
+    "secondary_mechanism_ids": ["MECH_HEGEMONIC_CONTESTATION_001", "MECH_ORDER_DESYNCHRONIZATION_001"],
+    "dominant_trajectory_id": "TRAJ_TECH_SELECTIVE_DECOUPLING_001",
+    "main_risk": "Escalade des contrôles et fragmentation accélérée si un incident de sécurité ou un durcissement intérieur survient.",
+    "main_watch_signals": [
+      "extension ou relâchement des contrôles à l'export",
+      "progrès chinois sur les nœuds avancés",
+      "alignement ou défection des alliés",
+      "courses aux subventions"
+    ],
+    "main_uncertainties": [
+      "rythme de l'autonomie technologique chinoise",
+      "tenue de l'alignement allié",
+      "coût économique du découplage"
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "broad_reconvergence_of_supply_chains",
+        "why_it_matters": "Contredirait le diagnostic de fragmentation.",
+        "monitoring_indicators": ["control_rollbacks", "cross_investment_recovery"]
+      }
+    ],
+    "confidence": 0.6,
+    "confidence_label": "MEDIUM",
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "analytical_status": "REVIEW_REQUIRED",
+  "created_at": "2026-05-27",
+  "last_updated": "2026-05-27"
+}

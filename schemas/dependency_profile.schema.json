@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/dependency_profile.schema.json",
+  "title": "dependency_profile",
+  "description": "Dépendance internationale comme relation sociale convertible.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dependency_id",
+    "dependent_actor_id",
+    "controller_actor_or_network",
+    "dependency_type",
+    "criticality_level",
+    "substitutability",
+    "weaponization_potential",
+    "main_risk",
+    "evidence_status",
+    "confidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "dependency_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "dependent_actor_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "controller_actor_or_network": {
+      "type": "string"
+    },
+    "dependency_type": {
+      "$ref": "common_defs.schema.json#/$defs/dependency_type"
+    },
+    "dependent_capacity": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "criticality_level": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "substitutability": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "time_to_substitute": {
+      "type": "string"
+    },
+    "asymmetry_level": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "visibility_level": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "politicization_level": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "weaponization_potential": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "exit_cost": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "current_strategy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "main_risk": {
+      "type": "string"
+    },
+    "evidence_status": {
+      "$ref": "common_defs.schema.json#/$defs/evidence_status"
+    },
+    "confidence": {
+      "$ref": "common_defs.schema.json#/$defs/confidence"
+    }
+  }
+}

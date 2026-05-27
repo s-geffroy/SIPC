@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/mechanism_profile.schema.json",
+  "title": "mechanism_profile",
+  "description": "Mécanisme causal international avec conditions d’activation, séquence et invalidation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "mechanism_id",
+    "name",
+    "mechanism_type",
+    "minimal_definition",
+    "activation_conditions",
+    "typical_sequence",
+    "invalidation_signals",
+    "evidence_status",
+    "confidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "mechanism_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "name": {
+      "type": "string"
+    },
+    "mechanism_type": {
+      "$ref": "common_defs.schema.json#/$defs/mechanism_type"
+    },
+    "minimal_definition": {
+      "type": "string"
+    },
+    "activation_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "typical_sequence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "amplifiers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "dampeners": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "possible_outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "invalidation_signals": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/invalidation_signal"
+      },
+      "default": []
+    },
+    "evidence_status": {
+      "$ref": "common_defs.schema.json#/$defs/evidence_status"
+    },
+    "confidence": {
+      "$ref": "common_defs.schema.json#/$defs/confidence"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/norm_profile.schema.json",
+  "title": "norm_profile",
+  "description": "Norme internationale comme institution sociale disputée, activable et convertible.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "norm_id",
+    "name",
+    "norm_family",
+    "core_prescription",
+    "institutionalization_level",
+    "evidence_status",
+    "confidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "norm_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "name": {
+      "type": "string"
+    },
+    "norm_family": {
+      "$ref": "common_defs.schema.json#/$defs/norm_family"
+    },
+    "core_prescription": {
+      "type": "string"
+    },
+    "institutionalization_level": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "main_institutions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "carrier_audiences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "main_beneficiaries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "main_constrained_actors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "violation_costs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "contestation_patterns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "conversion_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "evidence_status": {
+      "$ref": "common_defs.schema.json#/$defs/evidence_status"
+    },
+    "confidence": {
+      "$ref": "common_defs.schema.json#/$defs/confidence"
+    }
+  }
+}

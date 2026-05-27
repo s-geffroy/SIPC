@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Si vous utilisez la SIPC, merci de la citer comme suit."
+title: "SIPC — Sociologie Internationale des Personnes Collectives"
+abstract: >-
+  Cadre théorique et opérationnel pour analyser les situations sociales internationales comme
+  une société mondiale stratifiée de personnes collectives inégales, avec une ontologie JSON
+  outillée (schémas, validateur, linter doctrinal) et trois exemples appliqués.
+type: software
+authors:
+  - family-names: Geffroy
+    given-names: Sylvain
+version: "1.0.0"
+date-released: "2026-05-27"
+license: CC-BY-4.0
+url: "https://s-geffroy.github.io/SIPC/"
+repository-code: "https://github.com/s-geffroy/SIPC"
+keywords:
+  - relations internationales
+  - sociologie
+  - ontologie
+  - JSON Schema
+  - géopolitique

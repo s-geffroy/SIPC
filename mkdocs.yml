@@ -1,0 +1,54 @@
+site_name: SIPC — Sociologie Internationale des Personnes Collectives
+site_description: Cadre théorique et opérationnel pour analyser les situations sociales internationales
+site_url: https://s-geffroy.github.io/SIPC/
+repo_url: https://github.com/s-geffroy/SIPC
+repo_name: s-geffroy/SIPC
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+
+nav:
+  - Accueil: index.md
+  - Théorie:
+      - Thèse centrale: 01_theorie/these_centrale.md
+      - Personne collective: 01_theorie/personne_collective.md
+      - Situation sociale internationale: 01_theorie/situation_sociale_internationale.md
+      - Champs, capitaux, conversions: 01_theorie/champs_capitaux_conversions.md
+      - Normes, institutions, légitimité: 01_theorie/normes_institutions_legitimite.md
+      - Dépendances et résilience: 01_theorie/dependances_resilience.md
+      - Domination, contestation, ordre: 01_theorie/domination_contestation_ordre.md
+      - Causalité, preuve, limites: 01_theorie/causalite_preuve_limites.md
+  - Méthode:
+      - Protocole général: 02_methode/protocole_general.md
+  - Ontologie:
+      - Vue d'ensemble: 03_ontologie/vue_ensemble.md
+      - Enums contrôlés: 03_ontologie/enums_controles.md
+      - Règles de validation: 03_ontologie/regles_validation.md
+  - Mécanismes: 04_mecanismes/index.md
+  - Preuve: 05_preuve/triangulation_probatoire.md
+  - Exemples: 06_exemples/index.md
+  - Implémentation: 07_implementation/guide_depot.md
+  - Glossaire: glossaire.md
+  - Limites: limites.md
+  - Bibliographie: bibliographie.md

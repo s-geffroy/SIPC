@@ -1,0 +1,401 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "ANALYSIS_UKRAINE_WAR_001",
+  "situation": {
+    "situation_id": "SIT_UKRAINE_WAR_001",
+    "name": "Guerre en Ukraine et reconfiguration de l'ordre euro-atlantique",
+    "scope": {
+      "geographic": "Ukraine, Russie, espace euro-atlantique",
+      "temporal": "Phase de guerre ouverte et de guerre d'usure",
+      "fields": ["MIL", "DIP", "ECO", "FIN", "ENERGY", "LEGAL", "SYM", "INF"]
+    },
+    "situation_type": ["CRISIS", "NORMATIVE_CONFLICT", "ENERGY_DEPENDENCY", "REGIONAL_ORDER_STRESS"],
+    "current_phase": "protracted_attrition_war"
+  },
+  "actors": [
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_RUSSIA",
+      "name": "Fédération de Russie",
+      "actor_type": "STATE",
+      "aliases": [],
+      "description": "État engagé dans une agression armée visant à modifier le statut et les frontières de l'Ukraine et l'ordre de sécurité régional.",
+      "primary_fields": ["MIL", "ENERGY", "DIP", "SYM"],
+      "claimed_roles": ["great_power", "civilizational_pole"],
+      "recognized_roles": ["nuclear_power"],
+      "contested_roles": ["legitimate_security_guarantor_in_region"],
+      "main_capitals": ["MILITARY", "ENERGY", "SYMBOLIC"],
+      "main_vulnerabilities": ["sanctions_exposure", "demographic_and_industrial_strain"],
+      "main_dependencies": ["DEP_RUSSIA_REVENUE_ENERGY_001"],
+      "main_audiences": ["domestic_public", "elites", "non_western_partners"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.7
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_UKRAINE",
+      "name": "Ukraine",
+      "actor_type": "STATE",
+      "aliases": [],
+      "description": "État défendant sa souveraineté et son intégrité territoriale, fortement dépendant du soutien occidental.",
+      "primary_fields": ["MIL", "DIP", "SYM"],
+      "claimed_roles": ["sovereign_defender", "frontline_of_european_security"],
+      "recognized_roles": ["sovereign_state", "aid_recipient"],
+      "contested_roles": [],
+      "main_capitals": ["SYMBOLIC", "MILITARY", "SOCIAL"],
+      "main_vulnerabilities": ["aid_dependency", "infrastructure_destruction"],
+      "main_dependencies": ["DEP_UKRAINE_WESTERN_AID_001"],
+      "main_audiences": ["domestic_public", "western_supporters"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.7
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_NATO_WEST",
+      "name": "Coalition occidentale (OTAN, UE, partenaires)",
+      "actor_type": "INFORMAL_COALITION",
+      "aliases": ["the_West"],
+      "description": "Coalition fournissant aide militaire, financière et appui normatif à l'Ukraine, et pilotant le régime de sanctions.",
+      "primary_fields": ["MIL", "FIN", "DIP", "LEGAL"],
+      "claimed_roles": ["defender_of_international_order"],
+      "recognized_roles": ["security_provider", "sanctions_authority"],
+      "contested_roles": ["impartial_actor"],
+      "main_capitals": ["FINANCIAL", "MILITARY", "INSTITUTIONAL", "NORMATIVE"],
+      "main_vulnerabilities": ["coalition_cohesion", "domestic_fatigue", "energy_price_shock"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_publics", "global_south"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    }
+  ],
+  "relations": [
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_RUSSIA_UKRAINE_COERCION_001",
+      "source_actor_id": "ACT_RUSSIA",
+      "target_actor_id": "ACT_UKRAINE",
+      "relation_type": "COERCION",
+      "fields": ["MIL", "SYM"],
+      "description": "Agression armée visant à soumettre ou démembrer l'Ukraine.",
+      "asymmetry_level": 0.6,
+      "trust_level": 0.05,
+      "credibility_level": 0.7,
+      "reversibility": 0.2,
+      "exit_cost": 0.9,
+      "main_tensions": ["territorial_conquest", "regime_survival"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.72
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_WEST_UKRAINE_PROTECTION_001",
+      "source_actor_id": "ACT_NATO_WEST",
+      "target_actor_id": "ACT_UKRAINE",
+      "relation_type": "PROTECTION",
+      "fields": ["MIL", "FIN"],
+      "description": "Soutien militaire et financier soutenu, sans engagement de troupes directes.",
+      "asymmetry_level": 0.8,
+      "trust_level": 0.6,
+      "credibility_level": 0.55,
+      "reversibility": 0.5,
+      "exit_cost": 0.6,
+      "main_tensions": ["escalation_management", "aid_sustainability"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.68
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_WEST_RUSSIA_SANCTION_001",
+      "source_actor_id": "ACT_NATO_WEST",
+      "target_actor_id": "ACT_RUSSIA",
+      "relation_type": "SANCTION",
+      "fields": ["FIN", "ECO", "ENERGY"],
+      "description": "Régime de sanctions financières, technologiques et énergétiques visant à dégrader la capacité de guerre russe.",
+      "asymmetry_level": 0.5,
+      "trust_level": 0.05,
+      "credibility_level": 0.6,
+      "reversibility": 0.4,
+      "exit_cost": 0.7,
+      "main_tensions": ["sanctions_circumvention", "blowback_on_senders"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.66
+    }
+  ],
+  "activated_fields": [
+    { "field": "MIL", "intensity": 0.95, "role_in_situation": "Guerre d'usure de haute intensité." },
+    { "field": "ENERGY", "intensity": 0.8, "role_in_situation": "Énergie comme ressource de revenus et levier de coercition." },
+    { "field": "FIN", "intensity": 0.82, "role_in_situation": "Sanctions et financement de l'effort de guerre." },
+    { "field": "SYM", "intensity": 0.78, "role_in_situation": "Lutte de légitimité et activation normative autour de la souveraineté." }
+  ],
+  "capital_structure": [],
+  "dependencies": [
+    {
+      "schema_version": "1.0",
+      "dependency_id": "DEP_UKRAINE_WESTERN_AID_001",
+      "dependent_actor_id": "ACT_UKRAINE",
+      "controller_actor_or_network": "ACT_NATO_WEST",
+      "dependency_type": "FINANCIAL",
+      "dependent_capacity": ["military_sustainment", "state_budget", "air_defense"],
+      "criticality_level": 0.95,
+      "substitutability": 0.15,
+      "time_to_substitute": "Très difficile à court terme.",
+      "asymmetry_level": 0.85,
+      "visibility_level": 0.9,
+      "politicization_level": 0.9,
+      "weaponization_potential": 0.4,
+      "exit_cost": 0.95,
+      "current_strategy": ["diversify_donors", "domestic_production_ramp_up"],
+      "main_risk": "Effondrement de la capacité de défense si l'aide se tarit.",
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.7
+    },
+    {
+      "schema_version": "1.0",
+      "dependency_id": "DEP_RUSSIA_REVENUE_ENERGY_001",
+      "dependent_actor_id": "ACT_RUSSIA",
+      "controller_actor_or_network": "Marchés énergétiques mondiaux et acheteurs non occidentaux",
+      "dependency_type": "ENERGY",
+      "dependent_capacity": ["war_financing", "fiscal_revenue"],
+      "criticality_level": 0.8,
+      "substitutability": 0.5,
+      "time_to_substitute": "Réorientation partielle vers l'Asie.",
+      "asymmetry_level": 0.4,
+      "visibility_level": 0.8,
+      "politicization_level": 0.85,
+      "weaponization_potential": 0.6,
+      "exit_cost": 0.7,
+      "current_strategy": ["market_reorientation", "shadow_fleet", "price_cap_evasion"],
+      "main_risk": "Compression durable des revenus limitant l'effort de guerre.",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    }
+  ],
+  "norms": [
+    {
+      "schema_version": "1.0",
+      "norm_id": "NORM_NON_AGGRESSION",
+      "name": "Non-agression et intégrité territoriale",
+      "norm_family": "SOVEREIGNTY",
+      "core_prescription": "L'usage de la force pour acquérir un territoire est prohibé.",
+      "institutionalization_level": 0.85,
+      "main_institutions": ["UN_CHARTER"],
+      "carrier_audiences": ["states", "international_public_opinion"],
+      "main_beneficiaries": ["status_quo_states", "smaller_states"],
+      "main_constrained_actors": ["revisionist_powers"],
+      "violation_costs": ["sanctions", "isolation", "legal_proceedings"],
+      "contestation_patterns": ["security_justification", "historical_claims"],
+      "conversion_paths": ["coalition_mobilization", "delegitimation"],
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.68
+    }
+  ],
+  "institutions": [],
+  "dominant_mechanism": {
+    "schema_version": "1.0",
+    "mechanism_id": "MECH_NORM_ACTIVATION_001",
+    "name": "Activation normative autour de la souveraineté",
+    "mechanism_type": "NORM_ACTIVATION",
+    "minimal_definition": "La violation flagrante de la non-agression est mobilisée pour légitimer une coalition, sanctionner l'agresseur et soutenir la défense.",
+    "activation_conditions": ["flagrant_norm_violation", "available_carrier_coalition", "credible_enforcement_capacity"],
+    "typical_sequence": ["violation", "norm_invocation", "coalition_formation", "sanction_and_support"],
+    "amplifiers": ["media_visibility", "precedent_concerns", "alliance_solidarity"],
+    "dampeners": ["coalition_fatigue", "competing_priorities", "energy_costs"],
+    "possible_outputs": ["sustained_support", "selective_enforcement", "normative_erosion"],
+    "invalidation_signals": [
+      {
+        "signal": "coalition_abandons_norm_under_cost",
+        "why_it_matters": "Montrerait que l'activation normative cède devant les intérêts matériels.",
+        "monitoring_indicators": ["aid_cuts", "sanction_rollbacks"]
+      }
+    ],
+    "evidence_status": "MODERATELY_SUPPORTED",
+    "confidence": 0.62
+  },
+  "secondary_mechanisms": [
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_DEPENDENCY_WEAPONIZATION_ENERGY_001",
+      "name": "Weaponisation de la dépendance énergétique",
+      "mechanism_type": "DEPENDENCY_WEAPONIZATION",
+      "minimal_definition": "Les flux énergétiques sont utilisés comme levier de coercition et de financement.",
+      "activation_conditions": ["energy_interdependence", "asymmetric_exposure"],
+      "typical_sequence": ["supply_manipulation", "price_shock", "adaptation"],
+      "amplifiers": ["winter_demand", "limited_alternatives"],
+      "dampeners": ["diversification", "demand_reduction"],
+      "possible_outputs": ["coercive_leverage", "market_realignment"],
+      "invalidation_signals": [
+        {
+          "signal": "rapid_european_energy_diversification",
+          "why_it_matters": "Neutraliserait le levier énergétique.",
+          "monitoring_indicators": ["import_substitution", "storage_levels"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_RESILIENCE_TEST_001",
+      "name": "Test de résilience de la coalition",
+      "mechanism_type": "RESILIENCE_TEST",
+      "minimal_definition": "La guerre d'usure teste la capacité de chaque camp à soutenir l'effort dans la durée.",
+      "activation_conditions": ["protracted_conflict", "cost_accumulation"],
+      "typical_sequence": ["attrition", "fatigue", "reallocation_or_collapse"],
+      "amplifiers": ["economic_strain", "political_cycles"],
+      "dampeners": ["institutionalized_support", "burden_sharing"],
+      "possible_outputs": ["sustained_resolve", "negotiated_freeze", "collapse_of_support"],
+      "invalidation_signals": [
+        {
+          "signal": "durable_institutionalized_funding_mechanism",
+          "why_it_matters": "Réduirait la vulnérabilité au cycle politique.",
+          "monitoring_indicators": ["multiyear_aid_commitments"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    }
+  ],
+  "trajectories": [
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_UKRAINE_PROTRACTED_ATTRITION_001",
+      "situation_id": "SIT_UKRAINE_WAR_001",
+      "trajectory_type": "STABILIZATION",
+      "name": "Guerre d'usure prolongée sans rupture décisive",
+      "mechanism_path": "Ni l'activation normative ni la pression militaire ne produisent de décision ; l'usure se prolonge.",
+      "conditions": ["sustained_western_aid", "russian_strategic_patience", "no_decisive_breakthrough"],
+      "bifurcation_points": ["major_aid_shift", "battlefield_collapse", "leadership_change"],
+      "probability_band": "MEDIUM_HIGH",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "rapid_front_collapse_on_either_side",
+          "why_it_matters": "Mettrait fin à la dynamique d'usure.",
+          "monitoring_indicators": ["large_territorial_shifts"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_UKRAINE_NEGOTIATED_FREEZE_001",
+      "situation_id": "SIT_UKRAINE_WAR_001",
+      "trajectory_type": "FREEZE",
+      "name": "Gel négocié sans règlement du statut",
+      "mechanism_path": "L'épuisement mutuel et la fatigue des coalitions conduisent à un cessez-le-feu gelant les lignes sans résoudre le conflit normatif.",
+      "conditions": ["mutual_exhaustion", "external_pressure_to_settle", "stabilized_front"],
+      "bifurcation_points": ["security_guarantees_design", "sanctions_status"],
+      "probability_band": "MEDIUM",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "renewed_large_scale_offensive",
+          "why_it_matters": "Invaliderait l'hypothèse de gel.",
+          "monitoring_indicators": ["mobilization_waves", "ceasefire_breakdown"]
+        }
+      ],
+      "evidence_status": "WEAKLY_SUPPORTED",
+      "confidence": 0.5
+    }
+  ],
+  "evidence": {
+    "schema_version": "1.0",
+    "hypothesis_id": "HYP_UKRAINE_NORM_ACTIVATION_DOMINANT_001",
+    "situation_id": "SIT_UKRAINE_WAR_001",
+    "hypothesis": "Le mécanisme dominant est l'activation normative autour de la souveraineté, qui structure le soutien occidental et la durée du conflit, avec la résilience des coalitions comme variable critique.",
+    "mechanism_tested": "Activation normative autour de la souveraineté",
+    "evidence_items": [
+      {
+        "evidence_id": "EVID_UKRAINE_RESOLUTIONS_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Mobilisation institutionnelle et coalition de sanctions invoquant explicitement la non-agression.",
+        "source_ids": [],
+        "strength": 0.75,
+        "reliability": 0.75,
+        "interpretation_risk": 0.3
+      },
+      {
+        "evidence_id": "EVID_UKRAINE_AID_FLOWS_001",
+        "type": "MATERIAL_DATA",
+        "description": "Flux d'aide militaire et financière soutenus, corrélés aux cycles politiques des donateurs.",
+        "source_ids": [],
+        "strength": 0.8,
+        "reliability": 0.7,
+        "interpretation_risk": 0.35
+      }
+    ],
+    "counter_hypotheses": [
+      {
+        "hypothesis": "Le moteur premier est un calcul de sécurité géopolitique (équilibre des puissances), la norme servant d'habillage.",
+        "plausibility": 0.55,
+        "status": "MODERATELY_SUPPORTED"
+      },
+      {
+        "hypothesis": "La dynamique est avant tout déterminée par la résilience matérielle et industrielle, indépendamment des normes.",
+        "plausibility": 0.45,
+        "status": "WEAKLY_SUPPORTED"
+      }
+    ],
+    "contradictory_evidence": [
+      "Application sélective des normes selon les conflits, suggérant un rôle des intérêts au moins aussi fort que celui de la norme."
+    ],
+    "unknowns": [
+      "Durée de la cohésion de la coalition.",
+      "Seuils d'escalade nucléaire."
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "western_support_collapses_despite_ongoing_violation",
+        "why_it_matters": "Affaiblirait l'hypothèse de l'activation normative comme moteur dominant.",
+        "monitoring_indicators": ["aid_termination_without_settlement"]
+      }
+    ],
+    "overall_confidence": 0.6,
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "diagnostic": {
+    "schema_version": "1.0",
+    "analysis_id": "ANALYSIS_UKRAINE_WAR_001",
+    "situation_id": "SIT_UKRAINE_WAR_001",
+    "executive_summary": "Guerre d'usure où l'activation normative autour de la souveraineté soutient une coalition, mais où la résilience matérielle et la fatigue politique deviennent les variables décisives.",
+    "analytical_summary": "La situation n'est pas réductible à un duel militaire : elle articule une violation normative flagrante, une coalition de soutien, un régime de sanctions et une weaponisation croisée des dépendances énergétique et financière. L'issue dépend moins d'une victoire décisive que de la résilience comparée des coalitions.",
+    "dominant_mechanism_id": "MECH_NORM_ACTIVATION_001",
+    "secondary_mechanism_ids": ["MECH_DEPENDENCY_WEAPONIZATION_ENERGY_001", "MECH_RESILIENCE_TEST_001"],
+    "dominant_trajectory_id": "TRAJ_UKRAINE_PROTRACTED_ATTRITION_001",
+    "main_risk": "Effondrement de la résilience d'un camp (fatigue de l'aide ou de la mobilisation) entraînant une bascule brutale.",
+    "main_watch_signals": [
+      "engagements pluriannuels d'aide ou leur abandon",
+      "réorientation énergétique",
+      "mobilisations massives",
+      "ruptures de front"
+    ],
+    "main_uncertainties": [
+      "durée de la cohésion occidentale",
+      "capacité industrielle comparée",
+      "seuils d'escalade"
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "durable_settlement_resolving_status",
+        "why_it_matters": "Sortirait la situation de la dynamique d'usure analysée.",
+        "monitoring_indicators": ["comprehensive_peace_agreement"]
+      }
+    ],
+    "confidence": 0.58,
+    "confidence_label": "MEDIUM",
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "analytical_status": "REVIEW_REQUIRED",
+  "created_at": "2026-05-27",
+  "last_updated": "2026-05-27"
+}

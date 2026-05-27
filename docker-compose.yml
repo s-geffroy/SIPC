@@ -1,0 +1,11 @@
+# Orchestration de l'outillage SIPC. Le dépôt est monté dans /sipc.
+# Usage : `docker compose run --rm sipc <commande>` ou via le Makefile.
+services:
+  sipc:
+    build: .
+    image: sipc-tools:latest
+    working_dir: /sipc
+    volumes:
+      - .:/sipc
+    ports:
+      - "8000:8000"

@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/institution_profile.schema.json",
+  "title": "institution_profile",
+  "description": "Institution internationale comme dispositif social de stabilisation, classement et lutte.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "institution_id",
+    "name",
+    "institution_type",
+    "core_functions",
+    "current_stress_level",
+    "evidence_status",
+    "confidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "institution_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "name": {
+      "type": "string"
+    },
+    "institution_type": {
+      "$ref": "common_defs.schema.json#/$defs/institution_type"
+    },
+    "core_functions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "rules_and_procedures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "dominant_capitals": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/capital_type"
+      },
+      "default": []
+    },
+    "access_structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "privileged_actors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "secondary_actors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "excluded_or_constrained_actors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        }
+      },
+      "default": {}
+    },
+    "classification_power": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "main_tensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "current_stress_level": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "evidence_status": {
+      "$ref": "common_defs.schema.json#/$defs/evidence_status"
+    },
+    "confidence": {
+      "$ref": "common_defs.schema.json#/$defs/confidence"
+    }
+  }
+}

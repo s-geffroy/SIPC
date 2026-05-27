@@ -1,0 +1,516 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "ANALYSIS_TAIWAN_STRAIT_001",
+  "situation": {
+    "situation_id": "SIT_TAIWAN_STRAIT_001",
+    "name": "Situation sociale internationale du détroit de Taïwan",
+    "scope": {
+      "geographic": "Détroit de Taïwan et Indo-Pacifique occidental",
+      "temporal": "Phase contemporaine",
+      "fields": ["MIL", "DIP", "TEC", "ECO", "LEGAL", "SYM", "INF"]
+    },
+    "situation_type": [
+      "SECURITY_TENSION",
+      "RECOGNITION_CONFLICT",
+      "TECHNOLOGY_DEPENDENCY",
+      "REGIONAL_ORDER_STRESS"
+    ],
+    "current_phase": "latent_crisis_with_periodic_acceleration"
+  },
+  "actors": [
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_CHINA",
+      "name": "République populaire de Chine",
+      "actor_type": "STATE",
+      "aliases": ["PRC"],
+      "description": "État revendiquant la souveraineté sur Taïwan et cherchant à modifier le statut régional selon ses intérêts de rang et de sécurité.",
+      "primary_fields": ["MIL", "DIP", "TEC", "SYM"],
+      "claimed_roles": ["regional_power", "sovereignty_defender"],
+      "recognized_roles": ["major_power"],
+      "contested_roles": ["legitimate_sovereignty_actor_over_taiwan"],
+      "main_capitals": ["MILITARY", "ECONOMIC", "TECHNOLOGICAL", "SYMBOLIC"],
+      "main_vulnerabilities": ["international_reputation_cost", "economic_disruption_risk"],
+      "main_dependencies": ["DEP_CHINA_ADVANCED_CHIPS_001"],
+      "main_audiences": ["domestic_public", "party_state_elites", "regional_actors"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_USA",
+      "name": "États-Unis d'Amérique",
+      "actor_type": "STATE",
+      "aliases": ["USA"],
+      "description": "Puissance prééminente de l'ordre indo-pacifique, garante d'une ambiguïté stratégique sur Taïwan et d'un réseau d'alliances régionales.",
+      "primary_fields": ["MIL", "DIP", "TEC", "FIN"],
+      "claimed_roles": ["order_guarantor", "alliance_leader"],
+      "recognized_roles": ["superpower", "security_guarantor"],
+      "contested_roles": ["impartial_external_actor"],
+      "main_capitals": ["MILITARY", "FINANCIAL", "TECHNOLOGICAL", "INSTITUTIONAL"],
+      "main_vulnerabilities": ["overextension_risk", "credibility_of_commitments"],
+      "main_dependencies": ["DEP_USA_ADVANCED_CHIPS_001"],
+      "main_audiences": ["domestic_public", "regional_allies", "congress"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_TAIWAN",
+      "name": "Taïwan (République de Chine)",
+      "actor_type": "STATE",
+      "aliases": ["ROC"],
+      "description": "Entité politique de facto autonome, au statut international contesté, centrale dans la chaîne mondiale des semi-conducteurs avancés.",
+      "primary_fields": ["TEC", "DIP", "SYM"],
+      "claimed_roles": ["self_governing_democracy"],
+      "recognized_roles": ["de_facto_state"],
+      "contested_roles": ["sovereign_state"],
+      "main_capitals": ["TECHNOLOGICAL", "SYMBOLIC", "ECONOMIC"],
+      "main_vulnerabilities": ["military_asymmetry", "diplomatic_isolation"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "external_supporters"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_TSMC",
+      "name": "Taiwan Semiconductor Manufacturing Company",
+      "actor_type": "MULTINATIONAL_FIRM",
+      "aliases": ["TSMC"],
+      "description": "Fondeur dominant des semi-conducteurs les plus avancés, nœud critique de dépendance technologique mondiale.",
+      "primary_fields": ["TEC", "ECO"],
+      "claimed_roles": ["neutral_commercial_supplier"],
+      "recognized_roles": ["systemic_technology_node"],
+      "contested_roles": [],
+      "main_capitals": ["TECHNOLOGICAL", "ECONOMIC"],
+      "main_vulnerabilities": ["geographic_concentration", "geopolitical_exposure"],
+      "main_dependencies": [],
+      "main_audiences": ["global_clients", "host_state", "investors"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.7
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_JAPAN",
+      "name": "Japon",
+      "actor_type": "STATE",
+      "aliases": [],
+      "description": "Acteur régional clé, allié des États-Unis, dont la sécurité et l'approvisionnement technologique dépendent de la stabilité du détroit.",
+      "primary_fields": ["MIL", "DIP", "TEC"],
+      "claimed_roles": ["regional_stabilizer"],
+      "recognized_roles": ["us_ally", "regional_power"],
+      "contested_roles": [],
+      "main_capitals": ["ECONOMIC", "TECHNOLOGICAL", "MILITARY"],
+      "main_vulnerabilities": ["proximity_to_conflict_zone", "energy_dependency"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "us_alliance"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    }
+  ],
+  "relations": [
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_CHINA_TAIWAN_CONTESTATION_001",
+      "source_actor_id": "ACT_CHINA",
+      "target_actor_id": "ACT_TAIWAN",
+      "relation_type": "NON_RECOGNITION",
+      "fields": ["DIP", "SYM", "MIL"],
+      "description": "Refus de reconnaissance de la souveraineté de Taïwan, assorti d'une pression coercitive graduée.",
+      "asymmetry_level": 0.8,
+      "trust_level": 0.1,
+      "credibility_level": 0.6,
+      "reversibility": 0.3,
+      "exit_cost": 0.85,
+      "main_tensions": ["status_dispute", "military_signalling"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_USA_TAIWAN_PROTECTION_001",
+      "source_actor_id": "ACT_USA",
+      "target_actor_id": "ACT_TAIWAN",
+      "relation_type": "PROTECTION",
+      "fields": ["MIL", "DIP"],
+      "description": "Soutien sécuritaire sous ambiguïté stratégique : ventes d'armes et engagement non explicite.",
+      "asymmetry_level": 0.75,
+      "trust_level": 0.55,
+      "credibility_level": 0.5,
+      "reversibility": 0.5,
+      "exit_cost": 0.7,
+      "main_tensions": ["commitment_credibility", "escalation_management"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_USA_CHINA_RIVALRY_001",
+      "source_actor_id": "ACT_USA",
+      "target_actor_id": "ACT_CHINA",
+      "relation_type": "RIVALRY",
+      "fields": ["MIL", "TEC", "ECO"],
+      "description": "Rivalité stratégique structurante mêlant dissuasion militaire et compétition technologique.",
+      "asymmetry_level": 0.4,
+      "trust_level": 0.15,
+      "credibility_level": 0.6,
+      "reversibility": 0.2,
+      "exit_cost": 0.6,
+      "main_tensions": ["security_dilemma", "technology_decoupling"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_WORLD_TSMC_DEPENDENCY_001",
+      "source_actor_id": "ACT_USA",
+      "target_actor_id": "ACT_TSMC",
+      "relation_type": "DEPENDENCY",
+      "fields": ["TEC", "ECO"],
+      "description": "Dépendance des industries américaines aux semi-conducteurs avancés produits par TSMC à Taïwan.",
+      "asymmetry_level": 0.7,
+      "trust_level": 0.6,
+      "credibility_level": 0.7,
+      "reversibility": 0.25,
+      "exit_cost": 0.9,
+      "main_tensions": ["supply_concentration", "geopolitical_risk"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.7
+    }
+  ],
+  "activated_fields": [
+    { "field": "MIL", "intensity": 0.86, "role_in_situation": "Dissuasion, coercition potentielle et signalement militaire." },
+    { "field": "TEC", "intensity": 0.91, "role_in_situation": "Centralité des semi-conducteurs avancés et dépendances industrielles mondiales." },
+    { "field": "DIP", "intensity": 0.78, "role_in_situation": "Lutte de reconnaissance et gestion de l'ambiguïté stratégique." },
+    { "field": "ECO", "intensity": 0.7, "role_in_situation": "Interdépendance commerciale et coût économique d'une rupture." }
+  ],
+  "capital_structure": [
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_TSMC_TECH_001",
+      "actor_id": "ACT_TSMC",
+      "capital_type": "TECHNOLOGICAL",
+      "field": "TEC",
+      "description": "Maîtrise quasi-exclusive des nœuds de gravure les plus avancés.",
+      "level": 0.95,
+      "convertibility": 0.7,
+      "conversion_paths": ["industrial_leverage", "strategic_indispensability"],
+      "constraints": ["geographic_concentration", "dependence_on_foreign_equipment"],
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.72
+    },
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_CHINA_MIL_001",
+      "actor_id": "ACT_CHINA",
+      "capital_type": "MILITARY",
+      "field": "MIL",
+      "description": "Montée en puissance navale et balistique permettant une coercition de proximité.",
+      "level": 0.8,
+      "convertibility": 0.65,
+      "conversion_paths": ["deterrence", "coercive_signalling", "blockade_capability"],
+      "constraints": ["cost_of_major_war", "amphibious_operation_difficulty"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    }
+  ],
+  "dependencies": [
+    {
+      "schema_version": "1.0",
+      "dependency_id": "DEP_USA_ADVANCED_CHIPS_001",
+      "dependent_actor_id": "ACT_USA",
+      "controller_actor_or_network": "ACT_TSMC et chaîne de valeur taïwanaise",
+      "dependency_type": "TECHNOLOGICAL",
+      "dependent_capacity": ["advanced_computing", "ai_hardware", "defense_electronics"],
+      "criticality_level": 0.9,
+      "substitutability": 0.2,
+      "time_to_substitute": "Plusieurs années (relocalisation industrielle en cours).",
+      "asymmetry_level": 0.7,
+      "visibility_level": 0.85,
+      "politicization_level": 0.8,
+      "weaponization_potential": 0.6,
+      "exit_cost": 0.9,
+      "current_strategy": ["onshoring", "supply_diversification", "export_controls"],
+      "main_risk": "Rupture d'approvisionnement en cas de crise majeure dans le détroit.",
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.7
+    },
+    {
+      "schema_version": "1.0",
+      "dependency_id": "DEP_CHINA_ADVANCED_CHIPS_001",
+      "dependent_actor_id": "ACT_CHINA",
+      "controller_actor_or_network": "Écosystème occidental d'équipements et de design (incl. contrôles à l'export US)",
+      "dependency_type": "TECHNOLOGICAL",
+      "dependent_capacity": ["advanced_semiconductors", "ai_compute"],
+      "criticality_level": 0.85,
+      "substitutability": 0.3,
+      "time_to_substitute": "Incertain ; effort d'autonomie technologique intense.",
+      "asymmetry_level": 0.6,
+      "visibility_level": 0.8,
+      "politicization_level": 0.85,
+      "weaponization_potential": 0.55,
+      "exit_cost": 0.8,
+      "current_strategy": ["indigenous_innovation", "stockpiling", "alternative_suppliers"],
+      "main_risk": "Verrouillage technologique durable par les contrôles à l'exportation.",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    }
+  ],
+  "norms": [
+    {
+      "schema_version": "1.0",
+      "norm_id": "NORM_SOVEREIGNTY_TERRITORIAL_INTEGRITY",
+      "name": "Souveraineté et intégrité territoriale",
+      "norm_family": "SOVEREIGNTY",
+      "core_prescription": "Les frontières et la souveraineté reconnues ne doivent pas être modifiées par la force.",
+      "institutionalization_level": 0.8,
+      "main_institutions": ["UN_CHARTER"],
+      "carrier_audiences": ["states", "international_public_opinion"],
+      "main_beneficiaries": ["status_quo_states"],
+      "main_constrained_actors": ["revisionist_actors"],
+      "violation_costs": ["reputation", "sanctions", "coalition_response"],
+      "contestation_patterns": ["competing_sovereignty_claims"],
+      "conversion_paths": ["legitimation", "mobilization"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    }
+  ],
+  "institutions": [
+    {
+      "schema_version": "1.0",
+      "institution_id": "INST_ONE_CHINA_FRAMEWORK",
+      "name": "Cadre discursif « une seule Chine »",
+      "institution_type": "DISCURSIVE_INSTITUTION",
+      "core_functions": ["status_management", "ambiguity_preservation"],
+      "rules_and_procedures": ["diplomatic_recognition_formulas"],
+      "dominant_capitals": ["SYMBOLIC", "INSTITUTIONAL"],
+      "classification_power": ["who_counts_as_a_state"],
+      "main_tensions": ["formula_erosion", "domestic_reinterpretation"],
+      "current_stress_level": 0.65,
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    }
+  ],
+  "dominant_mechanism": {
+    "schema_version": "1.0",
+    "mechanism_id": "MECH_RECOGNITION_SOVEREIGNTY_CONFLICT_001",
+    "name": "Conflit de reconnaissance et de souveraineté",
+    "mechanism_type": "RECOGNITION_CRISIS",
+    "minimal_definition": "Un écart entre rang/statut revendiqué et reconnaissance accordée structure la tension et rend certaines concessions coûteuses.",
+    "activation_conditions": ["contested_sovereignty", "high_symbolic_audience_cost", "strategic_value_of_status"],
+    "typical_sequence": ["status_claim", "recognition_refusal_or_ambiguity", "audience_activation", "coercive_or_symbolic_signalling"],
+    "amplifiers": ["domestic_audience_pressure", "military_modernization", "great_power_rivalry"],
+    "dampeners": ["credible_backchannels", "cost_of_major_war", "economic_interdependence"],
+    "possible_outputs": ["managed_tension", "coercive_escalation", "military_crisis"],
+    "invalidation_signals": [
+      {
+        "signal": "durable_low_cost_status_compromise",
+        "why_it_matters": "Réduirait le poids du mécanisme de reconnaissance.",
+        "monitoring_indicators": ["public_acceptance", "institutionalized_formula"]
+      }
+    ],
+    "evidence_status": "MODERATELY_SUPPORTED",
+    "confidence": 0.62
+  },
+  "secondary_mechanisms": [
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_SECURITY_DILEMMA_001",
+      "name": "Dilemme de sécurité sino-américain",
+      "mechanism_type": "SECURITY_DILEMMA",
+      "minimal_definition": "Des mesures défensives d'un camp sont perçues comme offensives par l'autre, alimentant une spirale d'armement.",
+      "activation_conditions": ["military_buildup", "ambiguous_intentions"],
+      "typical_sequence": ["capability_increase", "threat_perception", "counter_buildup"],
+      "amplifiers": ["alliance_signalling", "incidents"],
+      "dampeners": ["transparency_measures", "crisis_communication"],
+      "possible_outputs": ["arms_racing", "incident_escalation"],
+      "invalidation_signals": [
+        {
+          "signal": "mutual_force_posture_restraint",
+          "why_it_matters": "Indiquerait une désactivation du dilemme.",
+          "monitoring_indicators": ["confidence_building_measures"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_DEPENDENCY_WEAPONIZATION_001",
+      "name": "Weaponisation de la dépendance technologique",
+      "mechanism_type": "DEPENDENCY_WEAPONIZATION",
+      "minimal_definition": "Un nœud critique (semi-conducteurs) peut être converti en levier de contrainte par contrôle d'accès.",
+      "activation_conditions": ["critical_chokepoint", "limited_substitutability"],
+      "typical_sequence": ["access_control", "coercive_leverage", "adaptation_or_compliance"],
+      "amplifiers": ["export_controls", "supply_concentration"],
+      "dampeners": ["diversification", "onshoring"],
+      "possible_outputs": ["coercion", "decoupling"],
+      "invalidation_signals": [
+        {
+          "signal": "rapid_supply_diversification",
+          "why_it_matters": "Réduirait fortement le potentiel de weaponisation.",
+          "monitoring_indicators": ["new_fabs_online", "alternative_suppliers"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    }
+  ],
+  "trajectories": [
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_TAIWAN_MANAGED_TENSION_001",
+      "situation_id": "SIT_TAIWAN_STRAIT_001",
+      "trajectory_type": "STABILIZATION",
+      "name": "Tension gérée sans rupture majeure",
+      "mechanism_path": "Dissuasion, coût économique élevé et canaux de gestion maintiennent la situation sous le seuil de rupture.",
+      "conditions": ["continued_deterrence", "no_major_accidental_incident", "economic_cost_recognition"],
+      "bifurcation_points": ["major_military_incident", "domestic_political_shift", "technology_embargo_expansion"],
+      "probability_band": "MEDIUM_HIGH",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "rapid_military_mobilization_crossing_threshold",
+          "why_it_matters": "Indiquerait un basculement vers escalade ouverte.",
+          "monitoring_indicators": ["mobilization", "evacuation_orders", "naval_blockade_signals"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_TAIWAN_COERCIVE_ESCALATION_001",
+      "situation_id": "SIT_TAIWAN_STRAIT_001",
+      "trajectory_type": "ESCALATION",
+      "name": "Escalade coercitive (blocus ou quarantaine)",
+      "mechanism_path": "Verrouillage d'audience et incident déclencheur poussent à une coercition élargie sous le seuil de la guerre ouverte.",
+      "conditions": ["audience_lock_in", "trigger_incident", "perceived_window_of_opportunity"],
+      "bifurcation_points": ["us_response_credibility", "blockade_vs_full_assault"],
+      "probability_band": "MEDIUM_LOW",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "credible_mutual_de_escalation_channel",
+          "why_it_matters": "Réduirait la probabilité d'escalade coercitive.",
+          "monitoring_indicators": ["backchannel_activity", "public_de_escalation_signals"]
+        }
+      ],
+      "evidence_status": "WEAKLY_SUPPORTED",
+      "confidence": 0.45
+    }
+  ],
+  "evidence": {
+    "schema_version": "1.0",
+    "hypothesis_id": "HYP_TAIWAN_RECOGNITION_DOMINANT_001",
+    "situation_id": "SIT_TAIWAN_STRAIT_001",
+    "hypothesis": "Le mécanisme dominant est un conflit de reconnaissance et de souveraineté, amplifié par le dilemme de sécurité et la dépendance technologique.",
+    "mechanism_tested": "Conflit de reconnaissance et de souveraineté",
+    "evidence_items": [
+      {
+        "evidence_id": "EVID_TAIWAN_OFFICIAL_DISCOURSE_001",
+        "type": "OFFICIAL_DISCOURSE",
+        "description": "Réaffirmations officielles récurrentes de la revendication de souveraineté et du refus de l'indépendance formelle.",
+        "source_ids": [],
+        "strength": 0.7,
+        "reliability": 0.75,
+        "interpretation_risk": 0.3
+      },
+      {
+        "evidence_id": "EVID_TAIWAN_MILITARY_PRACTICE_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Exercices militaires et incursions répétés autour de Taïwan servant de signalement de statut et de coercition.",
+        "source_ids": [],
+        "strength": 0.75,
+        "reliability": 0.7,
+        "interpretation_risk": 0.35
+      },
+      {
+        "evidence_id": "EVID_TAIWAN_CHIP_DATA_001",
+        "type": "MATERIAL_DATA",
+        "description": "Concentration de la production mondiale de semi-conducteurs avancés à Taïwan, attestée par les parts de marché des fonderies.",
+        "source_ids": [],
+        "strength": 0.85,
+        "reliability": 0.8,
+        "interpretation_risk": 0.2
+      }
+    ],
+    "counter_hypotheses": [
+      {
+        "hypothesis": "Le mécanisme dominant est d'abord le dilemme de sécurité sino-américain, la reconnaissance n'étant qu'un habillage.",
+        "plausibility": 0.55,
+        "status": "MODERATELY_SUPPORTED"
+      },
+      {
+        "hypothesis": "La dépendance technologique (semi-conducteurs) est le moteur premier, le statut étant secondaire.",
+        "plausibility": 0.4,
+        "status": "WEAKLY_SUPPORTED"
+      }
+    ],
+    "contradictory_evidence": [
+      "Périodes de stabilité prolongée malgré l'absence de résolution du statut, suggérant que d'autres facteurs contiennent la tension."
+    ],
+    "unknowns": [
+      "Intentions réelles des décideurs en cas de crise aiguë.",
+      "Seuils militaires exacts de déclenchement."
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "material_security_concessions_resolve_tension_without_status_component",
+        "why_it_matters": "Affaiblirait l'hypothèse de reconnaissance comme mécanisme dominant.",
+        "monitoring_indicators": ["security_arrangements_without_status_change"]
+      }
+    ],
+    "overall_confidence": 0.6,
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "diagnostic": {
+    "schema_version": "1.0",
+    "analysis_id": "ANALYSIS_TAIWAN_STRAIT_001",
+    "situation_id": "SIT_TAIWAN_STRAIT_001",
+    "executive_summary": "Situation latente de crise mêlant reconnaissance souveraine contestée, dissuasion militaire et dépendance technologique mondiale ; tension gérée mais structurellement instable.",
+    "analytical_summary": "L'objet central n'est pas une crise isolée mais une situation sociale internationale durable, périodiquement accélérée par des signaux militaires, politiques et technologiques. Le conflit de reconnaissance structure la tension ; le dilemme de sécurité et la weaponisation potentielle de la dépendance aux semi-conducteurs en sont les amplificateurs principaux.",
+    "dominant_mechanism_id": "MECH_RECOGNITION_SOVEREIGNTY_CONFLICT_001",
+    "secondary_mechanism_ids": ["MECH_SECURITY_DILEMMA_001", "MECH_DEPENDENCY_WEAPONIZATION_001"],
+    "dominant_trajectory_id": "TRAJ_TAIWAN_MANAGED_TENSION_001",
+    "main_risk": "Bifurcation d'une tension gérée vers une crise militaire sous effet de verrouillage d'audience ou d'incident.",
+    "main_watch_signals": [
+      "mobilisation militaire inhabituelle",
+      "verrouillage discursif interne",
+      "rupture des canaux de crise",
+      "expansion des contrôles technologiques"
+    ],
+    "main_uncertainties": [
+      "seuils réels de décision",
+      "réactions alliées",
+      "capacité de désescalade"
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "stable_compromise_formula_accepted_by_key_audiences",
+        "why_it_matters": "Réduirait fortement le risque de crise de reconnaissance.",
+        "monitoring_indicators": ["institutionalized_status_formula"]
+      }
+    ],
+    "confidence": 0.6,
+    "confidence_label": "MEDIUM",
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "analytical_status": "REVIEW_REQUIRED",
+  "created_at": "2026-05-27",
+  "last_updated": "2026-05-27"
+}

@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/evidence_profile.schema.json",
+  "title": "evidence_profile",
+  "description": "Profil probatoire pour tester une hypothèse ou un mécanisme.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "hypothesis_id",
+    "situation_id",
+    "hypothesis",
+    "mechanism_tested",
+    "evidence_items",
+    "counter_hypotheses",
+    "invalidation_signals",
+    "overall_confidence",
+    "evidence_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "hypothesis_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "situation_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "hypothesis": {
+      "type": "string"
+    },
+    "mechanism_tested": {
+      "type": "string"
+    },
+    "evidence_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidence_id",
+          "type",
+          "description",
+          "strength",
+          "reliability",
+          "interpretation_risk"
+        ],
+        "properties": {
+          "evidence_id": {
+            "$ref": "common_defs.schema.json#/$defs/object_id"
+          },
+          "type": {
+            "$ref": "common_defs.schema.json#/$defs/evidence_type"
+          },
+          "description": {
+            "type": "string"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "$ref": "common_defs.schema.json#/$defs/object_id"
+            },
+            "default": []
+          },
+          "strength": {
+            "$ref": "common_defs.schema.json#/$defs/score_0_1"
+          },
+          "reliability": {
+            "$ref": "common_defs.schema.json#/$defs/score_0_1"
+          },
+          "interpretation_risk": {
+            "$ref": "common_defs.schema.json#/$defs/score_0_1"
+          }
+        }
+      },
+      "default": []
+    },
+    "counter_hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "hypothesis",
+          "plausibility",
+          "status"
+        ],
+        "properties": {
+          "hypothesis": {
+            "type": "string"
+          },
+          "plausibility": {
+            "$ref": "common_defs.schema.json#/$defs/score_0_1"
+          },
+          "status": {
+            "$ref": "common_defs.schema.json#/$defs/evidence_status"
+          }
+        }
+      },
+      "default": []
+    },
+    "contradictory_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "invalidation_signals": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/invalidation_signal"
+      },
+      "default": []
+    },
+    "overall_confidence": {
+      "$ref": "common_defs.schema.json#/$defs/confidence"
+    },
+    "evidence_status": {
+      "$ref": "common_defs.schema.json#/$defs/evidence_status"
+    }
+  }
+}

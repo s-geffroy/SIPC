@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/diagnostic_profile.schema.json",
+  "title": "diagnostic_profile",
+  "description": "Diagnostic final hiérarchisé, testable et assorti d’un niveau de confiance.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "analysis_id",
+    "situation_id",
+    "executive_summary",
+    "analytical_summary",
+    "dominant_mechanism_id",
+    "dominant_trajectory_id",
+    "main_risk",
+    "main_watch_signals",
+    "main_uncertainties",
+    "invalidation_signals",
+    "confidence",
+    "confidence_label",
+    "evidence_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "analysis_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "situation_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "executive_summary": {
+      "type": "string"
+    },
+    "analytical_summary": {
+      "type": "string"
+    },
+    "dominant_mechanism_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "secondary_mechanism_ids": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/object_id"
+      },
+      "default": []
+    },
+    "dominant_trajectory_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "main_risk": {
+      "type": "string"
+    },
+    "main_watch_signals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "main_uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "invalidation_signals": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/invalidation_signal"
+      },
+      "default": []
+    },
+    "confidence": {
+      "$ref": "common_defs.schema.json#/$defs/confidence"
+    },
+    "confidence_label": {
+      "$ref": "common_defs.schema.json#/$defs/confidence_label"
+    },
+    "evidence_status": {
+      "$ref": "common_defs.schema.json#/$defs/evidence_status"
+    }
+  }
+}

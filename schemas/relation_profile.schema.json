@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/sipc/schemas/relation_profile.schema.json",
+  "title": "relation_profile",
+  "description": "Relation sociale internationale entre deux acteurs ou coalitions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "relation_id",
+    "source_actor_id",
+    "target_actor_id",
+    "relation_type",
+    "description",
+    "asymmetry_level",
+    "evidence_status",
+    "confidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common_defs.schema.json#/$defs/schema_version"
+    },
+    "relation_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "source_actor_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "target_actor_id": {
+      "$ref": "common_defs.schema.json#/$defs/object_id"
+    },
+    "relation_type": {
+      "$ref": "common_defs.schema.json#/$defs/relation_type"
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/field_code"
+      },
+      "default": []
+    },
+    "description": {
+      "type": "string"
+    },
+    "asymmetry_level": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "trust_level": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "credibility_level": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "reversibility": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "exit_cost": {
+      "$ref": "common_defs.schema.json#/$defs/score_0_1"
+    },
+    "main_tensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "$ref": "common_defs.schema.json#/$defs/evidence_ref"
+      },
+      "default": []
+    },
+    "analytical_status": {
+      "$ref": "common_defs.schema.json#/$defs/analytical_status"
+    },
+    "evidence_status": {
+      "$ref": "common_defs.schema.json#/$defs/evidence_status"
+    },
+    "confidence": {
+      "$ref": "common_defs.schema.json#/$defs/confidence"
+    }
+  }
+}

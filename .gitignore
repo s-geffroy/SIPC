@@ -1,0 +1,11 @@
+# MkDocs
+site/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+
+# OS
+.DS_Store
