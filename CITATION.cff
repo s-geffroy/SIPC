@@ -9,7 +9,7 @@ type: software
 authors:
   - family-names: Geffroy
     given-names: Sylvain
-version: "2.3.1"
+version: "2.4.0"
 date-released: "2026-05-27"
 license: CC-BY-4.0
 url: "https://s-geffroy.github.io/SIPC/"

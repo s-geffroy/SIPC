@@ -3,6 +3,17 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.4.0] — 2026-05-27
+
+### Ajouté
+- Nouvel exemple **Arctique** au tier VALIDATED (« gold standard ») : mécanisme dominant de
+  **désynchronisation d'ordre** (ouverture physique/économique dépassant l'adaptation
+  institutionnelle, Conseil de l'Arctique paralysé), ACH à trois hypothèses (preuve
+  `SMOKING_GUN` sur le déficit de gouvernance), sources gradées Admiralty, Key Assumptions
+  Check, premortem, `outcome` de trajectoire et `revision_history`.
+- **Cinq** exemples « gold standard » désormais. Papier (corpus porté à cinq cas), page
+  d'accueil, page Exemples et test de comptage (4 → 5) mis à jour.
+
 ## [2.3.1] — 2026-05-27
 
 ### Modifié

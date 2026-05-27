@@ -1,0 +1,650 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "ANALYSIS_ARCTIC_001",
+  "situation": {
+    "situation_id": "SIT_ARCTIC_001",
+    "name": "Situation sociale internationale de l'Arctique",
+    "scope": {
+      "geographic": "Océan Arctique, route maritime du Nord, plateaux continentaux contestés",
+      "temporal": "Phase contemporaine (post-2022)",
+      "fields": ["MIL", "ENV", "ECO", "LEGAL", "DIP", "ENERGY", "LOG"]
+    },
+    "situation_type": ["REGIONAL_ORDER_STRESS", "INSTITUTIONAL_CRISIS", "SECURITY_TENSION", "ORDER_TRANSITION"],
+    "current_phase": "governance_freeze_with_rapidly_opening_environment"
+  },
+  "actors": [
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_RUSSIA",
+      "name": "Fédération de Russie",
+      "actor_type": "STATE",
+      "aliases": [],
+      "description": "Puissance arctique dominante par sa façade côtière et sa militarisation, contrôlant la route maritime du Nord.",
+      "primary_fields": ["MIL", "ENERGY", "LOG"],
+      "claimed_roles": ["arctic_great_power", "northern_sea_route_manager"],
+      "recognized_roles": ["dominant_arctic_coastal_state"],
+      "contested_roles": ["legitimate_regulator_of_transit"],
+      "main_capitals": ["MILITARY", "ENERGY", "LOGISTICAL"],
+      "main_vulnerabilities": ["sanctions_exposure", "dependence_on_external_technology"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "elites", "non_western_partners"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_USA",
+      "name": "États-Unis d'Amérique",
+      "actor_type": "STATE",
+      "aliases": ["USA"],
+      "description": "Puissance arctique et chef de file de l'OTAN, attentive à la liberté de navigation et à la dissuasion régionale.",
+      "primary_fields": ["MIL", "DIP", "LEGAL"],
+      "claimed_roles": ["alliance_leader", "rules_based_order_guarantor"],
+      "recognized_roles": ["superpower", "arctic_state"],
+      "contested_roles": [],
+      "main_capitals": ["MILITARY", "INSTITUTIONAL", "NORMATIVE"],
+      "main_vulnerabilities": ["limited_icebreaker_capacity", "attention_dispersion"],
+      "main_dependencies": [],
+      "main_audiences": ["allies", "domestic_public"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_CHINA",
+      "name": "République populaire de Chine",
+      "actor_type": "STATE",
+      "aliases": ["PRC"],
+      "description": "Acteur extérieur se présentant comme « État quasi-arctique », promoteur d'une « route de la soie polaire » et partenaire de la Russie.",
+      "primary_fields": ["ECO", "DIP", "LOG"],
+      "claimed_roles": ["near_arctic_state", "polar_silk_road_promoter"],
+      "recognized_roles": ["external_stakeholder"],
+      "contested_roles": ["legitimate_arctic_actor"],
+      "main_capitals": ["ECONOMIC", "TECHNOLOGICAL"],
+      "main_vulnerabilities": ["lack_of_arctic_coastline", "dependence_on_russian_access"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "developing_partners"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_NORWAY",
+      "name": "Norvège",
+      "actor_type": "STATE",
+      "aliases": [],
+      "description": "État côtier arctique, membre de l'OTAN, à l'interface entre dissuasion et gestion fonctionnelle de l'Arctique.",
+      "primary_fields": ["MIL", "ENV", "DIP"],
+      "claimed_roles": ["responsible_coastal_steward"],
+      "recognized_roles": ["nato_ally", "arctic_coastal_state"],
+      "contested_roles": [],
+      "main_capitals": ["MILITARY", "INSTITUTIONAL", "NORMATIVE"],
+      "main_vulnerabilities": ["proximity_to_russia", "small_size"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "nato_alliance"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_ARCTIC_COUNCIL",
+      "name": "Conseil de l'Arctique",
+      "actor_type": "INTERNATIONAL_ORGANIZATION",
+      "aliases": [],
+      "description": "Principale enceinte de coopération arctique, largement paralysée depuis 2022 par la suspension des travaux avec la Russie.",
+      "primary_fields": ["DIP", "ENV", "INST"],
+      "claimed_roles": ["cooperation_forum", "norm_broker"],
+      "recognized_roles": ["regional_governance_body"],
+      "contested_roles": ["effective_collective_actor"],
+      "main_capitals": ["INSTITUTIONAL", "SYMBOLIC"],
+      "main_vulnerabilities": ["paralysis", "exclusion_of_a_key_member"],
+      "main_dependencies": [],
+      "main_audiences": ["member_states", "indigenous_organizations"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    }
+  ],
+  "relations": [
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_RUSSIA_USA_RIVALRY_001",
+      "source_actor_id": "ACT_RUSSIA",
+      "target_actor_id": "ACT_USA",
+      "relation_type": "RIVALRY",
+      "fields": ["MIL", "DIP"],
+      "description": "Rivalité stratégique étendue à l'Arctique : dissuasion, surveillance et réouverture de bases.",
+      "asymmetry_level": 0.4,
+      "trust_level": 0.1,
+      "credibility_level": 0.6,
+      "reversibility": 0.3,
+      "exit_cost": 0.6,
+      "main_tensions": ["military_buildup", "freedom_of_navigation"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_CHINA_RUSSIA_COOPERATION_001",
+      "source_actor_id": "ACT_CHINA",
+      "target_actor_id": "ACT_RUSSIA",
+      "relation_type": "COOPERATION",
+      "fields": ["ECO", "LOG", "ENERGY"],
+      "description": "Coopération sur la route maritime du Nord et les hydrocarbures, asymétrique et conditionnée par l'accès russe.",
+      "asymmetry_level": 0.5,
+      "trust_level": 0.4,
+      "credibility_level": 0.55,
+      "reversibility": 0.5,
+      "exit_cost": 0.55,
+      "main_tensions": ["access_dependence", "diverging_long_term_interests"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_RUSSIA_COUNCIL_CONTESTATION_001",
+      "source_actor_id": "ACT_RUSSIA",
+      "target_actor_id": "ACT_ARCTIC_COUNCIL",
+      "relation_type": "CONTESTATION",
+      "fields": ["DIP", "INST"],
+      "description": "Mise en cause de fait du fonctionnement du Conseil après la suspension des travaux par les sept autres membres.",
+      "asymmetry_level": 0.5,
+      "trust_level": 0.2,
+      "credibility_level": 0.5,
+      "reversibility": 0.5,
+      "exit_cost": 0.5,
+      "main_tensions": ["work_suspension", "loss_of_common_venue"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_USA_NORWAY_ALLIANCE_001",
+      "source_actor_id": "ACT_USA",
+      "target_actor_id": "ACT_NORWAY",
+      "relation_type": "ALLIANCE",
+      "fields": ["MIL", "DIP"],
+      "description": "Alliance OTAN renforcée en flanc nord, avec accès et coopération de défense.",
+      "asymmetry_level": 0.7,
+      "trust_level": 0.75,
+      "credibility_level": 0.7,
+      "reversibility": 0.3,
+      "exit_cost": 0.6,
+      "main_tensions": ["escalation_management", "burden_sharing"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    }
+  ],
+  "activated_fields": [
+    { "field": "ENV", "intensity": 0.9, "role_in_situation": "Fonte des glaces ouvrant routes et accès, moteur physique de la transformation." },
+    { "field": "MIL", "intensity": 0.78, "role_in_situation": "Réouverture de bases, exercices et dissuasion régionale." },
+    { "field": "LOG", "intensity": 0.72, "role_in_situation": "Route maritime du Nord et logistique polaire." },
+    { "field": "LEGAL", "intensity": 0.68, "role_in_situation": "Revendications de plateau continental étendu (UNCLOS)." }
+  ],
+  "capital_structure": [
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_RUSSIA_ARCTIC_MILITARY_001",
+      "actor_id": "ACT_RUSSIA",
+      "capital_type": "MILITARY",
+      "field": "MIL",
+      "description": "Réseau de bases rouvertes, brise-glaces et capacités sous-marines conférant une prééminence militaire arctique.",
+      "level": 0.85,
+      "convertibility": 0.6,
+      "conversion_paths": ["deterrence", "control_of_northern_sea_route", "coercive_signalling"],
+      "constraints": ["cost", "sanctions_on_technology"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_RUSSIA_NSR_LOGISTICAL_001",
+      "actor_id": "ACT_RUSSIA",
+      "capital_type": "LOGISTICAL",
+      "field": "LOG",
+      "description": "Contrôle réglementaire et infrastructurel de la route maritime du Nord.",
+      "level": 0.8,
+      "convertibility": 0.55,
+      "conversion_paths": ["transit_regulation", "rent_extraction", "leverage_over_partners"],
+      "constraints": ["limited_traffic", "ice_variability"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    }
+  ],
+  "dependencies": [
+    {
+      "schema_version": "1.0",
+      "dependency_id": "DEP_CHINA_RUSSIAN_ACCESS_001",
+      "dependent_actor_id": "ACT_CHINA",
+      "controller_actor_or_network": "ACT_RUSSIA (accès à la route maritime du Nord et aux projets arctiques)",
+      "dependency_type": "LOGISTICAL",
+      "dependent_capacity": ["polar_transit", "arctic_resource_projects"],
+      "criticality_level": 0.6,
+      "substitutability": 0.4,
+      "time_to_substitute": "Limité sans coopération russe.",
+      "asymmetry_level": 0.6,
+      "visibility_level": 0.7,
+      "politicization_level": 0.7,
+      "weaponization_potential": 0.5,
+      "exit_cost": 0.6,
+      "current_strategy": ["partnership", "icebreaker_program", "scientific_presence"],
+      "main_risk": "Accès conditionné et révocable au gré des intérêts russes.",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    }
+  ],
+  "norms": [
+    {
+      "schema_version": "1.0",
+      "norm_id": "NORM_UNCLOS_CONTINENTAL_SHELF",
+      "name": "Plateau continental étendu (UNCLOS)",
+      "norm_family": "SOVEREIGNTY",
+      "core_prescription": "Les droits sur le plateau continental au-delà de 200 milles découlent de critères géologiques évalués par la commission idoine (CLCS).",
+      "institutionalization_level": 0.7,
+      "main_institutions": ["UNCLOS", "CLCS"],
+      "carrier_audiences": ["coastal_states", "international_lawyers"],
+      "main_beneficiaries": ["arctic_coastal_states"],
+      "main_constrained_actors": ["non_coastal_actors"],
+      "violation_costs": ["legal_delegitimation"],
+      "contestation_patterns": ["overlapping_claims", "ridge_classification_disputes"],
+      "conversion_paths": ["legal_assertion", "claim_submission"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "norm_id": "NORM_ARCTIC_ENVIRONMENTAL_PROTECTION",
+      "name": "Protection de l'environnement arctique",
+      "norm_family": "ENVIRONMENTAL",
+      "core_prescription": "La fragilité de l'écosystème arctique impose coopération scientifique, prévention et précaution.",
+      "institutionalization_level": 0.55,
+      "main_institutions": ["ARCTIC_COUNCIL"],
+      "carrier_audiences": ["scientists", "indigenous_organizations", "public_opinion"],
+      "main_beneficiaries": ["arctic_communities"],
+      "main_constrained_actors": ["resource_developers"],
+      "violation_costs": ["reputation", "scientific_isolation"],
+      "contestation_patterns": ["development_vs_protection"],
+      "conversion_paths": ["functional_cooperation", "legitimation"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    }
+  ],
+  "institutions": [
+    {
+      "schema_version": "1.0",
+      "institution_id": "INST_ARCTIC_COUNCIL",
+      "name": "Conseil de l'Arctique",
+      "institution_type": "INTERNATIONAL_REGIME",
+      "core_functions": ["scientific_cooperation", "environmental_governance", "norm_setting"],
+      "rules_and_procedures": ["consensus", "working_groups", "rotating_chairmanship"],
+      "dominant_capitals": ["INSTITUTIONAL", "SYMBOLIC"],
+      "classification_power": ["who_is_a_legitimate_arctic_stakeholder"],
+      "main_tensions": ["paralysis_since_2022", "exclusion_of_russia"],
+      "current_stress_level": 0.85,
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.66
+    },
+    {
+      "schema_version": "1.0",
+      "institution_id": "INST_UNCLOS_CLCS",
+      "name": "Commission des limites du plateau continental (CLCS)",
+      "institution_type": "LEGAL_INSTITUTION",
+      "core_functions": ["evaluation_of_extended_shelf_claims"],
+      "rules_and_procedures": ["scientific_submissions", "recommendations"],
+      "dominant_capitals": ["LEGAL", "NORMATIVE"],
+      "classification_power": ["what_counts_as_extended_continental_shelf"],
+      "main_tensions": ["overlapping_arctic_claims", "slow_process"],
+      "current_stress_level": 0.6,
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    }
+  ],
+  "dominant_mechanism": {
+    "schema_version": "1.0",
+    "mechanism_id": "MECH_ORDER_DESYNCHRONIZATION_ARCTIC_001",
+    "name": "Désynchronisation d'ordre (l'environnement va plus vite que la gouvernance)",
+    "mechanism_type": "ORDER_DESYNCHRONIZATION",
+    "minimal_definition": "L'ouverture physique et économique de l'Arctique évolue plus vite que l'ordre institutionnel et normatif, produisant un déficit de gouvernance que les acteurs comblent unilatéralement.",
+    "activation_conditions": ["rapid_environmental_change", "blocked_or_lagging_institutions", "rising_economic_stakes"],
+    "typical_sequence": ["physical_opening", "governance_lag", "unilateral_assertion", "fragmentation"],
+    "amplifiers": ["great_power_rivalry", "institutional_paralysis", "resource_expectations"],
+    "dampeners": ["functional_low_politics_cooperation", "shared_environmental_interest", "legal_processes"],
+    "possible_outputs": ["fragmented_governance", "managed_coexistence", "ad_hoc_arrangements"],
+    "invalidation_signals": [
+      {
+        "signal": "rapid_institutional_renewal_closing_the_governance_gap",
+        "why_it_matters": "Indiquerait que la gouvernance rattrape le changement, désactivant la désynchronisation.",
+        "monitoring_indicators": ["new_binding_arctic_framework", "council_full_resumption"]
+      }
+    ],
+    "evidence_status": "MODERATELY_SUPPORTED",
+    "confidence": 0.6
+  },
+  "secondary_mechanisms": [
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_INSTITUTIONAL_BLOCKAGE_001",
+      "name": "Blocage institutionnel du Conseil de l'Arctique",
+      "mechanism_type": "INSTITUTIONAL_BLOCKAGE",
+      "minimal_definition": "La paralysie de l'enceinte de coopération prive la région de son principal mécanisme de coordination.",
+      "activation_conditions": ["consensus_rule", "geopolitical_rupture"],
+      "typical_sequence": ["work_suspension", "loss_of_coordination", "alternative_tracks"],
+      "amplifiers": ["member_exclusion", "spillover_from_external_conflict"],
+      "dampeners": ["technical_working_level_contacts"],
+      "possible_outputs": ["parallel_formats", "selective_resumption"],
+      "invalidation_signals": [
+        {
+          "signal": "full_resumption_of_council_work",
+          "why_it_matters": "Lèverait le blocage institutionnel.",
+          "monitoring_indicators": ["ministerial_meetings_resumed"]
+        }
+      ],
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.64
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_CAPITAL_CONVERSION_MILITARY_001",
+      "name": "Conversion de capital militaire en position arctique",
+      "mechanism_type": "CAPITAL_CONVERSION",
+      "minimal_definition": "La réouverture de bases et la modernisation militaire sont converties en prééminence et en levier régional.",
+      "activation_conditions": ["military_modernization", "strategic_value_of_region"],
+      "typical_sequence": ["base_reopening", "exercises", "deterrence_signalling"],
+      "amplifiers": ["alliance_enlargement", "rivalry"],
+      "dampeners": ["cost", "logistical_difficulty"],
+      "possible_outputs": ["security_dilemma", "militarized_status_quo"],
+      "invalidation_signals": [
+        {
+          "signal": "mutual_arctic_demilitarization_measures",
+          "why_it_matters": "Réduirait la conversion militaire en levier.",
+          "monitoring_indicators": ["force_reductions", "confidence_building_measures"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_CLASSIFICATION_STRUGGLE_SHELF_001",
+      "name": "Lutte de classement (plateau continental)",
+      "mechanism_type": "CLASSIFICATION_STRUGGLE",
+      "minimal_definition": "Bataille sur la qualification géologique et juridique des dorsales sous-marines pour étendre les droits souverains.",
+      "activation_conditions": ["overlapping_claims", "resource_stakes"],
+      "typical_sequence": ["claim_submission", "evaluation", "recommendation_or_dispute"],
+      "amplifiers": ["resource_expectations", "nationalism"],
+      "dampeners": ["legal_process", "scientific_consensus"],
+      "possible_outputs": ["legal_settlement", "frozen_overlap"],
+      "invalidation_signals": [
+        {
+          "signal": "binding_delimitation_agreements",
+          "why_it_matters": "Réduirait la lutte de classement.",
+          "monitoring_indicators": ["clcs_recommendations_accepted"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.56
+    }
+  ],
+  "trajectories": [
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_ARCTIC_FRAGMENTED_GOVERNANCE_001",
+      "situation_id": "SIT_ARCTIC_001",
+      "trajectory_type": "FRAGMENTATION",
+      "name": "Gouvernance fragmentée et arrangements parallèles",
+      "mechanism_path": "Le déficit de gouvernance persiste ; la coopération se scinde en formats parallèles (Arctique des Sept, accords bilatéraux) et l'assertion unilatérale comble le vide.",
+      "conditions": ["prolonged_council_paralysis", "sustained_rivalry", "low_politics_cooperation_only"],
+      "bifurcation_points": ["institutional_renewal", "military_incident", "resource_rush"],
+      "probability_band": "MEDIUM_HIGH",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "comprehensive_institutional_reintegration",
+          "why_it_matters": "Mettrait fin à la fragmentation.",
+          "monitoring_indicators": ["unified_arctic_governance", "russia_reintegration"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6,
+      "outcome": {
+        "status": "PENDING",
+        "notes": "Trajectoire dominante en cours d'observation ; à rescorer lors des révisions."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_ARCTIC_MANAGED_COEXISTENCE_001",
+      "situation_id": "SIT_ARCTIC_001",
+      "trajectory_type": "STABILIZATION",
+      "name": "Coexistence gérée par la basse politique",
+      "mechanism_path": "La coopération fonctionnelle (science, recherche et sauvetage) reprend partiellement malgré le gel politique, stabilisant la région sans la réunifier.",
+      "conditions": ["shared_safety_interests", "selective_resumption", "no_major_incident"],
+      "bifurcation_points": ["trust_rebuilding", "spillover_from_external_conflict"],
+      "probability_band": "MEDIUM",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "breakdown_of_functional_cooperation",
+          "why_it_matters": "Invaliderait l'hypothèse de coexistence gérée.",
+          "monitoring_indicators": ["search_and_rescue_cooperation_halt", "scientific_exchange_cutoff"]
+        }
+      ],
+      "evidence_status": "WEAKLY_SUPPORTED",
+      "confidence": 0.48
+    }
+  ],
+  "evidence": {
+    "schema_version": "1.0",
+    "hypothesis_id": "HYP_ARCTIC_ORDER_DESYNC_DOMINANT_001",
+    "situation_id": "SIT_ARCTIC_001",
+    "hypothesis": "Le mécanisme dominant est une désynchronisation d'ordre : l'ouverture physique et économique de l'Arctique dépasse la capacité d'adaptation des institutions, créant un déficit de gouvernance que les acteurs comblent unilatéralement.",
+    "mechanism_tested": "Désynchronisation d'ordre arctique",
+    "evidence_items": [
+      {
+        "evidence_id": "EVID_ARCTIC_ICE_ROUTES_001",
+        "type": "MATERIAL_DATA",
+        "description": "Déclin documenté de la banquise estivale et allongement des fenêtres de transit sur la route maritime du Nord.",
+        "source_ids": ["SRC_CLIMATE_DATA"],
+        "strength": 0.85,
+        "reliability": 0.82,
+        "interpretation_risk": 0.2,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "HOOP",
+        "consistency": [
+          { "hypothesis_id": "HYP_ORDER_DESYNC", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_MILITARIZATION", "consistency": "NEUTRAL" },
+          { "hypothesis_id": "HYP_RESOURCE_SCRAMBLE", "consistency": "NEUTRAL" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_ARCTIC_COUNCIL_PARALYSIS_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Suspension des travaux du Conseil de l'Arctique avec la Russie depuis 2022, privant la région de son enceinte de coordination.",
+        "source_ids": ["SRC_OFFICIAL_STATEMENTS"],
+        "strength": 0.82,
+        "reliability": 0.8,
+        "interpretation_risk": 0.2,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "STRAW_IN_THE_WIND",
+        "consistency": [
+          { "hypothesis_id": "HYP_ORDER_DESYNC", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_MILITARIZATION", "consistency": "NEUTRAL" },
+          { "hypothesis_id": "HYP_RESOURCE_SCRAMBLE", "consistency": "INCONSISTENT" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_ARCTIC_GOVERNANCE_GAP_001",
+        "type": "EXPERT_ASSESSMENT",
+        "description": "Le rythme d'ouverture physique et économique dépasse l'adaptation des traités et institutions, laissant un déficit de gouvernance comblé par des mesures unilatérales — ce qui discrimine une désynchronisation d'ordre d'une pure militarisation ou d'une simple ruée vers les ressources.",
+        "source_ids": ["SRC_EXPERT_ANALYSIS", "SRC_OFFICIAL_STATEMENTS"],
+        "strength": 0.74,
+        "reliability": 0.68,
+        "interpretation_risk": 0.35,
+        "credibility_grade": "2",
+        "diagnosticity": "HIGH",
+        "process_tracing_test": "SMOKING_GUN",
+        "consistency": [
+          { "hypothesis_id": "HYP_ORDER_DESYNC", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_MILITARIZATION", "consistency": "INCONSISTENT" },
+          { "hypothesis_id": "HYP_RESOURCE_SCRAMBLE", "consistency": "INCONSISTENT" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_ARCTIC_MILITARY_BUILDUP_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Réouverture de bases, exercices et élargissement de l'OTAN (Finlande, Suède) renforçant la dimension militaire régionale.",
+        "source_ids": ["SRC_MILITARY_OSINT"],
+        "strength": 0.78,
+        "reliability": 0.7,
+        "interpretation_risk": 0.3,
+        "credibility_grade": "2",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "STRAW_IN_THE_WIND",
+        "consistency": [
+          { "hypothesis_id": "HYP_ORDER_DESYNC", "consistency": "NEUTRAL" },
+          { "hypothesis_id": "HYP_MILITARIZATION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_RESOURCE_SCRAMBLE", "consistency": "NEUTRAL" }
+        ]
+      }
+    ],
+    "hypotheses": [
+      { "hypothesis_id": "HYP_ORDER_DESYNC", "label": "Désynchronisation d'ordre dominante", "is_lead": true },
+      { "hypothesis_id": "HYP_MILITARIZATION", "label": "Militarisation de grande puissance dominante", "is_lead": false },
+      { "hypothesis_id": "HYP_RESOURCE_SCRAMBLE", "label": "Ruée vers les ressources dominante", "is_lead": false }
+    ],
+    "key_assumptions": [
+      {
+        "assumption": "La coopération de basse intensité (science, recherche et sauvetage) reste possible malgré le gel politique.",
+        "status": "UNCERTAIN",
+        "impact_if_wrong": "Sans canaux fonctionnels, la fragmentation s'accélère et la coexistence gérée devient improbable."
+      },
+      {
+        "assumption": "Aucune des parties ne recherche un affrontement militaire direct en Arctique à court terme.",
+        "status": "SUPPORTED",
+        "impact_if_wrong": "Le diagnostic de désynchronisation cède la place à une logique de confrontation militaire assumée."
+      }
+    ],
+    "premortem": [
+      "Le diagnostic serait faux si une crise militaire directe redéfinissait l'Arctique comme théâtre d'affrontement (primat de la militarisation).",
+      "Le diagnostic serait faux si une refondation institutionnelle rapide comblait le déficit de gouvernance."
+    ],
+    "counter_hypotheses": [
+      {
+        "hypothesis": "Le moteur premier est une militarisation de grande puissance (Russie–OTAN), la gouvernance n'étant qu'un décor.",
+        "plausibility": 0.45,
+        "status": "MODERATELY_SUPPORTED"
+      },
+      {
+        "hypothesis": "Le moteur premier est une ruée vers les ressources (hydrocarbures, minerais, pêcheries).",
+        "plausibility": 0.35,
+        "status": "WEAKLY_SUPPORTED"
+      }
+    ],
+    "contradictory_evidence": [
+      "Persistance d'une coopération scientifique et de mécanismes de sécurité maritime, contredisant l'idée d'un effondrement total de la gouvernance."
+    ],
+    "unknowns": [
+      "Rythme réel d'exploitation économique de la route maritime du Nord.",
+      "Durée du gel institutionnel et conditions d'une reprise."
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "institutional_renewal_resolves_governance_gap_without_unilateralism",
+        "why_it_matters": "Affaiblirait l'hypothèse de la désynchronisation comme mécanisme dominant.",
+        "monitoring_indicators": ["binding_arctic_framework", "council_full_resumption"]
+      }
+    ],
+    "overall_confidence": 0.58,
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "diagnostic": {
+    "schema_version": "1.0",
+    "analysis_id": "ANALYSIS_ARCTIC_001",
+    "situation_id": "SIT_ARCTIC_001",
+    "executive_summary": "Un Arctique qui s'ouvre physiquement plus vite que sa gouvernance ne s'adapte : la désynchronisation d'ordre crée un déficit de coordination que la rivalité, le blocage du Conseil et la militarisation comblent par fragmentation.",
+    "analytical_summary": "L'Arctique n'est ni une simple zone de guerre froide rééditée ni une simple ruée vers les ressources. Le mécanisme dominant est une désynchronisation d'ordre : le changement environnemental et économique dépasse la capacité d'adaptation institutionnelle, et le blocage du Conseil de l'Arctique prive la région de coordination. La militarisation et la lutte de classement sur le plateau continental amplifient la dynamique. L'issue probable est une gouvernance fragmentée, sauf reprise fonctionnelle durable.",
+    "dominant_mechanism_id": "MECH_ORDER_DESYNCHRONIZATION_ARCTIC_001",
+    "secondary_mechanism_ids": ["MECH_INSTITUTIONAL_BLOCKAGE_001", "MECH_CAPITAL_CONVERSION_MILITARY_001", "MECH_CLASSIFICATION_STRUGGLE_SHELF_001"],
+    "dominant_trajectory_id": "TRAJ_ARCTIC_FRAGMENTED_GOVERNANCE_001",
+    "main_risk": "Incident militaire ou ruée économique dans un vide de gouvernance, sans enceinte pour gérer l'escalade.",
+    "main_watch_signals": [
+      "reprise ou paralysie durable du Conseil de l'Arctique",
+      "incidents militaires en zone arctique",
+      "volume de transit sur la route maritime du Nord",
+      "soumissions et différends sur le plateau continental"
+    ],
+    "main_uncertainties": [
+      "durée du gel institutionnel",
+      "rythme d'exploitation économique",
+      "tenue de la coopération de basse intensité"
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "durable_institutional_reintegration_closing_the_gap",
+        "why_it_matters": "Sortirait la situation de la dynamique de désynchronisation analysée.",
+        "monitoring_indicators": ["binding_framework", "council_reintegration"]
+      }
+    ],
+    "confidence": 0.56,
+    "confidence_label": "MEDIUM",
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "analytical_status": "VALIDATED",
+  "sources": [
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_CLIMATE_DATA",
+      "name": "Données climatiques et glaciologiques",
+      "source_type": "DATA",
+      "reliability": "B",
+      "description": "Séries d'observation de la banquise et du transit maritime."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_OFFICIAL_STATEMENTS",
+      "name": "Déclarations et communiqués officiels",
+      "source_type": "OFFICIAL",
+      "reliability": "B",
+      "description": "Positions officielles des États et du Conseil de l'Arctique."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_MILITARY_OSINT",
+      "name": "Renseignement de sources ouvertes (activité militaire)",
+      "source_type": "DATA",
+      "reliability": "C",
+      "description": "Suivi des bases, exercices et déploiements."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_EXPERT_ANALYSIS",
+      "name": "Analyses d'experts en gouvernance arctique",
+      "source_type": "EXPERT",
+      "reliability": "C",
+      "description": "Évaluations académiques et de think tanks."
+    }
+  ],
+  "revision_history": [
+    {
+      "version": "1.0",
+      "date": "2026-05-27",
+      "change_summary": "Analyse initiale au tier VALIDATED (gold standard) : ACH, sources gradées, calibration, suivi des signaux."
+    }
+  ],
+  "created_at": "2026-05-27",
+  "last_updated": "2026-05-27"
+}

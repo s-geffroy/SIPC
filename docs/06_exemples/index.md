@@ -1,7 +1,7 @@
 # Exemples appliqués
 
-Quatre cas démontrent que la SIPC fonctionne sur des situations réelles sans devenir un
-commentaire vague. Les quatre analyses JSON **valident contre les schémas** et **passent le
+Cinq cas démontrent que la SIPC fonctionne sur des situations réelles sans devenir un
+commentaire vague. Les cinq analyses JSON **valident contre les schémas** et **passent le
 linter doctrinal** (mécanisme dominant, contre-hypothèses, signaux d'invalidation, intégrité
 référentielle).
 
@@ -11,8 +11,9 @@ référentielle).
 | Guerre en Ukraine | activation normative | **VALIDATED** | souveraineté, normes, sanctions, résilience de coalition |
 | Rivalité tech US-Chine | weaponisation de chokepoints | **VALIDATED** | dépendance, hégémonie, standards, fragmentation |
 | Mer de Chine méridionale | conversion en zone grise | **VALIDATED** | coercition de zone grise, droit de la mer, alliances, fait accompli |
+| Arctique | désynchronisation d'ordre | **VALIDATED** | environnement, gouvernance bloquée, militarisation, plateau continental |
 
-Les quatre cas sont des exemples **« gold standard »** au [tier VALIDATED](../03_ontologie/regles_validation.md) :
+Les cinq cas sont des exemples **« gold standard »** au [tier VALIDATED](../03_ontologie/regles_validation.md) :
 sources gradées (Admiralty), [ACH](../05_preuve/ach.md) cohérente (hypothèse dominante la moins
 infirmée, départagée par une preuve `SMOKING_GUN`), calibration ancrée et suivi des signaux
 d'invalidation.
@@ -53,6 +54,17 @@ de navigation, dilemme de sécurité régional. Trajectoire dominante : normalis
 fait ; alternative : affrontement armé limité déclenché par un incident.
 
 - JSON : [`examples/south_china_sea/situation_analysis.json`](https://github.com/s-geffroy/SIPC/blob/main/examples/south_china_sea/situation_analysis.json)
+
+## Arctique
+
+**Désynchronisation d'ordre** : l'ouverture physique et économique de l'Arctique (fonte des
+glaces, route maritime du Nord) dépasse la capacité d'adaptation des institutions, et la
+paralysie du Conseil de l'Arctique prive la région de coordination. Secondaires : blocage
+institutionnel, conversion de capital militaire, lutte de classement sur le plateau continental.
+Trajectoire dominante : gouvernance fragmentée ; alternative : coexistence gérée par la basse
+politique.
+
+- JSON : [`examples/arctic/situation_analysis.json`](https://github.com/s-geffroy/SIPC/blob/main/examples/arctic/situation_analysis.json)
 
 ## Structure d'un exemple
 
