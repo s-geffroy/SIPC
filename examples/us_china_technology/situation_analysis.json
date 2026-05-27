@@ -256,7 +256,11 @@
         }
       ],
       "evidence_status": "MODERATELY_SUPPORTED",
-      "confidence": 0.6
+      "confidence": 0.6,
+      "outcome": {
+        "status": "PENDING",
+        "notes": "Trajectoire dominante en cours d'observation ; à rescorer lors des révisions."
+      }
     },
     {
       "schema_version": "1.0",
@@ -291,20 +295,74 @@
         "evidence_id": "EVID_TECH_EXPORT_CONTROLS_001",
         "type": "OBSERVABLE_PRACTICE",
         "description": "Mise en place et extension de contrôles à l'export ciblant les équipements et puces avancés.",
-        "source_ids": [],
+        "source_ids": ["SRC_OFFICIAL_CONTROLS"],
         "strength": 0.8,
         "reliability": 0.78,
-        "interpretation_risk": 0.25
+        "interpretation_risk": 0.25,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "HOOP",
+        "consistency": [
+          { "hypothesis_id": "HYP_WEAPONIZATION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_HEGEMONIC", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_MARKET", "consistency": "INCONSISTENT" }
+        ]
       },
       {
         "evidence_id": "EVID_TECH_MARKET_CONCENTRATION_001",
         "type": "MATERIAL_DATA",
         "description": "Concentration extrême des capacités EUV chez un seul fournisseur, attestant le caractère de chokepoint.",
-        "source_ids": [],
+        "source_ids": ["SRC_INDUSTRY_REPORTS"],
         "strength": 0.85,
         "reliability": 0.8,
-        "interpretation_risk": 0.2
+        "interpretation_risk": 0.2,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "STRAW_IN_THE_WIND",
+        "consistency": [
+          { "hypothesis_id": "HYP_WEAPONIZATION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_HEGEMONIC", "consistency": "NEUTRAL" },
+          { "hypothesis_id": "HYP_MARKET", "consistency": "NEUTRAL" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_TECH_TARGETED_NODE_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Les contrôles visent précisément les nœuds avancés et les outils critiques tandis que les échanges sur nœuds matures perdurent, ce qui discrimine un ciblage de chokepoint d'un découplage hégémonique large ou d'une logique de marché.",
+        "source_ids": ["SRC_TRADE_DATA", "SRC_EXPERT_ANALYSIS"],
+        "strength": 0.75,
+        "reliability": 0.7,
+        "interpretation_risk": 0.3,
+        "credibility_grade": "2",
+        "diagnosticity": "HIGH",
+        "process_tracing_test": "SMOKING_GUN",
+        "consistency": [
+          { "hypothesis_id": "HYP_WEAPONIZATION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_HEGEMONIC", "consistency": "INCONSISTENT" },
+          { "hypothesis_id": "HYP_MARKET", "consistency": "INCONSISTENT" }
+        ]
       }
+    ],
+    "hypotheses": [
+      { "hypothesis_id": "HYP_WEAPONIZATION", "label": "Weaponisation des chokepoints dominante", "is_lead": true },
+      { "hypothesis_id": "HYP_HEGEMONIC", "label": "Contestation hégémonique large dominante", "is_lead": false },
+      { "hypothesis_id": "HYP_MARKET", "label": "Compétition de marché dominante", "is_lead": false }
+    ],
+    "key_assumptions": [
+      {
+        "assumption": "Les alliés clés maintiennent l'alignement sur les contrôles à l'export.",
+        "status": "UNCERTAIN",
+        "impact_if_wrong": "Une défection d'allié réduirait fortement l'efficacité du levier des chokepoints."
+      },
+      {
+        "assumption": "L'autonomie technologique chinoise sur les nœuds avancés reste lointaine à court terme.",
+        "status": "UNCERTAIN",
+        "impact_if_wrong": "Une percée chinoise annulerait le levier et invaliderait le mécanisme dominant."
+      }
+    ],
+    "premortem": [
+      "Le diagnostic serait faux si la Chine atteignait rapidement la parité sur les nœuds avancés (le levier s'effondre).",
+      "Le diagnostic serait faux si les contrôles étaient largement relâchés, révélant un primat de la logique de marché."
     ],
     "counter_hypotheses": [
       {
@@ -367,7 +425,54 @@
     "confidence_label": "MEDIUM",
     "evidence_status": "MODERATELY_SUPPORTED"
   },
-  "analytical_status": "REVIEW_REQUIRED",
+  "analytical_status": "VALIDATED",
+  "sources": [
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_OFFICIAL_CONTROLS",
+      "name": "Réglementations de contrôle à l'export",
+      "source_type": "OFFICIAL",
+      "reliability": "B",
+      "description": "Textes officiels : entity lists, licences, foreign direct product rules."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_INDUSTRY_REPORTS",
+      "name": "Rapports sectoriels semi-conducteurs",
+      "source_type": "DATA",
+      "reliability": "B",
+      "description": "Capacités et parts de marché des fonderies et équipementiers."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_TRADE_DATA",
+      "name": "Données de commerce technologique",
+      "source_type": "DATA",
+      "reliability": "B",
+      "description": "Flux d'échanges distinguant nœuds avancés et nœuds matures."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_EXPERT_ANALYSIS",
+      "name": "Analyses d'experts en politique technologique",
+      "source_type": "EXPERT",
+      "reliability": "C",
+      "description": "Évaluations académiques et de think tanks."
+    }
+  ],
+  "revision_history": [
+    {
+      "version": "1.0",
+      "date": "2026-05-27",
+      "change_summary": "Analyse initiale (tier REVIEW_REQUIRED)."
+    },
+    {
+      "version": "2.0",
+      "date": "2026-05-27",
+      "change_summary": "Enrichissement gold standard : ACH, sources gradées, calibration, suivi des signaux.",
+      "fired_signals": []
+    }
+  ],
   "created_at": "2026-05-27",
   "last_updated": "2026-05-27"
 }

@@ -28,3 +28,24 @@ Rivalité technologique structurée par la weaponisation de chokepoints (EUV, ou
 
 > **Confiance** : MEDIUM (0.6) · **Statut probatoire** : `MODERATELY_SUPPORTED`
 
+## Matrice ACH
+
+Légende : `+` consistant, `−` inconsistant, `·` neutre. Diag. = diagnosticité de la preuve.
+
+| Preuve | Diag. | Weaponisation des chokepoints dominante | Contestation hégémonique large dominante | Compétition de marché dominante |
+|---|---|---|---|---|
+| EVID_TECH_EXPORT_CONTROLS_001 | MEDIUM | + | + | − |
+| EVID_TECH_MARKET_CONCENTRATION_001 | MEDIUM | + | · | · |
+| EVID_TECH_TARGETED_NODE_001 | HIGH | + | − | − |
+
+## Décompte des preuves inconsistantes (plus c'est bas, mieux c'est)
+
+- **Weaponisation des chokepoints dominante** : 0 inconsistance(s) ← hypothèse dominante
+- **Contestation hégémonique large dominante** : 1 inconsistance(s)
+- **Compétition de marché dominante** : 2 inconsistance(s)
+
+## Hypothèses clés (Key Assumptions Check)
+
+- **Les alliés clés maintiennent l'alignement sur les contrôles à l'export.** — `UNCERTAIN` : Une défection d'allié réduirait fortement l'efficacité du levier des chokepoints.
+- **L'autonomie technologique chinoise sur les nœuds avancés reste lointaine à court terme.** — `UNCERTAIN` : Une percée chinoise annulerait le levier et invaliderait le mécanisme dominant.
+

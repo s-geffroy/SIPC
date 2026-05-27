@@ -3,6 +3,15 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.2.0] — 2026-05-27
+
+### Ajouté
+- Exemple **Rivalité technologique US-Chine** promu « gold standard » au tier VALIDATED : ACH à
+  trois hypothèses (weaponisation des chokepoints la moins infirmée, via une preuve
+  `SMOKING_GUN` sur le ciblage chirurgical des nœuds avancés), sources gradées Admiralty, Key
+  Assumptions Check, premortem, `outcome` de trajectoire et `revision_history`.
+- Les **trois exemples** sont désormais au tier VALIDATED ; page Exemples mise à jour.
+
 ## [2.1.0] — 2026-05-27
 
 ### Ajouté
