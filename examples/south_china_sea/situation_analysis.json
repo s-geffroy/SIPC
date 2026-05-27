@@ -1,0 +1,638 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "ANALYSIS_SOUTH_CHINA_SEA_001",
+  "situation": {
+    "situation_id": "SIT_SOUTH_CHINA_SEA_001",
+    "name": "Situation sociale internationale de la mer de Chine méridionale",
+    "scope": {
+      "geographic": "Mer de Chine méridionale (Spratleys, Paracels, récif de Scarborough, Second Thomas Shoal)",
+      "temporal": "Phase contemporaine",
+      "fields": ["MIL", "LEGAL", "DIP", "ECO", "ENERGY", "SYM", "INF"]
+    },
+    "situation_type": ["SECURITY_TENSION", "NORMATIVE_CONFLICT", "REGIONAL_ORDER_STRESS"],
+    "current_phase": "gray_zone_coercion_below_armed_conflict"
+  },
+  "actors": [
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_CHINA",
+      "name": "République populaire de Chine",
+      "actor_type": "STATE",
+      "aliases": ["PRC"],
+      "description": "État revendiquant des droits historiques étendus (ligne en neuf traits) et établissant un contrôle de fait par présence paramilitaire et constructions insulaires.",
+      "primary_fields": ["MIL", "DIP", "LEGAL", "SYM"],
+      "claimed_roles": ["legitimate_sovereign", "regional_order_setter"],
+      "recognized_roles": ["major_power"],
+      "contested_roles": ["lawful_claimant_under_unclos"],
+      "main_capitals": ["MILITARY", "ECONOMIC", "INSTITUTIONAL"],
+      "main_vulnerabilities": ["regional_reputation_cost", "legal_delegitimation"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "party_state_elites", "regional_states"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_PHILIPPINES",
+      "name": "Philippines",
+      "actor_type": "STATE",
+      "aliases": [],
+      "description": "État côtier demandeur, vainqueur de l'arbitrage de 2016, allié des États-Unis, exposé à la coercition de zone grise.",
+      "primary_fields": ["LEGAL", "DIP", "MIL"],
+      "claimed_roles": ["lawful_coastal_state"],
+      "recognized_roles": ["us_ally", "arbitration_winner"],
+      "contested_roles": [],
+      "main_capitals": ["LEGAL", "SYMBOLIC"],
+      "main_vulnerabilities": ["military_asymmetry", "economic_exposure_to_china"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "us_alliance", "asean"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_VIETNAM",
+      "name": "Viêt Nam",
+      "actor_type": "STATE",
+      "aliases": [],
+      "description": "État demandeur majeur aux Spratleys et Paracels, combinant fermeté et gestion prudente de sa dépendance économique à la Chine.",
+      "primary_fields": ["DIP", "MIL", "ECO"],
+      "claimed_roles": ["coastal_claimant"],
+      "recognized_roles": ["regional_actor"],
+      "contested_roles": [],
+      "main_capitals": ["MILITARY", "ECONOMIC"],
+      "main_vulnerabilities": ["economic_dependence_on_china", "military_asymmetry"],
+      "main_dependencies": [],
+      "main_audiences": ["domestic_public", "asean"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_USA",
+      "name": "États-Unis d'Amérique",
+      "actor_type": "STATE",
+      "aliases": ["USA"],
+      "description": "Puissance extérieure garante de la liberté de navigation et du traité de défense mutuelle avec les Philippines.",
+      "primary_fields": ["MIL", "DIP", "LEGAL"],
+      "claimed_roles": ["freedom_of_navigation_guarantor", "alliance_leader"],
+      "recognized_roles": ["superpower", "security_guarantor"],
+      "contested_roles": ["impartial_external_actor"],
+      "main_capitals": ["MILITARY", "INSTITUTIONAL", "NORMATIVE"],
+      "main_vulnerabilities": ["credibility_of_commitments", "escalation_management"],
+      "main_dependencies": [],
+      "main_audiences": ["regional_allies", "domestic_public"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "actor_id": "ACT_ASEAN",
+      "name": "Association des nations de l'Asie du Sud-Est",
+      "actor_type": "REGIONAL_ORGANIZATION",
+      "aliases": ["ASEAN"],
+      "description": "Organisation régionale cherchant un code de conduite, mais limitée par sa règle du consensus et l'hétérogénéité des intérêts de ses membres.",
+      "primary_fields": ["DIP", "INST"],
+      "claimed_roles": ["regional_convener", "norm_broker"],
+      "recognized_roles": ["regional_forum"],
+      "contested_roles": ["effective_collective_actor"],
+      "main_capitals": ["INSTITUTIONAL", "SYMBOLIC"],
+      "main_vulnerabilities": ["consensus_paralysis", "member_divergence"],
+      "main_dependencies": [],
+      "main_audiences": ["member_states", "external_powers"],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    }
+  ],
+  "relations": [
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_CHINA_PHILIPPINES_COERCION_001",
+      "source_actor_id": "ACT_CHINA",
+      "target_actor_id": "ACT_PHILIPPINES",
+      "relation_type": "COERCION",
+      "fields": ["MIL", "LEGAL"],
+      "description": "Coercition de zone grise (garde-côtes, milice maritime, blocages) autour des récifs contestés.",
+      "asymmetry_level": 0.8,
+      "trust_level": 0.1,
+      "credibility_level": 0.6,
+      "reversibility": 0.3,
+      "exit_cost": 0.8,
+      "main_tensions": ["resupply_blockades", "water_cannon_incidents"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_CHINA_VIETNAM_RIVALRY_001",
+      "source_actor_id": "ACT_CHINA",
+      "target_actor_id": "ACT_VIETNAM",
+      "relation_type": "RIVALRY",
+      "fields": ["MIL", "ECO"],
+      "description": "Rivalité territoriale tempérée par une forte interdépendance économique.",
+      "asymmetry_level": 0.65,
+      "trust_level": 0.2,
+      "credibility_level": 0.55,
+      "reversibility": 0.4,
+      "exit_cost": 0.6,
+      "main_tensions": ["paracels_dispute", "fishing_incidents"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_USA_PHILIPPINES_PROTECTION_001",
+      "source_actor_id": "ACT_USA",
+      "target_actor_id": "ACT_PHILIPPINES",
+      "relation_type": "PROTECTION",
+      "fields": ["MIL", "DIP"],
+      "description": "Traité de défense mutuelle et coopération renforcée (accès aux bases), avec un seuil de déclenchement ambigu.",
+      "asymmetry_level": 0.75,
+      "trust_level": 0.6,
+      "credibility_level": 0.55,
+      "reversibility": 0.4,
+      "exit_cost": 0.65,
+      "main_tensions": ["treaty_threshold_ambiguity", "escalation_control"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_CHINA_ASEAN_CONTESTATION_001",
+      "source_actor_id": "ACT_CHINA",
+      "target_actor_id": "ACT_ASEAN",
+      "relation_type": "CONTESTATION",
+      "fields": ["DIP", "INST", "LEGAL"],
+      "description": "Négociation prolongée d'un code de conduite, où la temporisation sert le fait accompli.",
+      "asymmetry_level": 0.6,
+      "trust_level": 0.35,
+      "credibility_level": 0.5,
+      "reversibility": 0.5,
+      "exit_cost": 0.5,
+      "main_tensions": ["binding_vs_nonbinding_coc", "consensus_paralysis"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    },
+    {
+      "schema_version": "1.0",
+      "relation_id": "REL_USA_CHINA_RIVALRY_001",
+      "source_actor_id": "ACT_USA",
+      "target_actor_id": "ACT_CHINA",
+      "relation_type": "RIVALRY",
+      "fields": ["MIL", "DIP"],
+      "description": "Rivalité stratégique de fond, dont la mer de Chine méridionale est un théâtre de signalement.",
+      "asymmetry_level": 0.4,
+      "trust_level": 0.15,
+      "credibility_level": 0.6,
+      "reversibility": 0.3,
+      "exit_cost": 0.6,
+      "main_tensions": ["fonops", "incident_risk"],
+      "evidence_refs": [],
+      "analytical_status": "REVIEW_REQUIRED",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    }
+  ],
+  "activated_fields": [
+    { "field": "MIL", "intensity": 0.82, "role_in_situation": "Coercition de zone grise et présence paramilitaire." },
+    { "field": "LEGAL", "intensity": 0.8, "role_in_situation": "Bataille des qualifications juridiques (droits historiques vs UNCLOS)." },
+    { "field": "DIP", "intensity": 0.72, "role_in_situation": "Négociation du code de conduite et alignements." },
+    { "field": "ECO", "intensity": 0.6, "role_in_situation": "Pêche, hydrocarbures et routes maritimes." }
+  ],
+  "capital_structure": [
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_CHINA_MARITIME_PARAMILITARY_001",
+      "actor_id": "ACT_CHINA",
+      "capital_type": "MILITARY",
+      "field": "MIL",
+      "description": "Garde-côtes nombreux et milice maritime permettant une présence coercitive permanente sous le seuil de la guerre.",
+      "level": 0.85,
+      "convertibility": 0.7,
+      "conversion_paths": ["de_facto_control", "fait_accompli", "deterrence_of_claimants"],
+      "constraints": ["reputational_cost", "risk_of_triggering_alliance"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    },
+    {
+      "schema_version": "1.0",
+      "capital_id": "CAP_PHILIPPINES_LEGAL_001",
+      "actor_id": "ACT_PHILIPPINES",
+      "capital_type": "LEGAL",
+      "field": "LEGAL",
+      "description": "Sentence arbitrale de 2016 favorable, ressource de légitimité juridique.",
+      "level": 0.8,
+      "convertibility": 0.4,
+      "conversion_paths": ["delegitimation_of_claims", "coalition_support"],
+      "constraints": ["non_enforcement", "rejection_by_china"],
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.68
+    }
+  ],
+  "dependencies": [
+    {
+      "schema_version": "1.0",
+      "dependency_id": "DEP_REGION_SEA_LANES_001",
+      "dependent_actor_id": "ACT_PHILIPPINES",
+      "controller_actor_or_network": "Routes maritimes et zones de pêche contestées",
+      "dependency_type": "FOOD",
+      "dependent_capacity": ["fisheries", "maritime_access"],
+      "criticality_level": 0.75,
+      "substitutability": 0.3,
+      "time_to_substitute": "Difficile à court terme.",
+      "asymmetry_level": 0.7,
+      "visibility_level": 0.8,
+      "politicization_level": 0.8,
+      "weaponization_potential": 0.6,
+      "exit_cost": 0.7,
+      "current_strategy": ["legal_assertion", "alliance_support", "publicization"],
+      "main_risk": "Éviction progressive des pêcheries et des zones d'accès.",
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    }
+  ],
+  "norms": [
+    {
+      "schema_version": "1.0",
+      "norm_id": "NORM_UNCLOS_FREEDOM_NAVIGATION",
+      "name": "Droit de la mer et liberté de navigation (UNCLOS)",
+      "norm_family": "SOVEREIGNTY",
+      "core_prescription": "Les droits maritimes découlent du droit de la mer (zones économiques exclusives), non de droits historiques unilatéraux ; la navigation reste libre.",
+      "institutionalization_level": 0.75,
+      "main_institutions": ["UNCLOS", "ARBITRAL_TRIBUNAL_2016"],
+      "carrier_audiences": ["coastal_states", "maritime_powers", "international_public_opinion"],
+      "main_beneficiaries": ["smaller_coastal_states", "maritime_trading_states"],
+      "main_constrained_actors": ["expansive_claimants"],
+      "violation_costs": ["delegitimation", "coalition_pushback"],
+      "contestation_patterns": ["historic_rights_claims", "ruling_rejection"],
+      "conversion_paths": ["legal_delegitimation", "coalition_mobilization"],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.62
+    }
+  ],
+  "institutions": [
+    {
+      "schema_version": "1.0",
+      "institution_id": "INST_UNCLOS_ARBITRATION",
+      "name": "Arbitrage UNCLOS (sentence de 2016)",
+      "institution_type": "LEGAL_INSTITUTION",
+      "core_functions": ["dispute_adjudication", "legal_qualification"],
+      "rules_and_procedures": ["annex_vii_arbitration"],
+      "dominant_capitals": ["LEGAL", "NORMATIVE"],
+      "classification_power": ["what_counts_as_lawful_maritime_entitlement"],
+      "main_tensions": ["non_enforcement", "rejection_by_one_party"],
+      "current_stress_level": 0.7,
+      "evidence_status": "STRONGLY_SUPPORTED",
+      "confidence": 0.66
+    }
+  ],
+  "dominant_mechanism": {
+    "schema_version": "1.0",
+    "mechanism_id": "MECH_GRAY_ZONE_CAPITAL_CONVERSION_001",
+    "name": "Conversion incrémentale de capital paramilitaire en contrôle de fait",
+    "mechanism_type": "CAPITAL_CONVERSION",
+    "minimal_definition": "Une présence paramilitaire et des constructions insulaires sont converties, par petits pas sous le seuil de la guerre, en contrôle administratif de fait et en faits accomplis difficilement réversibles.",
+    "activation_conditions": ["paramilitary_capacity", "ambiguous_thresholds", "claimant_asymmetry"],
+    "typical_sequence": ["persistent_presence", "incident_normalization", "facility_construction", "de_facto_control"],
+    "amplifiers": ["alliance_threshold_ambiguity", "salami_slicing", "weak_collective_response"],
+    "dampeners": ["alliance_credibility", "legal_delegitimation", "publicization_of_incidents"],
+    "possible_outputs": ["normalized_control", "limited_clash", "negotiated_modus_vivendi"],
+    "invalidation_signals": [
+      {
+        "signal": "rollback_of_de_facto_control_or_binding_coc",
+        "why_it_matters": "Indiquerait que l'incrémentalisme cède devant un cadre contraignant.",
+        "monitoring_indicators": ["withdrawal_from_features", "binding_code_of_conduct_signed"]
+      }
+    ],
+    "evidence_status": "MODERATELY_SUPPORTED",
+    "confidence": 0.62
+  },
+  "secondary_mechanisms": [
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_CLASSIFICATION_STRUGGLE_001",
+      "name": "Lutte de classement juridique",
+      "mechanism_type": "CLASSIFICATION_STRUGGLE",
+      "minimal_definition": "Bataille sur les catégories qui définissent les droits maritimes : droits historiques contre zones économiques exclusives de l'UNCLOS.",
+      "activation_conditions": ["competing_legal_frames", "high_stakes_entitlements"],
+      "typical_sequence": ["claim_assertion", "adjudication", "ruling_rejection_or_acceptance"],
+      "amplifiers": ["nationalism", "resource_value"],
+      "dampeners": ["third_party_adjudication", "coalition_legal_support"],
+      "possible_outputs": ["legal_delegitimation", "frozen_dispute"],
+      "invalidation_signals": [
+        {
+          "signal": "convergence_on_unclos_based_settlement",
+          "why_it_matters": "Réduirait la lutte de classement.",
+          "monitoring_indicators": ["joint_acceptance_of_ruling"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_NORM_ACTIVATION_FONOPS_001",
+      "name": "Activation normative (liberté de navigation)",
+      "mechanism_type": "NORM_ACTIVATION",
+      "minimal_definition": "La liberté de navigation est mobilisée par des opérations et déclarations pour contester les revendications expansives.",
+      "activation_conditions": ["available_norm", "external_carrier_power"],
+      "typical_sequence": ["norm_invocation", "fonops", "audience_reaction"],
+      "amplifiers": ["alliance_signalling", "publicization"],
+      "dampeners": ["selective_application", "fatigue"],
+      "possible_outputs": ["contested_legitimacy", "status_quo_signalling"],
+      "invalidation_signals": [
+        {
+          "signal": "cessation_of_freedom_of_navigation_operations",
+          "why_it_matters": "Affaiblirait l'activation normative comme contre-levier.",
+          "monitoring_indicators": ["fonops_frequency"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.58
+    },
+    {
+      "schema_version": "1.0",
+      "mechanism_id": "MECH_SECURITY_DILEMMA_SCS_001",
+      "name": "Dilemme de sécurité régional",
+      "mechanism_type": "SECURITY_DILEMMA",
+      "minimal_definition": "Les mesures de défense des demandeurs et de leurs soutiens sont perçues comme offensives, alimentant la militarisation.",
+      "activation_conditions": ["militarization", "ambiguous_intentions"],
+      "typical_sequence": ["capability_increase", "threat_perception", "counter_measures"],
+      "amplifiers": ["incidents", "alliance_buildup"],
+      "dampeners": ["crisis_communication", "confidence_building_measures"],
+      "possible_outputs": ["arms_racing", "incident_escalation"],
+      "invalidation_signals": [
+        {
+          "signal": "mutual_restraint_measures",
+          "why_it_matters": "Indiquerait une désactivation du dilemme.",
+          "monitoring_indicators": ["hotlines", "incident_management_agreements"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.55
+    }
+  ],
+  "trajectories": [
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_SCS_NORMALIZED_GRAYZONE_001",
+      "situation_id": "SIT_SOUTH_CHINA_SEA_001",
+      "trajectory_type": "NORMALIZATION",
+      "name": "Normalisation de la zone grise et contrôle de fait",
+      "mechanism_path": "La conversion incrémentale se poursuit sous le seuil de la guerre, établissant un contrôle de fait routinisé sans règlement du statut.",
+      "conditions": ["sustained_paramilitary_presence", "no_binding_coc", "alliance_threshold_not_crossed"],
+      "bifurcation_points": ["major_maritime_incident", "binding_coc", "alliance_intervention"],
+      "probability_band": "MEDIUM_HIGH",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "binding_code_of_conduct_or_rollback",
+          "why_it_matters": "Mettrait fin à la dynamique de fait accompli.",
+          "monitoring_indicators": ["coc_signature", "feature_withdrawal"]
+        }
+      ],
+      "evidence_status": "MODERATELY_SUPPORTED",
+      "confidence": 0.6,
+      "outcome": {
+        "status": "PENDING",
+        "notes": "Trajectoire dominante en cours d'observation ; à rescorer lors des révisions."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "trajectory_id": "TRAJ_SCS_LIMITED_CLASH_001",
+      "situation_id": "SIT_SOUTH_CHINA_SEA_001",
+      "trajectory_type": "ESCALATION",
+      "name": "Affrontement armé limité déclenché par un incident",
+      "mechanism_path": "Un incident maritime (collision, tir) franchit un seuil et entraîne un affrontement limité, susceptible d'activer le traité de défense mutuelle.",
+      "conditions": ["incident_trigger", "loss_of_life", "domestic_pressure_to_respond"],
+      "bifurcation_points": ["alliance_treaty_invocation", "de_escalation_channel"],
+      "probability_band": "MEDIUM_LOW",
+      "numeric_estimate": null,
+      "invalidation_signals": [
+        {
+          "signal": "effective_incident_management_mechanism",
+          "why_it_matters": "Réduirait la probabilité d'escalade par incident.",
+          "monitoring_indicators": ["hotline_use", "rapid_de_escalation"]
+        }
+      ],
+      "evidence_status": "WEAKLY_SUPPORTED",
+      "confidence": 0.45
+    }
+  ],
+  "evidence": {
+    "schema_version": "1.0",
+    "hypothesis_id": "HYP_SCS_GRAY_ZONE_DOMINANT_001",
+    "situation_id": "SIT_SOUTH_CHINA_SEA_001",
+    "hypothesis": "Le mécanisme dominant est la conversion incrémentale d'un capital paramilitaire en contrôle de fait (zone grise), calibrée sous le seuil déclenchant une réponse d'alliance, avec la lutte de classement juridique comme amplificateur.",
+    "mechanism_tested": "Conversion incrémentale de capital paramilitaire en contrôle de fait",
+    "evidence_items": [
+      {
+        "evidence_id": "EVID_SCS_GRAYZONE_001",
+        "type": "OBSERVABLE_PRACTICE",
+        "description": "Présence permanente de garde-côtes et de la milice maritime, blocages de ravitaillement et usage de canons à eau autour des récifs contestés.",
+        "source_ids": ["SRC_MARITIME_OSINT"],
+        "strength": 0.78,
+        "reliability": 0.72,
+        "interpretation_risk": 0.3,
+        "credibility_grade": "2",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "HOOP",
+        "consistency": [
+          { "hypothesis_id": "HYP_GRAY_ZONE", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_LEGAL_CLASSIFICATION", "consistency": "NEUTRAL" },
+          { "hypothesis_id": "HYP_GREAT_POWER", "consistency": "NEUTRAL" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_SCS_ISLAND_BUILDING_001",
+        "type": "MATERIAL_DATA",
+        "description": "Construction et militarisation d'îles artificielles (pistes, infrastructures) attestées par l'imagerie satellite, créant des faits accomplis difficilement réversibles.",
+        "source_ids": ["SRC_MARITIME_OSINT"],
+        "strength": 0.85,
+        "reliability": 0.8,
+        "interpretation_risk": 0.2,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "STRAW_IN_THE_WIND",
+        "consistency": [
+          { "hypothesis_id": "HYP_GRAY_ZONE", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_LEGAL_CLASSIFICATION", "consistency": "INCONSISTENT" },
+          { "hypothesis_id": "HYP_GREAT_POWER", "consistency": "NEUTRAL" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_SCS_BELOW_THRESHOLD_001",
+        "type": "EXPERT_ASSESSMENT",
+        "description": "La coercition est calibrée pour rester sous le seuil susceptible de déclencher le traité de défense mutuelle États-Unis–Philippines, ce qui discrimine un fait accompli graduel d'un pur affrontement de grande puissance ou d'une querelle juridique.",
+        "source_ids": ["SRC_EXPERT_ANALYSIS", "SRC_OFFICIAL_STATEMENTS"],
+        "strength": 0.74,
+        "reliability": 0.68,
+        "interpretation_risk": 0.35,
+        "credibility_grade": "2",
+        "diagnosticity": "HIGH",
+        "process_tracing_test": "SMOKING_GUN",
+        "consistency": [
+          { "hypothesis_id": "HYP_GRAY_ZONE", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_LEGAL_CLASSIFICATION", "consistency": "INCONSISTENT" },
+          { "hypothesis_id": "HYP_GREAT_POWER", "consistency": "INCONSISTENT" }
+        ]
+      },
+      {
+        "evidence_id": "EVID_SCS_RULING_REJECTED_001",
+        "type": "DOCTRINAL_DOCUMENT",
+        "description": "Rejet de la sentence arbitrale de 2016 et réaffirmation de droits historiques (ligne en neuf traits).",
+        "source_ids": ["SRC_LEGAL_DOCUMENTS", "SRC_OFFICIAL_STATEMENTS"],
+        "strength": 0.8,
+        "reliability": 0.78,
+        "interpretation_risk": 0.25,
+        "credibility_grade": "1",
+        "diagnosticity": "MEDIUM",
+        "process_tracing_test": "STRAW_IN_THE_WIND",
+        "consistency": [
+          { "hypothesis_id": "HYP_GRAY_ZONE", "consistency": "NEUTRAL" },
+          { "hypothesis_id": "HYP_LEGAL_CLASSIFICATION", "consistency": "CONSISTENT" },
+          { "hypothesis_id": "HYP_GREAT_POWER", "consistency": "NEUTRAL" }
+        ]
+      }
+    ],
+    "hypotheses": [
+      { "hypothesis_id": "HYP_GRAY_ZONE", "label": "Conversion en zone grise dominante", "is_lead": true },
+      { "hypothesis_id": "HYP_LEGAL_CLASSIFICATION", "label": "Lutte de classement juridique dominante", "is_lead": false },
+      { "hypothesis_id": "HYP_GREAT_POWER", "label": "Compétition de grande puissance dominante", "is_lead": false }
+    ],
+    "key_assumptions": [
+      {
+        "assumption": "Les incidents restent sous le seuil déclenchant le traité de défense mutuelle États-Unis–Philippines.",
+        "status": "UNCERTAIN",
+        "impact_if_wrong": "Internationalisation et risque d'escalade rapide ; la trajectoire dominante bascule vers l'affrontement limité."
+      },
+      {
+        "assumption": "La Chine privilégie le fait accompli graduel à la confrontation ouverte.",
+        "status": "SUPPORTED",
+        "impact_if_wrong": "Le diagnostic de zone grise cède la place à une logique de grande puissance assumée."
+      }
+    ],
+    "premortem": [
+      "Le diagnostic serait faux si un affrontement majeur survenait délibérément, révélant le primat de la compétition de grande puissance.",
+      "Le diagnostic serait faux si un code de conduite contraignant stabilisait durablement le statut par voie juridico-diplomatique."
+    ],
+    "counter_hypotheses": [
+      {
+        "hypothesis": "Le moteur premier est la lutte de classement juridique (droits historiques contre UNCLOS).",
+        "plausibility": 0.45,
+        "status": "MODERATELY_SUPPORTED"
+      },
+      {
+        "hypothesis": "Le moteur premier est la compétition de grande puissance États-Unis–Chine, les demandeurs étant des relais.",
+        "plausibility": 0.4,
+        "status": "WEAKLY_SUPPORTED"
+      }
+    ],
+    "contradictory_evidence": [
+      "Périodes d'apaisement et de coopération économique bilatérale, suggérant que la coercition est dosée plutôt que maximale."
+    ],
+    "unknowns": [
+      "Seuil exact d'activation du traité de défense mutuelle.",
+      "Degré de cohésion future de l'ASEAN."
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "binding_coc_resolves_disputes_without_de_facto_control",
+        "why_it_matters": "Affaiblirait l'hypothèse de la zone grise comme mécanisme dominant.",
+        "monitoring_indicators": ["binding_coc_signed", "rollback_of_features"]
+      }
+    ],
+    "overall_confidence": 0.6,
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "diagnostic": {
+    "schema_version": "1.0",
+    "analysis_id": "ANALYSIS_SOUTH_CHINA_SEA_001",
+    "situation_id": "SIT_SOUTH_CHINA_SEA_001",
+    "executive_summary": "Coercition de zone grise convertissant une présence paramilitaire en contrôle de fait, sous le seuil de la guerre, avec une lutte de classement juridique (UNCLOS vs droits historiques) en toile de fond.",
+    "analytical_summary": "La mer de Chine méridionale n'est pas une crise ponctuelle mais une situation sociale internationale durable où un fait accompli graduel s'installe sans franchir le seuil de l'affrontement ouvert. Le mécanisme dominant est une conversion incrémentale de capital paramilitaire en contrôle administratif ; il est amplifié par la lutte de classement juridique, l'activation normative de la liberté de navigation et un dilemme de sécurité régional. L'issue probable est une normalisation du contrôle de fait, sauf incident déclencheur ou code de conduite contraignant.",
+    "dominant_mechanism_id": "MECH_GRAY_ZONE_CAPITAL_CONVERSION_001",
+    "secondary_mechanism_ids": ["MECH_CLASSIFICATION_STRUGGLE_001", "MECH_NORM_ACTIVATION_FONOPS_001", "MECH_SECURITY_DILEMMA_SCS_001"],
+    "dominant_trajectory_id": "TRAJ_SCS_NORMALIZED_GRAYZONE_001",
+    "main_risk": "Escalade par incident maritime franchissant le seuil d'activation du traité de défense mutuelle.",
+    "main_watch_signals": [
+      "incidents avec pertes humaines",
+      "signature d'un code de conduite contraignant",
+      "fréquence des opérations de liberté de navigation",
+      "nouvelles constructions ou retraits sur les récifs"
+    ],
+    "main_uncertainties": [
+      "seuil réel d'activation de l'alliance",
+      "cohésion de l'ASEAN",
+      "tolérance des demandeurs à la coercition"
+    ],
+    "invalidation_signals": [
+      {
+        "signal": "durable_binding_settlement_reversing_de_facto_control",
+        "why_it_matters": "Sortirait la situation de la dynamique de fait accompli analysée.",
+        "monitoring_indicators": ["binding_coc", "feature_demilitarization"]
+      }
+    ],
+    "confidence": 0.6,
+    "confidence_label": "MEDIUM",
+    "evidence_status": "MODERATELY_SUPPORTED"
+  },
+  "analytical_status": "VALIDATED",
+  "sources": [
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_OFFICIAL_STATEMENTS",
+      "name": "Déclarations et documents officiels",
+      "source_type": "OFFICIAL",
+      "reliability": "B",
+      "description": "Communiqués et positions officielles des parties."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_MARITIME_OSINT",
+      "name": "Renseignement maritime de sources ouvertes",
+      "source_type": "DATA",
+      "reliability": "C",
+      "description": "Imagerie satellite, AIS et suivi des incidents en mer."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_LEGAL_DOCUMENTS",
+      "name": "Documents juridiques (UNCLOS, sentence de 2016)",
+      "source_type": "OFFICIAL",
+      "reliability": "B",
+      "description": "Textes du droit de la mer et de l'arbitrage."
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "SRC_EXPERT_ANALYSIS",
+      "name": "Analyses d'experts en sécurité maritime",
+      "source_type": "EXPERT",
+      "reliability": "C",
+      "description": "Évaluations académiques et de think tanks."
+    }
+  ],
+  "revision_history": [
+    {
+      "version": "1.0",
+      "date": "2026-05-27",
+      "change_summary": "Analyse initiale au tier VALIDATED (gold standard) : ACH, sources gradées, calibration, suivi des signaux."
+    }
+  ],
+  "created_at": "2026-05-27",
+  "last_updated": "2026-05-27"
+}

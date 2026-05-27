@@ -1,7 +1,7 @@
 # Exemples appliqués
 
-Trois cas démontrent que la SIPC fonctionne sur des situations réelles sans devenir un
-commentaire vague. Les trois analyses JSON **valident contre les schémas** et **passent le
+Quatre cas démontrent que la SIPC fonctionne sur des situations réelles sans devenir un
+commentaire vague. Les quatre analyses JSON **valident contre les schémas** et **passent le
 linter doctrinal** (mécanisme dominant, contre-hypothèses, signaux d'invalidation, intégrité
 référentielle).
 
@@ -10,8 +10,9 @@ référentielle).
 | Détroit de Taïwan | crise de reconnaissance | **VALIDATED** | reconnaissance, dissuasion, dépendance tech, ordre régional |
 | Guerre en Ukraine | activation normative | **VALIDATED** | souveraineté, normes, sanctions, résilience de coalition |
 | Rivalité tech US-Chine | weaponisation de chokepoints | **VALIDATED** | dépendance, hégémonie, standards, fragmentation |
+| Mer de Chine méridionale | conversion en zone grise | **VALIDATED** | coercition de zone grise, droit de la mer, alliances, fait accompli |
 
-Les trois cas sont des exemples **« gold standard »** au [tier VALIDATED](../03_ontologie/regles_validation.md) :
+Les quatre cas sont des exemples **« gold standard »** au [tier VALIDATED](../03_ontologie/regles_validation.md) :
 sources gradées (Admiralty), [ACH](../05_preuve/ach.md) cohérente (hypothèse dominante la moins
 infirmée, départagée par une preuve `SMOKING_GUN`), calibration ancrée et suivi des signaux
 d'invalidation.
@@ -42,6 +43,16 @@ un découplage sélectif. Secondaires : contestation hégémonique, désynchroni
 Trajectoire dominante : fragmentation gérée ; alternative : compétition encadrée.
 
 - JSON : [`examples/us_china_technology/situation_analysis.json`](https://github.com/s-geffroy/SIPC/blob/main/examples/us_china_technology/situation_analysis.json)
+
+## Mer de Chine méridionale
+
+**Conversion incrémentale de capital paramilitaire en contrôle de fait** (zone grise), calibrée
+sous le seuil déclenchant le traité de défense mutuelle États-Unis–Philippines. Secondaires :
+lutte de classement juridique (droits historiques vs UNCLOS), activation normative de la liberté
+de navigation, dilemme de sécurité régional. Trajectoire dominante : normalisation du contrôle de
+fait ; alternative : affrontement armé limité déclenché par un incident.
+
+- JSON : [`examples/south_china_sea/situation_analysis.json`](https://github.com/s-geffroy/SIPC/blob/main/examples/south_china_sea/situation_analysis.json)
 
 ## Structure d'un exemple
 

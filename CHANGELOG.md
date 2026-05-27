@@ -3,6 +3,17 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.3.0] — 2026-05-27
+
+### Ajouté
+- Nouvel exemple **Mer de Chine méridionale** au tier VALIDATED (« gold standard ») : mécanisme
+  dominant de conversion en zone grise (coercition paramilitaire → contrôle de fait sous le seuil
+  d'alliance), ACH à trois hypothèses (preuve `SMOKING_GUN` sur la calibration sous le seuil du
+  traité de défense mutuelle), sources gradées Admiralty, Key Assumptions Check, premortem,
+  `outcome` de trajectoire et `revision_history`.
+- Quatre exemples « gold standard » désormais disponibles ; page Exemples et test de comptage
+  mis à jour (3 → 4).
+
 ## [2.2.0] — 2026-05-27
 
 ### Ajouté
