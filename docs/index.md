@@ -29,6 +29,18 @@ dépendances, mécanismes et trajectoires. Voir [Situation sociale international
 - Construire des **trajectoires conditionnelles** plutôt que des prédictions.
 - Soumettre l'analyse à une **discipline probatoire** (preuves, contre-hypothèses, invalidation).
 
+## Une méthode renforcée et outillée
+
+La méthode est disciplinée par quatre dispositifs, **vérifiés automatiquement** et documentés :
+
+- **[Calibration probabiliste](05_preuve/calibration.md)** — échelle estimative ancrée (mots ↔ plages), fin de la fausse précision.
+- **[Analyse des hypothèses concurrentes](05_preuve/ach.md)** (ACH) — diagnosticité, tests de *process tracing*, Key Assumptions Check, premortem.
+- **[Traçabilité des sources](05_preuve/sources_et_claims.md)** — gradation Admiralty (fiabilité × crédibilité), « source ≠ preuve ».
+- **[Suivi et backtesting](05_preuve/backtesting.md)** — surveillance des signaux, révisions, score de Brier.
+
+La conformité est **graduée** selon la maturité de l'analyse (`DRAFT` → `REVIEW_REQUIRED` →
+`VALIDATED`) et exécutée en intégration continue. Voir [Règles de validation](03_ontologie/regles_validation.md).
+
 ## Ce que le modèle ne prétend pas faire
 
 - Prédire mécaniquement l'avenir.
@@ -37,14 +49,22 @@ dépendances, mécanismes et trajectoires. Voir [Situation sociale international
 
 ## Papier académique
 
-Le fondement théorique est exposé dans un papier académique (LaTeX, compilé en CI) :
-**[📄 Télécharger le PDF](assets/sipc_paper.pdf)**.
+Le fondement théorique et les quatre études de cas sont exposés dans un papier académique
+(LaTeX, source de vérité, compilé en CI) : **[📄 Télécharger le PDF](assets/sipc_paper.pdf)**
+ou lire en ligne sur la page [Papier académique](papier.md).
+
+## Quatre cas appliqués et validés
+
+Détroit de Taïwan, guerre en Ukraine, rivalité technologique États-Unis / Chine et mer de Chine
+méridionale — tous au tier `VALIDATED`. Voir [Exemples](06_exemples/index.md).
 
 ## Parcours recommandé
 
 1. [Théorie](01_theorie/these_centrale.md) — fondations conceptuelles.
-2. [Méthode](02_methode/protocole_general.md) — protocole d'analyse en 10 étapes.
-3. [Ontologie](03_ontologie/vue_ensemble.md) — objets JSON et règles de validation.
+2. [Méthode](02_methode/protocole_general.md) — protocole en 11 étapes, avec [suivi et mise à jour](02_methode/suivi_et_mise_a_jour.md).
+3. [Ontologie](03_ontologie/vue_ensemble.md) — objets JSON, [enums](03_ontologie/enums_controles.md) et [règles de validation](03_ontologie/regles_validation.md).
 4. [Mécanismes](04_mecanismes/index.md) — le cœur causal.
-5. [Exemples](06_exemples/index.md) — trois cas appliqués et validés.
-6. [Implémentation](07_implementation/guide_depot.md) — outillage et conventions.
+5. [Preuve](05_preuve/triangulation_probatoire.md) — triangulation, calibration, ACH, sources, backtesting.
+6. [Exemples](06_exemples/index.md) — quatre cas appliqués et validés.
+7. [Papier académique](papier.md) — synthèse théorique et études de cas.
+8. [Implémentation](07_implementation/guide_depot.md) — outillage, Docker et conventions.

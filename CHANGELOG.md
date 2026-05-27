@@ -3,6 +3,16 @@
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 sémantique.
 
+## [2.3.1] — 2026-05-27
+
+### Modifié
+- **Papier LaTeX** : section « Études de cas » étendue au corpus des **quatre cas validés**
+  (Taïwan, Ukraine, US-Chine, mer de Chine méridionale) ; abstract, section ontologie et
+  conclusion mis à jour pour refléter l'ensemble du dispositif (calibration, ACH, sources, suivi).
+- **Page d'accueil** : ajoute une présentation de la méthode renforcée (4 dispositifs), du
+  modèle de conformité gradué, des quatre cas et du parcours complet — le site et le papier
+  mentionnent désormais l'ensemble du périmètre.
+
 ## [2.3.0] — 2026-05-27
 
 ### Ajouté
